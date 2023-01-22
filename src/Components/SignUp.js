@@ -18,7 +18,7 @@ const SignUp = () => {
                    </div>
                    <br></br>
                    <br></br>
-                    <a href="https://www.google.com/">Already have an account?</a>
+                   <a href="https://www.google.com/">Already have an account?</a>
                 </div>
             </div>
         </div>

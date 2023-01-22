@@ -57,17 +57,15 @@
   padding: 0;
 }
 .userinfo{
-  background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
-  margin-right: 10px;
-  margin-left: 10px;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  margin: 10px;
   padding: 3px;
   border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 48%;
+  min-width: 250px;
+  border: solid;
+  border-color: black;
 }
-.recordsholder{
+.slotsholder{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -76,10 +74,24 @@
   
 }
 .records{
-  background-color: #F9F2A7;
-  margin-left: 10px;
-  margin-right: 10px;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  margin: 10px;
   padding: 3px;
   border-radius: 5px;
-  width: 45%;
+  width: 48%;
+  min-width: 250px;
+  border: solid;
+  border-color: black;
+}
+.featuredstuff{
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  margin: 10px;
+  padding: 3px;
+  border-radius: 5px;
+  width: 48%;
+  min-width: 250px;
+  border: solid;
+  border-color: black;
+}
+.notextdeco{
+  text-decoration: none;
+  color: black;
 }
