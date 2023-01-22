@@ -81,6 +81,8 @@
   min-width: 250px;
   border: solid;
   border-color: black;
+  display: flex;
+  flex-direction: column;
 }
 .featuredstuff{
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  margin: 10px;
@@ -94,4 +96,12 @@
 .notextdeco{
   text-decoration: none;
   color: black;
+}
+.button2{
+  border: none;
+  background: #18E170;
+  border-radius: 10px;
+  height: 30px;
+  margin-left: 45%;
+  margin-right: 45%;
 }

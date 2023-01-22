@@ -14,7 +14,7 @@ const SignUp = () => {
                     <br></br>
                     <br></br>
                    <div className="horizontalcenter">
-                        <button className="button1 grow">Sign In</button>
+                        <button className="button1 grow">Sign Up</button>
                    </div>
                    <br></br>
                    <br></br>

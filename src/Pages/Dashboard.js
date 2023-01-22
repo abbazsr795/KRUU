@@ -15,11 +15,13 @@ const Dashboard = () => {
                 </div>
             </div>
             <div className="slotsholder">
-                <div className="records grow">
+                <div className="records">
                     <h1>Past vaccine records</h1>
+                    <button className="button2 grow">+</button>
                 </div>
-                <div className="records grow">
+                <div className="records">
                     <h1>Upcoming vaccine records</h1>
+                    <button className="button2 grow">+</button>
                 </div>
             </div>
             <br></br>
