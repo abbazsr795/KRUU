@@ -5,6 +5,7 @@ import SignUpPage from './Pages/SignUpPage';
 import DashboardPage from './Pages/DashboardPage';
 import { Routes, Route } from 'react-router-dom'
 import UserInfoPage from './Pages/UserInfoPage';
+import ErrorPage from './Pages/ErrorPage';
 
 const App = () => {
   return(
@@ -12,7 +13,8 @@ const App = () => {
       <Route path='/signin'                      element={<SignInPage/>}      />
       <Route path='/signup'                      element={<SignUpPage/>}      />
       <Route path='/dashboard'                   element={<DashboardPage/>}   />
-      <Route path='/userinfo'                   element={<UserInfoPage/>}   />
+      <Route path='/userinfo'                    element={<UserInfoPage/>}    />
+      <Route path='*'                            element={<ErrorPage/>}       />
     </Routes>
   )
 }
