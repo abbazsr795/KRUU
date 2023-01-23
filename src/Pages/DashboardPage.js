@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dashboard = () => {
+const DashboardPage = () => {
     return(
         <div className="verticalcenter">
             <div className="slotsholder">
@@ -31,4 +31,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default DashboardPage

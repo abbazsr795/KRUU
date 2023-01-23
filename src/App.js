@@ -1,18 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import SignIn from './Components/SignIn.js'
-import SignUp from './Components/SignUp.js'
-import Footer from './Components/Footer.js'
-import HeadRoom from './Components/HeadRoom';
-import Dashboard from './Pages/Dashboard';
+import SignInPage from './Pages/SignInPage';
+import SignUpPage from './Pages/SignUpPage';
+import DashboardPage from './Pages/DashboardPage';
+import { Routes, Route } from 'react-router-dom'
+import UserInfoPage from './Pages/UserInfoPage';
 
 const App = () => {
   return(
-    <div>
-      <HeadRoom/>
-      <Dashboard/>
-      <Footer/>
-    </div>
+    /*<Routes>
+      <Route path='/signin'                      element={<SignInPage/>}      />
+      <Route path='/signup'                      element={<SignUpPage/>}      />
+      <Route path='/dashboard'                   element={<DashboardPage/>}   />
+    </Routes>*/
+    <SignUpPage/>
   )
 }
 

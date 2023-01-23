@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 .emailandpasswordbox{
-  background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
   border-radius: 5px;
   padding: 3px;
   width: 20%;
@@ -34,7 +35,8 @@
 .footer{
   bottom: 0;
   position: fixed;
-  background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   width: 100%;
   margin-top: 10px;
   display: flex;
@@ -74,7 +76,8 @@
   
 }
 .records{
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  margin: 10px;
+  background-color: #FF9A8B;
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
   padding: 3px;
   border-radius: 5px;
   width: 48%;
@@ -104,4 +107,16 @@
   height: 30px;
   margin-left: 45%;
   margin-right: 45%;
+}
+.userinfobox{
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  border-radius: 5px;
+  border-color: black;
+  padding: 3px;
+  width: 20%;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
 }
