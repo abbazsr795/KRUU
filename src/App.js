@@ -8,12 +8,12 @@ import UserInfoPage from './Pages/UserInfoPage';
 
 const App = () => {
   return(
-    /*<Routes>
+    <Routes>
       <Route path='/signin'                      element={<SignInPage/>}      />
       <Route path='/signup'                      element={<SignUpPage/>}      />
       <Route path='/dashboard'                   element={<DashboardPage/>}   />
-    </Routes>*/
-    <SignUpPage/>
+      <Route path='/userinfo'                   element={<UserInfoPage/>}   />
+    </Routes>
   )
 }
 
