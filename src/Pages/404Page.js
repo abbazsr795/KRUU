@@ -11,7 +11,7 @@ const NotFound = () =>{
     let apikey = "sVZJqmh4aCTKXhXdh5BhLyWce8NYQTkJc56elKs2"
     
     
-    // getPic()
+    getPic()
 
     return <>
         <h1>No Page</h1>
