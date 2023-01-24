@@ -16,8 +16,8 @@
   justify-content: center;
 }
 .verticalcenter{
-  display: flex;
-  flex-direction: column;
+  height: 200px;
+  position: relative;
 }
 *{
   font-family: 'Cuprum', sans-serif;
