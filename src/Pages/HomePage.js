@@ -1,8 +1,11 @@
 import { useNavigate } from "react-router-dom"
+import { RenderComp } from "../States/Misc"
 
 const Home = ()=>{
 
     let navigate = useNavigate()
+    
+
 
     let toDashboard = () =>{
         navigate('/dashboard')

@@ -1,21 +1,22 @@
 const NotFound = () =>{
-
-    let f = null
     
-    async function getPic(){
+    async function getPic(apikey){
         let g = await fetch("https://api.nasa.gov/planetary/apod?api_key="+apikey)
-        f = g.json()
+        let f = g.json()
         console.log("done "+f.title)
+        return f
     }
 
     let apikey = "sVZJqmh4aCTKXhXdh5BhLyWce8NYQTkJc56elKs2"
     
     
-    getPic()
+    let f = getPic(apikey)
 
     return <>
-        <h1>No Page</h1>
-        {/* <p> {f.title} </p> */}
+        <h1>No Such PAge</h1>
+        <p>While you are here, here's the NASA pic of the day</p>
+        <h3>{f.title}</h3>
+        
     </>
 }
 
