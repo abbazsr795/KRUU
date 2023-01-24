@@ -6,7 +6,7 @@ import DashboardPage from './Pages/DashboardPage';
 import { Routes, Route } from 'react-router-dom'
 import UserInfoPage from './Pages/UserInfoPage';
 import NotFound from './Pages/404Page';
-import Home from './Pages/HomePAge';
+import Home from './Pages/HomePage';
 
 const App = () => {
   return(
