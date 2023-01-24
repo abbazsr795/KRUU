@@ -5,11 +5,11 @@ const Home = ()=>{
     let navigate = useNavigate()
 
     let toDashboard = () =>{
-
+        navigate('/dashboard')
     }
 
     let toUserInfo = () =>{
-
+        navigate('/userinfo')
     }
 
 
