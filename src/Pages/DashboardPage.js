@@ -1,7 +1,12 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
+// import React from "react";
 import Footer from "../Components/Footer";
 
 const DashboardPage = () => {
+
+    let navigate = useNavigate()
+
+
     return(
         <div className="verticalcenter">
             <div className="slotsholder">
@@ -18,7 +23,7 @@ const DashboardPage = () => {
             <div className="slotsholder">
                 <div className="records">
                     <h1>Past vaccine records</h1>
-                    <button className="button2 grow">+</button>
+                    <button className="button2 grow" onClick={()=>{navigate('/dashboard/pastrecords')}} >See More</button>
                 </div>
                 <div className="records">
                     <h1>Upcoming vaccine records</h1>

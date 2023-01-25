@@ -5,8 +5,6 @@ const Home = ()=>{
 
     let navigate = useNavigate()
 
-
-
     let toDashboard = () =>{
         navigate('/dashboard')
     }
@@ -14,8 +12,6 @@ const Home = ()=>{
     let toUserInfo = () =>{
         navigate('/userinfo')
     }
-
-
 
     return <>
         <h1>Home Page</h1>
