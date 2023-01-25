@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom"
 
 
-let Back =(URL)=>{
+let Back =(url)=>{
 
     let navigate = useNavigate()
 
-    navigate(URL)
+    navigate(url)
 
 }
 
