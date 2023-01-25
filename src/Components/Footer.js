@@ -1,8 +1,10 @@
 import React from "react";
 import { useRecoilValue } from "recoil";
 import { RenderComp } from "../States/Misc";
+import Back from "./Back";
 
 const Footer = () => {
+    
 
     let rend = useRecoilValue(RenderComp)
 
