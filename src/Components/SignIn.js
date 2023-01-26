@@ -1,8 +1,16 @@
 import React from "react";
 import '../index.css'
 import 'tachyons'
+import { useNavigate } from "react-router-dom"
 
 const SignIn = () => {
+
+    let navigate = useNavigate()
+    
+    let toSignUp = () => {
+        navigate("/signup")
+    }
+
     return(
         <div className="horizontalcenter">
             <div className="emailandpasswordbox">
@@ -18,7 +26,7 @@ const SignIn = () => {
                    </div>
                    <br></br>
                    <br></br>
-                    <a href="https://www.google.com/">Don't have an account?</a>
+                    <a onClick={toSignUp}>Don't have an account?</a>
                 </div>
             </div>
         </div>
