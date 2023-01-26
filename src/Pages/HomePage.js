@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom"
+import Footer from "../Components/Footer"
+import SignIn from "../Components/SignIn"
 // import { RenderComp } from "../States/Misc"
 
 function Home() {
@@ -35,11 +37,7 @@ function Home() {
             <br></br>
             <br></br>
             <br></br>
-<<<<<<< HEAD
             <Footer />
-=======
-            <Footer/>
->>>>>>> 34d8382a97889fc82a1d95752b55aa585f57d905
         </div>
     )
 }
