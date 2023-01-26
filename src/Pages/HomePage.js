@@ -1,12 +1,9 @@
 import { useNavigate } from "react-router-dom"
-import Footer from "../Components/Footer"
-import SignIn from "../Components/SignIn"
-// import { RenderComp } from "../States/Misc"
+import { RenderComp } from "../States/Misc"
 
 function Home() {
 
     let navigate = useNavigate()
-
 
 
     let toDashboard = () => {
@@ -17,29 +14,13 @@ function Home() {
         navigate('/userinfo')
     }
 
-    return (
+    return <>
+        <h1>Home Page</h1>
         <div>
-            <div className='home1'>
-                <h1 className='hometext'>ad 1</h1>
-            </div>
-            <div className='home2'>
-                <h1 className='hometext'>ad 2</h1>
-            </div>
-            <div className='home3'>
-                <h1 className='hometext'>ad 3</h1>
-            </div>
-            <div className='horizontalcenter'>
-                <h1 className="hometext2">Sign in to get started</h1>
-            </div>
-            <SignIn />
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <Footer />
+            <button onClick={()=>{toDashboard()}} >Dashboard</button>
+            <button onClick={()=>{toUserInfo()}} >User Info</button>
         </div>
-    )
+    </>
 }
 
 export default Home

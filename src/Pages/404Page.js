@@ -1,23 +1,26 @@
+import { useState } from "react"
+
 const NotFound = () =>{
+
+    let [content,Setcontent] = useState('')
     
-    async function getPic(apikey){
-        let g = await fetch("https://api.nasa.gov/planetary/apod?api_key="+apikey)
-        let f = g.json()
-        console.log("done "+f.title)
-        return f
+    const getPic = async () =>{
+        let g = await fetch("https://api.nasa.gov/planetary/apod?api_key=sVZJqmh4aCTKXhXdh5BhLyWce8NYQTkJc56elKs2").then((g)=>g.json())
+        Setcontent(g)
     }
 
-    let apikey = "sVZJqmh4aCTKXhXdh5BhLyWce8NYQTkJc56elKs2"
-    
-    
-    let f = getPic(apikey)
+    // let apikey = "sVZJqmh4aCTKXhXdh5BhLyWce8NYQTkJc56elKs2"
 
-    return <>
-        <h1>No Such PAge</h1>
+    getPic()
+
+
+    return <div className="verticalcenter">
+        <h1>No Such Page</h1>
         <p>While you are here, here's the NASA pic of the day</p>
-        <h3>{f.title}</h3>
-        
-    </>
+        <h3>{content.title}</h3>
+        <img height={"600"} width={"800"} src={content.hdurl} alt="" />
+        <p> {content.explanation} </p>
+    </div>
 }
 
 export default NotFound
