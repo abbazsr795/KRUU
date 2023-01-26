@@ -16,7 +16,7 @@ const SignIn = () => {
     }
 
     let passwordSet=(event)=>{
-        setEmail(event.target.value)
+        setPassword(event.target.value)
     }
 
     let letsignin = ()=>{
