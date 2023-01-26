@@ -47,75 +47,29 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-.header{
-  top: 0;
-  position: fixed;
-  background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
-  width: 100%;
-  margin-bottom: 10px;
-}
-.title{
-  font-family: 'Lobster', cursive;
-  padding: 0;
-}
-.userinfo{
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  margin: 10px;
-  padding: 3px;
-  border-radius: 5px;
-  width: 48%;
-  min-width: 250px;
-  border: solid;
-  border-color: black;
-}
-.slotsholder{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 10px;
-  flex-wrap: wrap;
-  
-}
-.records{
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  margin: 10px;
-  padding: 3px;
-  border-radius: 5px;
-  width: 48%;
-  min-width: 250px;
-  border: solid;
-  border-color: black;
-  display: flex;
-  flex-direction: column;
-}
-.featuredstuff{
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  margin: 10px;
-  padding: 3px;
-  border-radius: 5px;
-  width: 48%;
-  min-width: 250px;
-  border: solid;
-  border-color: black;
-}
 .notextdeco{
   text-decoration: none;
   color: black;
 }
-.button2{
-  border: none;
-  background: #18E170;
-  border-radius: 10px;
-  height: 30px;
-  margin-left: 45%;
-  margin-right: 45%;
+.home1{
+  padding : 0px;
+  margin: 0px;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }
-.userinfobox{
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  border-radius: 5px;
-  border-color: black;
-  padding: 3px;
-  width: 20%;
-  min-width: 250px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 15px;
+.home2{
+  padding : 0px;
+  margin: 0px;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+.home3{
+  padding : 0px;
+  margin: 0px;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+.hometext{
+  margin: 0px;
+  font-size : 800%;
+}
+.hometext2{
+  font-size : 500%;
 }
