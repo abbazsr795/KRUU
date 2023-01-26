@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import SignInPage from './Pages/SignInPage';
 import SignUpPage from './Pages/SignUpPage';
@@ -16,6 +15,7 @@ const App = () => {
       <Route path='/signin'                 element={<SignInPage/>}     />
       <Route path='/signup'                 element={<SignUpPage/>}     />
       <Route path='/dashboard'              element={<DashboardPage/>}  />
+      <Route path='/dashboard/upcoming'     element={<DashboardPage/>}  />
       <Route path='/dashboard/pastrecords'  element={<PastRecords/>}    />
       <Route path='/userinfo'               element={<UserInfoPage/>}   />
       <Route path='*'                       element={<NotFound/> }      />

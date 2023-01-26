@@ -27,7 +27,7 @@ const DashboardPage = () => {
                 </div>
                 <div className="records">
                     <h1>Upcoming vaccine records</h1>
-                    <button className="button2 grow">+</button>
+                    <button className="button2 grow" onClick={()=>{navigate("/dashboard/upcoming")}} >+</button>
                 </div>
             </div>
             <br></br>
