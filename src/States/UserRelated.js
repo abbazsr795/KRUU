@@ -8,7 +8,7 @@ export let UserLog = atom({
 export let UserLogData = atom({
     key:"UserLogData",
     default:{
-        username:'',
+        email:'',
         
     }
 })

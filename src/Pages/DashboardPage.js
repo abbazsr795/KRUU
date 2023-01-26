@@ -9,10 +9,6 @@ const DashboardPage = () => {
 
     return(
         <div className="verticalcenter">
-<<<<<<< HEAD
-            <div>
-                
-=======
             <div className="slotsholder">
                 <div className="userinfo grow">
                     <h1>Name : Abbazs Rahman</h1>
@@ -33,7 +29,6 @@ const DashboardPage = () => {
                     <h1>Upcoming vaccine records</h1>
                     <button className="button2 grow" onClick={()=>{navigate("/dashboard/upcoming")}} >+</button>
                 </div>
->>>>>>> amraaz
             </div>
             <br></br>
             <br></br>

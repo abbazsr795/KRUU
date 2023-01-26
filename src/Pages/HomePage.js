@@ -1,26 +1,20 @@
 import { useNavigate } from "react-router-dom"
-import { RenderComp } from "../States/Misc"
+// import { RenderComp } from "../States/Misc"
+import { UserLog } from "../States/UserRelated"
+
+import { useRecoilValue } from "recoil"
+
+import HomeComp from "../Components/HomeComp"
 
 function Home() {
 
-    let navigate = useNavigate()
+    let userlogged = useRecoilValue(UserLog)
 
-
-    let toDashboard = () => {
-        navigate('/dashboard')
-    }
-
-    let toUserInfo = () => {
-        navigate('/userinfo')
-    }
 
     return <>
-        <h1>Home Page</h1>
-        <div>
-            <button onClick={()=>{toDashboard()}} >Dashboard</button>
-            <button onClick={()=>{toUserInfo()}} >User Info</button>
-        </div>
+        { userlogged ? <></> : <HomeComp/> }
     </>
+        
 }
 
 export default Home
