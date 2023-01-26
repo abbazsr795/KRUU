@@ -4,9 +4,10 @@ import SignInPage from './Pages/SignInPage';
 import SignUpPage from './Pages/SignUpPage';
 import DashboardPage from './Pages/DashboardPage';
 import { Routes, Route } from 'react-router-dom'
-import UserInfoPage from './Pages/UserInfoPage';
 import NotFound from './Pages/404Page';
 import Home from './Pages/HomePage';
+import VaccinesPage from './Pages/VaccinesPage';
+import UserInfoPage from './Pages/UserInfoPage';
 
 const App = () => {
   return(
@@ -16,6 +17,7 @@ const App = () => {
       <Route path='/signup'     element={<SignUpPage/>}    />
       <Route path='/dashboard'  element={<DashboardPage/>} />
       <Route path='/userinfo'   element={<UserInfoPage/>}  />
+      <Route path='/vaccines'   element={<VaccinesPage/>}  />
       <Route path='*'           element={<NotFound/> }     />
     </Routes>
   )
