@@ -14,7 +14,6 @@ const SignUp = () => {
 
     let setuserdata = useSetRecoilState(UserLogData)
 
-
     let emailSet=(event)=>{
         setEmail(event.target.value)
     }
@@ -46,9 +45,11 @@ const SignUp = () => {
     }
 
     return <>
+        <h1>Sign Up</h1>
         <div className="horizontalcenter">
             <div className="emailandpasswordbox">
-                <div className="verticalcenter">
+                <div >
+
                     <h1>Email</h1>
                     <input className="inputbox" onChange={emailSet} />
                     <h1>Password</h1>

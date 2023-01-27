@@ -36,9 +36,10 @@ const SignIn = () => {
     }
 
     return <>
+            <h1>Sign In</h1>
             <div className="horizontalcenter">
                 <div className="emailandpasswordbox">
-                    <div className="verticalcenter">
+                    <div>
                         <h1>Email</h1>
                         <input className="inputbox" onChange={emailSet} />
                         <h1>Password</h1>
