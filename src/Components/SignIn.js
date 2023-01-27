@@ -1,14 +1,16 @@
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
+import { useState } from "react";
+
 import React from "react";
 import '../index.css'
 import 'tachyons'
-import { useRecoilState } from "recoil";
+// import { useRecoilState } from "recoil";
 
 const SignIn = () => {
 
-    let [email,setEmail] = useRecoilState("")
-    let [password,setPassword] = useRecoilState("")
+    let [email,setEmail] = useState('')
+    let [password,setPassword] = useState('')
 
 
     let emailSet=(event)=>{
@@ -19,8 +21,7 @@ const SignIn = () => {
         setPassword(event.target.value)
     }
 
-    let letsignin = ()=>{
-        const auth = getAuth();
+    let letsignin = (auth,email,password)=>{
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed in 
@@ -34,26 +35,26 @@ const SignIn = () => {
         });
     }
 
-    return(
-        <div className="horizontalcenter">
-            <div className="emailandpasswordbox">
-                <div className="verticalcenter">
-                    <h1>Email</h1>
-                    <input className="inputbox" onChange={emailSet()} />
-                    <h1>Password</h1>
-                    <input className="inputbox" type={"password"} onChange={passwordSet()} />
+    return <>
+            <div className="horizontalcenter">
+                <div className="emailandpasswordbox">
+                    <div className="verticalcenter">
+                        <h1>Email</h1>
+                        <input className="inputbox" onChange={emailSet} />
+                        <h1>Password</h1>
+                        <input className="inputbox" type={"password"} onChange={passwordSet} />
+                        <br></br>
+                        <br></br>
+                    <div className="horizontalcenter">
+                            <button className="button1 grow" onClick={()=>{letsignin(getAuth(),email,password)}} >Sign In</button>
+                    </div>
                     <br></br>
                     <br></br>
-                   <div className="horizontalcenter">
-                        <button className="button1 grow" onClick={()=>{letsignin()}} >Sign In</button>
-                   </div>
-                   <br></br>
-                   <br></br>
-                    {/* <a onClick={SignUp}>Don't have an account?</a> */}
+                        {/* <a onClick={SignUp}>Don't have an account?</a> */}
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        </>
 }
 
 export default SignIn
