@@ -12,7 +12,7 @@ const SignUp = () => {
     let [email,setEmail] = useState('')
     let [password,setPassword] = useState('')
 
-    let [userdata,setuserdata] = useSetRecoilState(UserLogData)
+    let setuserdata = useSetRecoilState(UserLogData)
 
 
     let emailSet=(event)=>{
