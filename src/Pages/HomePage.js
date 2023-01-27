@@ -12,7 +12,7 @@ function Home() {
 
 
     return <>
-        { userlogged ? <></> : <HomeComp/> }
+        { userlogged ? <HomeComp/> : <h1>Not Logged in</h1> }
     </>
         
 }

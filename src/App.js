@@ -7,6 +7,7 @@ import NotFound from './Pages/404Page';
 import Home from './Pages/HomePage';
 import UserInfoPage from './Pages/UserInfoPage'
 import VaccinesPage from './Pages/VaccinesPage'
+import PastRecords from './Pages/PastRecordsPage';
 
 // import PastRecords from './Pages/PastRecordsPage';
 
@@ -17,6 +18,8 @@ const App = () => {
       <Route path='/signin'     element={<SignInPage/>}    />
       <Route path='/signup'     element={<SignUpPage/>}    />
       <Route path='/dashboard'  element={<DashboardPage/>} />
+      <Route path='/dashboard/upcoming'     element={<DashboardPage/>}  />
+      <Route path='/dashboard/pastrecords'  element={<PastRecords/>}    />
       <Route path='/userinfo'   element={<UserInfoPage/>}  />
       <Route path='/vaccines'   element={<VaccinesPage/>}  />
       <Route path='*'           element={<NotFound/> }     />
