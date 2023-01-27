@@ -12,7 +12,7 @@ const SignUp = () => {
     let [email,setEmail] = useState('')
     let [password,setPassword] = useState('')
 
-    let [,setuserdata] = useSetRecoilState(UserLogData)
+    let [userdata,setuserdata] = useSetRecoilState(UserLogData)
 
 
     let emailSet=(event)=>{
@@ -29,10 +29,10 @@ const SignUp = () => {
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
-            // setuserdata({
-            //     email: user.email
-            // })
-            alert(user.email)
+            setuserdata({
+                email: user.email
+            })
+            // alert(user.email)
         })
         .catch((error) => {
             const errorCode = error.code;

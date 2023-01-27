@@ -13,7 +13,6 @@ const SignIn = () => {
     let [email,setEmail] = useState('')
     let [password,setPassword] = useState('')
 
-
     let emailSet=(event)=>{
         setEmail(event.target.value)
     }
