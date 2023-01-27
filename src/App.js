@@ -14,23 +14,15 @@ import PastRecords from './Pages/PastRecordsPage';
 const App = () => {
   return(
     <Routes>
-      <Route path='/'           element={<Home/>}          />
-      <Route path='/signin'     element={<SignInPage/>}    />
-      <Route path='/signup'     element={<SignUpPage/>}    />
-      <Route path='/dashboard'  element={<DashboardPage/>} />
-      <Route path='/dashboard/upcoming'     element={<DashboardPage/>}  />
-      <Route path='/dashboard/pastrecords'  element={<PastRecords/>}    />
-      <Route path='/userinfo'   element={<UserInfoPage/>}  />
-      <Route path='/vaccines'   element={<VaccinesPage/>}  />
-      <Route path='*'           element={<NotFound/> }     />
-      {/* <Route path='/'                       element={<Home/>}           />
+      <Route path='/'                       element={<Home/>}           />
       <Route path='/signin'                 element={<SignInPage/>}     />
       <Route path='/signup'                 element={<SignUpPage/>}     />
       <Route path='/dashboard'              element={<DashboardPage/>}  />
       <Route path='/dashboard/upcoming'     element={<DashboardPage/>}  />
       <Route path='/dashboard/pastrecords'  element={<PastRecords/>}    />
       <Route path='/userinfo'               element={<UserInfoPage/>}   />
-      <Route path='*'                       element={<NotFound/> }      /> */}
+      <Route path='/vaccines'               element={<VaccinesPage/>}   />
+      <Route path='*'                       element={<NotFound/> }      />
     </Routes>
   )
 }

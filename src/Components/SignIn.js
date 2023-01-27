@@ -1,6 +1,7 @@
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 import { useState } from "react";
+import {  Link } from "react-router-dom";
 
 import React from "react";
 import '../index.css'
@@ -50,7 +51,7 @@ const SignIn = () => {
                     </div>
                     <br></br>
                     <br></br>
-                        {/* <a onClick={SignUp}>Don't have an account?</a> */}
+                        <Link to='/signup' >Don't have an account?</Link>
                     </div>
                 </div>
             </div>
