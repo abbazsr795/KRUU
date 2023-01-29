@@ -36,7 +36,7 @@ const SignIn = () => {
                 email: user.email
             })
             setUserl(true)
-            navigate('/dashboard')
+            navigate('/')
         })
         .catch((error) => {
             const errorCode = error.code;

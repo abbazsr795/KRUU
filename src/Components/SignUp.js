@@ -6,6 +6,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { UserLogData } from "../States/UserRelated";
 import { useSetRecoilState } from "recoil";
+import { UserLog } from "../States/UserRelated";
 
 const SignUp = () => {
 
@@ -13,6 +14,7 @@ const SignUp = () => {
     let [password,setPassword] = useState('')
 
     let setuserdata = useSetRecoilState(UserLogData)
+    let setUserl = useSetRecoilState(UserLog)
 
     let emailSet=(event)=>{
         setEmail(event.target.value)
@@ -31,6 +33,7 @@ const SignUp = () => {
             setuserdata({
                 email: user.email
             })
+            setUserl(true)
             // alert(user.email)
         })
         .catch((error) => {

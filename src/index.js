@@ -1,7 +1,9 @@
 import React from 'react';
+import 'bulma/css/bulma.min.css';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Footer from './Components/Footer';
 
 
 // import reportWebVitals from './reportWebVitals';
@@ -14,6 +16,7 @@ root.render(
     <RecoilRoot>
       <BrowserRouter>
         <App/>
+        <Footer/>
       </BrowserRouter>
     </RecoilRoot>
   // {/* </React.StrictMode> */}
