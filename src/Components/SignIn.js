@@ -1,17 +1,22 @@
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 import { useState } from "react";
-import {  Link } from "react-router-dom";
+import {  Link, useNavigate } from "react-router-dom";
 
 import React from "react";
 import '../index.css'
 import 'tachyons'
-// import { useRecoilState } from "recoil";
+import { useSetRecoilState } from "recoil";
+import { UserLog, UserLogData } from "../States/UserRelated";
 
 const SignIn = () => {
 
+    let navigate = useNavigate()
+
     let [email,setEmail] = useState('')
     let [password,setPassword] = useState('')
+    let setUserd = useSetRecoilState(UserLogData)
+    let setUserl = useSetRecoilState(UserLog)
 
     let emailSet=(event)=>{
         setEmail(event.target.value)
@@ -27,6 +32,11 @@ const SignIn = () => {
             // Signed in 
             const user = userCredential.user;
             // ...
+            setUserd({
+                email: user.email
+            })
+            setUserl(true)
+            navigate('/dashboard')
         })
         .catch((error) => {
             const errorCode = error.code;
