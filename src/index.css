@@ -86,7 +86,7 @@
   margin: 5px;
 }
 .massivetext{
-  font-size: 100px;
+  font-size: 4em;
 }
 .flexiblerow{
   display: flex;
@@ -101,4 +101,14 @@
 }
 .maxwidth400px{
   max-width: 400px;
+}
+.card1{
+  width: 40ex;
+  height: 40ex;
+}
+.midtext{
+  font-size: 50px;
+}
+.spacearound{
+  justify-content: space-around;
 }

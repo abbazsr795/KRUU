@@ -12,6 +12,8 @@ let HomeComp = ()=>{
 
     let usrl = useRecoilValue(UserLog)
 
+    let useremail = useRecoilValue(UserLogData)
+
     let toDashboard = () => {
         navigate('/dashboard')
     }
@@ -22,9 +24,18 @@ let HomeComp = ()=>{
     
     return <>
 
-        <h1>Home Page</h1>
+        <div>
+            <h1 className="horizontalcenter massivetext">Welcome back {useremail.email}</h1>
+            <div className="horizontalcenter flexiblerow spacearound">
+                <button onClick={()=>{toDashboard()}} ><div className="verticalcenter card1 grow"><h1 className="massivetext">🚀</h1><h1 className="midtext">Dashboard</h1></div></button>
+                <button onClick={()=>{toUserInfo()}} ><div className="verticalcenter card1 grow"><h1 className="massivetext">📖</h1><h1 className="midtext">User Info</h1></div></button>
+                <button onClick={()=>{toUserInfo()}} ><div className="verticalcenter card1 grow"><h1 className="massivetext">💉</h1><h1 className="midtext">All Vaccines</h1></div></button>
+            </div>
+        </div>
+
+        {/* <h1>Home Page</h1>
         <button onClick={()=>{toDashboard()}} >Dashboard</button>
-        <button onClick={()=>{toUserInfo()}} >User Info</button>
+        <button onClick={()=>{toUserInfo()}} >User Info</button> */}
     </>
 }
 export default HomeComp
