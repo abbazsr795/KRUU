@@ -33,7 +33,6 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <br></br>
             <SignUpPage/>
         </div>
     )
