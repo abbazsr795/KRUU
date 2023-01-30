@@ -11,9 +11,7 @@ const DashboardPage = () => {
 
     return(
         <div>
-            <div className="dashboarduserinfo">
-                <div className="horizontalcenter"><h1 className="massivetext">Your upcoming vaccines</h1></div>
-            </div>
+            <h1 className="massivetext heading1 horizontalcenter">Your upcoming vaccines</h1>
             <br></br>
             <div className="futurevaccines ma1">
                 <div className="horizontalcenter flexiblerow">

@@ -121,3 +121,16 @@
 .heading2{
   font-size: 3em;
 }
+.card2{
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); 
+  width: 40ex;
+  margin: 8px;
+  border-radius: 5px;
+  padding: 5px;
+  border: solid;
+  border-color: black;
+}
+html{
+  padding-left: 5px;
+  padding-right: 5px;
+}
