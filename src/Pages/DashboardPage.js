@@ -11,10 +11,9 @@ const DashboardPage = () => {
 
     return(
         <div>
-            <div className="dashboarduserinfo">
-                <div className="horizontalcenter"><h1 className="massivetext">Your upcoming vaccines</h1></div>
-            </div>
-            <div className="futurevaccines">
+            <h1 className="massivetext heading1 horizontalcenter">Your upcoming vaccines</h1>
+            <br></br>
+            <div className="futurevaccines ma1">
                 <div className="horizontalcenter flexiblerow">
                     <h3>Going to any regions in the future?</h3>
                     <button className="button is-primary is-light" >East Asia</button>
