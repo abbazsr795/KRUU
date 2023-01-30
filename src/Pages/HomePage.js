@@ -5,6 +5,7 @@ import { UserLog } from "../States/UserRelated"
 import { useRecoilValue } from "recoil"
 
 import HomeComp from "../Components/HomeComp"
+import Banner from "../Components/Banner"
 
 function Home() {
 
@@ -14,7 +15,10 @@ function Home() {
 
 
     return <>
-        { userlogged ? <HomeComp/> : <div className="has-text-centered" ><h1>Not Logged in</h1> <button onClick={()=>{navigate("/signin")}} >Sign In</button><button onClick={()=>{navigate("/signup")}} >Sign Up</button> </div> }
+        { userlogged ? <HomeComp/> : 
+        <>
+            <Banner/>
+        </> }
     </>
         
 }

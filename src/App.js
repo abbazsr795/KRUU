@@ -19,10 +19,9 @@ const App = () => {
       <Route path='/signin'                 element={<SignInPage/>}     />
       <Route path='/signup'                 element={<SignUpPage/>}     />
       <Route path='/dashboard'              element={<DashboardPage/>}  />
-      <Route path='/dashboard/upcoming'     element={<DashboardPage/>}  />
-      <Route path='/dashboard/pastrecords'  element={<PastRecords/>}    />
+      <Route path='/pastrecords'            element={<PastRecords/>}    />
       <Route path='/userinfo'               element={<UserInfoPage/>}   />
-      <Route path='/userinfo/edit'               element={<EditUserInfo/>}   />
+      <Route path='/userinfo/edit'          element={<EditUserInfo/>}   />
       <Route path='/vaccines'               element={<VaccinesPage/>}   />
       <Route path='*'                       element={<NotFound/> }      />
     </Routes>
