@@ -46,7 +46,7 @@ const SignIn = () => {
     }
 
     return <>
-            <h1>Sign In</h1>
+            <h1 className="horizontalcenter heading2">Sign In</h1>
             <div className="horizontalcenter">
                 <div className="emailandpasswordbox">
                     <div>

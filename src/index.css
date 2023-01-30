@@ -103,12 +103,21 @@
   max-width: 400px;
 }
 .card1{
-  width: 40ex;
-  height: 40ex;
+  width: 35ex;
+  height: 35ex;
 }
 .midtext{
   font-size: 50px;
 }
 .spacearound{
   justify-content: space-around;
+}
+.heading1{
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  margin: 1ex;
+  border-radius: 5px;
+}
+.heading2{
+  font-size: 3em;
 }
