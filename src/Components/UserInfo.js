@@ -31,13 +31,13 @@ import React from "react";
 
 const UserInfo = (props) => {
     return <>
-        <div>
+        <div className="has-text-centered">
             <div>
                 <h1>Your Details</h1>
                 <h3>Email : {props.email} </h3>
                 <h3>Date of Birth : {props.DOB} </h3>
             </div>
-            <button className="button is-light">Edit Details</button>
+            <button className="button is-primary is-light">Edit Details</button>
         </div>
     </>
 }

@@ -14,7 +14,7 @@ function Home() {
 
 
     return <>
-        { userlogged ? <HomeComp/> : <><h1>Not Logged in</h1> <button onClick={()=>{navigate("/signin")}} >Sign In</button><button onClick={()=>{navigate("/signup")}} >Sign Up</button> </> }
+        { userlogged ? <HomeComp/> : <div className="has-text-centered" ><h1>Not Logged in</h1> <button onClick={()=>{navigate("/signin")}} >Sign In</button><button onClick={()=>{navigate("/signup")}} >Sign Up</button> </div> }
     </>
         
 }

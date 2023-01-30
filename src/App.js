@@ -8,6 +8,7 @@ import Home from './Pages/HomePage';
 import UserInfoPage from './Pages/UserInfoPage'
 import VaccinesPage from './Pages/VaccinesPage'
 import PastRecords from './Pages/PastRecordsPage';
+import EditUserInfo from './Components/EditUserInfo';
 
 // import PastRecords from './Pages/PastRecordsPage';
 
@@ -21,7 +22,7 @@ const App = () => {
       <Route path='/dashboard/upcoming'     element={<DashboardPage/>}  />
       <Route path='/dashboard/pastrecords'  element={<PastRecords/>}    />
       <Route path='/userinfo'               element={<UserInfoPage/>}   />
-      <Route path='/userinfo/edit'               element={<UserInfoPage/>}   />
+      <Route path='/userinfo/edit'               element={<EditUserInfo/>}   />
       <Route path='/vaccines'               element={<VaccinesPage/>}   />
       <Route path='*'                       element={<NotFound/> }      />
     </Routes>
