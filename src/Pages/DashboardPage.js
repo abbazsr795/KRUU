@@ -17,9 +17,9 @@ const DashboardPage = () => {
             <div className="futurevaccines">
                 <div className="horizontalcenter flexiblerow">
                     <h3>Going to any regions in the future?</h3>
-                    <button>East Asia</button>
-                    <button>Europe</button>
-                    <button>America</button>
+                    <button className="button is-primary is-light" >East Asia</button>
+                    <button className="button is-primary is-light" >Europe</button>
+                    <button className="button is-primary is-light" >America</button>
                     {/*When clicking the above buttons, the button colour should change and the vaccines listed below should change basedd on the selected country*/}
                 </div>
                 <div className="verticalcenter">
@@ -30,7 +30,7 @@ const DashboardPage = () => {
             <br></br>
             <br></br>
             <br></br>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

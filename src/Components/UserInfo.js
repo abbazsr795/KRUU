@@ -1,8 +1,6 @@
 import React from "react";
 
-const UserInfo = () => {
-    return(
-        <div className="horizontalcenter">
+{/* <div className="horizontalcenter">
             <div className="userinfobox">
                 <div className="verticalcenter">
                     <h1>Name</h1>
@@ -18,8 +16,20 @@ const UserInfo = () => {
                    <br></br>
                 </div>
             </div>
+        </div> */}
+
+
+const UserInfo = (props) => {
+    return <>
+        <div>
+            <div>
+                <h1>Your Details</h1>
+                <h3>Email : {props.email} </h3>
+                <h3>Date of Birth : {props.DOB} </h3>
+            </div>
+            <button className="button is-light">Edit Details</button>
         </div>
-    )
+    </>
 }
 
 export default UserInfo

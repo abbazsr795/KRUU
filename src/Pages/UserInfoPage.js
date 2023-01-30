@@ -2,18 +2,21 @@ import React from "react";
 import HeadRoom from "../Components/HeadRoom";
 import Footer from "../Components/Footer";
 import  UserInfo from "../Components/UserInfo"
+import { useRecoilValue } from "recoil";
+import { UserLogData } from "../States/UserRelated";
 
 const UserInfoPage = () => {
-    return(
-        <div>
+
+    let userdata = useRecoilValue(UserLogData)
+
+    return <div>
             <HeadRoom/>
-            <UserInfo/>
+            <UserInfo email={userdata.email} />
             <br></br>
             <br></br>
             <br></br>
             <Footer/>
         </div>
-    )
 }
 
 export default UserInfoPage
