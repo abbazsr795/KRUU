@@ -14,7 +14,8 @@ const DashboardPage = () => {
             <div className="dashboarduserinfo">
                 <div className="horizontalcenter"><h1 className="massivetext">Your upcoming vaccines</h1></div>
             </div>
-            <div className="futurevaccines">
+            <br></br>
+            <div className="futurevaccines ma1">
                 <div className="horizontalcenter flexiblerow">
                     <h3>Going to any regions in the future?</h3>
                     <button>East Asia</button>

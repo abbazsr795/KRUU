@@ -16,9 +16,8 @@
   justify-content: center;
 }
 .verticalcenter{
-  height: 200px;
-  position: relative;
-
+  display: flex;
+  flex-direction: column;
 }
 *{
   font-family: 'Cuprum', sans-serif;
@@ -77,9 +76,7 @@
 .userinfobox{
   background-color: #85FFBD;
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-  padding: 60px;
-  padding-top: 10px;
-  padding-bottom: 70px;
+  padding: 10px;
   border-radius: 5px;
 }
 .dashboarduserinfo{
@@ -100,7 +97,8 @@
 }
 .button2{
   border: none;
-  background: grey;
-  scale: 1.5;
   border-radius: 3px;
+}
+.maxwidth400px{
+  max-width: 400px;
 }
