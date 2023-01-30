@@ -36,9 +36,9 @@ let HomeComp = ()=>{
             <h1 className="horizontalcenter massivetext heading1">Welcome back {useremail.email}</h1>
             <div className="horizontalcenter flexiblerow spacearound">
             <button onClick={()=>{toPastRecords()}} ><div className="verticalcenter card1 grow grad3"><h1 className="massivetext">🗂️</h1><h1 className="midtext">Past vaccines</h1></div></button>
-                <button onClick={()=>{toDashboard()}} ><div className="verticalcenter card1 grow grad1"><h1 className="massivetext">🚀</h1><h1 className="midtext">Future vaccines</h1></div></button>
-                <button onClick={()=>{toUserInfo()}} ><div className="verticalcenter card1 grow grad2"><h1 className="massivetext">📖</h1><h1 className="midtext">User Info</h1></div></button>
-                <button onClick={()=>{toUserVaccines()}} ><div className="verticalcenter card1 grow grad3"><h1 className="massivetext">💉</h1><h1 className="midtext">Vaccine Index</h1></div></button>
+                <button onClick={()=>{toDashboard()}} ><div className="verticalcenter card1 grow "><h1 className="massivetext">🚀</h1><h1 className="midtext">Future vaccines</h1></div></button>
+                <button onClick={()=>{toUserInfo()}} ><div className="verticalcenter card1 grow"><h1 className="massivetext">📖</h1><h1 className="midtext">User Info</h1></div></button>
+                <button onClick={()=>{toUserVaccines()}} ><div className="verticalcenter card1 grow "><h1 className="massivetext">💉</h1><h1 className="midtext">Vaccine Index</h1></div></button>
             </div>
         </div>
 
