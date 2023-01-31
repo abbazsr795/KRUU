@@ -1,6 +1,6 @@
 import { Select } from "evergreen-ui"
 import { collection, getDocs, query } from "firebase/firestore"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { db } from "../FbStuff/fb"
 
 
@@ -31,14 +31,17 @@ let AddVaccinePage = ()=>{
         }
     }
 
+    useEffect(()=>{
+        GetDropVals()  
+    })
+
     return <div>
         <Select value={"item1"}  onChange={(event)=>{setValue(event.target.value)}} >
             { value.map((id)=>(
                 <option value={id.name}>id.name</option>
             )) }
         </Select>
-        <input type="text" />
-        <button>Add</button>
+        <button onClick={()=>{}} >Add</button>
     </div>
 }
 
