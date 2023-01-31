@@ -9,13 +9,17 @@ const UserInfoPage = () => {
 
     let userdata = useRecoilValue(UserLogData)
 
-    return <div>
+    return <div className="verticalcenter">
             <HeadRoom/>
-            <UserInfo email={userdata.email} />
-            <br></br>
-            <br></br>
-            <br></br>
-            <Footer/>
+            <div className="horizontalcenter">
+                <div className="lightblue card4 pa3">
+                    <UserInfo email={userdata.email} />
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <Footer/>
+                </div>
+            </div>
         </div>
 }
 

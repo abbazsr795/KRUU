@@ -9,15 +9,21 @@ let EditUserInfo = ()=>{
 
     const [birthDate, onChangeBirth] = useState(new Date());
 
-    return <div className="has-text-centered" >
-        <input type="text" placeholder="Name" />
-        <DatePicker onChange={onChangeBirth} value={birthDate} />
-        <br />
-        <br />
-        <br />
-        <br />
-        <button onClick={()=>{save()}} className="button is-primary is-light" >Save Changes</button>
-    </div>
+    return (
+        <div className="column">
+            <br></br>
+            <br></br>
+            <div className="horizontalcenter">
+                <div className="card4 lightblue pa3 verticalcenter" >
+                    <input type="text" placeholder="Name" />
+                    <DatePicker onChange={onChangeBirth} value={birthDate} />
+                    <br />
+                    <br />
+                    <button onClick={()=>{save()}} className="button is-primary is-light" >Save Changes</button>
+                </div>
+            </div>
+        </div>
+    )
 
 }
 
