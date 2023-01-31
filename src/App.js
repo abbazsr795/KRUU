@@ -10,22 +10,24 @@ import VaccinesPage from './Pages/VaccinesPage'
 import PastRecordsPage from './Pages/PastRecordsPage';
 import EditUserInfo from './Components/EditUserInfo';
 import EditPastRecords from './Pages/EditPastRecords';
+import AddVaccinePage from './Pages/AddVaccinePage';
 
 // import PastRecords from './Pages/PastRecordsPage';
 
 const App = () => {
   return(
     <Routes>
-      <Route path='/'                                element={<Home/>}            />
-      <Route path='/signin'                          element={<SignInPage/>}      />
-      <Route path='/signup'                          element={<SignUpPage/>}      />
-      <Route path='/dashboard'                       element={<DashboardPage/>}   />
-      <Route path='/vaccines/pastrecords'            element={<PastRecordsPage/>} />
-      <Route path='/vaccines/pastrecords/edit'       element={<EditPastRecords/>} />
-      <Route path='/userinfo'                        element={<UserInfoPage/>}    />
-      <Route path='/userinfo/edit'                   element={<EditUserInfo/>}    />
-      <Route path='/vaccines'                        element={<VaccinesPage/>}    />
-      <Route path='*'                                element={<NotFound/> }       />
+      <Route    path='/'                                element={<Home/>}             />
+      <Route    path='/signin'                          element={<SignInPage/>}       />
+      <Route    path='/signup'                          element={<SignUpPage/>}       />
+      <Route    path='/dashboard'                       element={<DashboardPage/>}    />
+      <Route    path='/vaccines/pastrecords'            element={<PastRecordsPage/>}  />
+      <Route    path='/vaccines/pastrecords/edit'       element={<EditPastRecords/>}  />
+      <Route    path='/vaccines/add'                    element={<AddVaccinePage/>}   />
+      <Route    path='/userinfo'                        element={<UserInfoPage/>}     />
+      <Route    path='/userinfo/edit'                   element={<EditUserInfo/>}     />
+      <Route    path='/vaccines'                        element={<VaccinesPage/>}     />
+      <Route    path='*'                                element={<NotFound/> }        />
     </Routes>
   )
 }

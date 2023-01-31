@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useRecoilValue } from "recoil";
+import { Link } from "react-router-dom";
 // import React from "react";
 import Footer from "../Components/Footer";
 import { UserLogData } from "../States/UserRelated";
@@ -22,6 +23,7 @@ const DashboardPage = () => {
                     {/*When clicking the above buttons, the button colour should change and the vaccines listed below should change basedd on the selected country*/}
                 </div>
                 <div className="verticalcenter">
+                    <Link className="button is-light is-primary" to="/" > Add Vaccine </Link>
                     {/*In this place, a list of all upcoming vaccines will come*/}
                 </div>
             </div>
