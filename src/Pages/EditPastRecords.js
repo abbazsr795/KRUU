@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore"; 
+
 import DatePicker from "react-date-picker";
 import HeadRoom from "../Components/HeadRoom";
 import { db } from "../FbStuff/fb";
 
 let EditPastRecords = ()=>{
 
-    const [vaccname,setvaccineName] = useState('')
-    const [vaccdesc,setvaccineDesc] = useState('')
+    const [vaccname,setvaccineName] = useState('empty')
+    const [vaccdesc,setvaccineDesc] = useState('empty')
     const [startDate, onChangeStart] = useState(new Date());
     const [endDate, onChangeEnd] = useState(new Date());
 
@@ -20,7 +21,7 @@ let EditPastRecords = ()=>{
         })
 
         if (docref!==""){
-            alert('success')
+            alert('success') 
         }
     }
 
@@ -33,7 +34,7 @@ let EditPastRecords = ()=>{
                 <div className="card4 verticalcenter lightblue pa3">
                     <input type="text" placeholder="Vaccine Name" onChange={(event)=>{setvaccineName(event.target.value)}} />
                     <br />
-                    <textarea className="descbox" name="Details" placeholder="Vaccine Details" id="" onChange={(event)=>{setvaccineDesc(event.target.value)}}/>
+                    <textarea className="descbox" name="Details" placeholder="Description" id="" onChange={(event)=>{setvaccineDesc(event.target.value)}}/>
                     <br />
                     <br />
                     <DatePicker onChange={onChangeStart} value={startDate} />

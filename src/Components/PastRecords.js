@@ -10,7 +10,7 @@ let PastRecords = ()=>{
     let isempty = false
     
     async function get() {
-        const q = query(collection(db, "Records"), where("vaccine","==","taken"));
+        const q = query(collection(db, "Records"), where("vaccines","==","taken"));
 
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
