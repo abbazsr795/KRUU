@@ -19,6 +19,11 @@
   display: flex;
   flex-direction: column;
 }
+.verticalcenter2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 *{
   font-family: 'Cuprum', sans-serif;
 }
@@ -157,4 +162,18 @@ html{
 .grad1{
   background-color: #FBAB7E;
   background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+.lightblue{
+  background: #F0F8FF;
+}
+.descbox{
+  min-height: 200px;
+}
+.card4{
+  width: 40ex;
+  border-radius: 5px;
+}
+.img2{
+  height: 220px;
+  width: 220px;
 }
