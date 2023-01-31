@@ -6,28 +6,23 @@ import { db } from "../FbStuff/fb";
 
 let EditPastRecords = ()=>{
 
-    const [,setvaccineName] = useState('')
-    const [,setvaccineDesc] = useState('')
+    const [vaccname,setvaccineName] = useState('')
+    const [vaccdesc,setvaccineDesc] = useState('')
     const [startDate, onChangeStart] = useState(new Date());
     const [endDate, onChangeEnd] = useState(new Date());
 
     async function AddVaccine(){
         const docref = await addDoc(collection(db,"Records"),{
-
+            name: vaccname,
+            description: vaccdesc,
             InjectDate: startDate,
             EndDate: endDate
         })
 
+        if (docref!==""){
+            alert('success')
+        }
     }
-
-    
-    let changename = (event)=>{
-        setvaccineName(event.target.value)
-    }
-    let changedesc = (event)=>{
-        setvaccineDesc(event.target.value)
-    }
-
 
     return( 
         <div className="horizontalcenter">
@@ -36,9 +31,9 @@ let EditPastRecords = ()=>{
                 <HeadRoom/>
                 <HeadRoom/>
                 <div className="card4 verticalcenter lightblue pa3">
-                    <input type="text" placeholder="Vaccine Name" onchange={changename} />
+                    <input type="text" placeholder="Vaccine Name" onChange={(event)=>{setvaccineName(event.target.value)}} />
                     <br />
-                    <textarea className="descbox" name="Details" placeholder="Vaccine Details" id="" onchange={changedesc}/>
+                    <textarea className="descbox" name="Details" placeholder="Vaccine Details" id="" onChange={(event)=>{setvaccineDesc(event.target.value)}}/>
                     <br />
                     <br />
                     <DatePicker onChange={onChangeStart} value={startDate} />
