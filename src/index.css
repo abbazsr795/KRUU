@@ -11,6 +11,9 @@
   justify-content: center;
   padding-bottom: 15px;
 }
+.heading5{
+  font-family: 'Lobster', cursive;
+}
 .horizontalcenter{
   display: flex;
   justify-content: center;
@@ -40,8 +43,7 @@
 .footer{
   bottom: 0;
   position: fixed;
-  background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  border-top: solid;
   width: 100%;
   margin-top: 10px;
   display: flex;
@@ -120,25 +122,20 @@
   justify-content: space-around;
 }
 .heading1{
-  background-color: #FBDA61;
-  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
   margin: 1ex;
   border-radius: 5px;
   font-weight: bold;
+  color: whitesmoke;
 }
 .heading2{
   font-size: 3em;
 }
 .card2{
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); 
+  background-color: whitesmoke;
   width: 40ex;
   margin: 8px;
   border-radius: 5px;
   padding: 5px;
-}
-html{
-  padding-left: 5px;
-  padding-right: 5px;
 }
 .card3{
   border: solid;
@@ -182,4 +179,25 @@ html{
   background-color: lightcoral;
   border: none;
   min-width: min-content;
+}
+body {
+	background: linear-gradient(-45deg, #0A325A, #0D467E, #246AAF, #9FC9F3);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.whitetext{
+  color: whitesmoke;
 }
