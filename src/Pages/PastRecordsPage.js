@@ -1,6 +1,6 @@
-import Records from "../Components/PastRecords"
+import PastRecords from "../Components/PastRecords"
 
-let PastRecords = ()=>{
+let PastRecordsPage = ()=>{
 
 
     return <>
@@ -8,7 +8,7 @@ let PastRecords = ()=>{
             <h1 className="massivetext heading1 horizontalcenter">Past vaccines</h1>
             <br></br>
             <div className="futurevaccines ma1">
-                <Records/>
+                <PastRecords/>
                 <div className="verticalcenter">
                     {/*In this place, a list of all upcoming vaccines will come*/}
                 </div>
@@ -23,4 +23,4 @@ let PastRecords = ()=>{
 }
 
 
-export default PastRecords
+export default PastRecordsPage
