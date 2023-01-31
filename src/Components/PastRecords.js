@@ -8,18 +8,23 @@ let PastRecords = ()=>{
 
     let navigate = useNavigate()
 
-    let [pastrecords,setpastrecords] = useState('')
+    let [pastrecords,setpastrecords] = useState([])
     let isempty = false
     
     async function get() {
-        const q = getDocs(collection(db, "Records"));
+        let h = []
+        const q = query(collection(db, "Records"));
 
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
-
-            setpastrecords(doc.data())
+            let d = doc.data()
+            let g = {
+                name: d.name
+            }
+            h.push(g)
   // doc.data() is never undefined for query doc snapshots
         });
+        setpastrecords(h)
 
         if (pastrecords.length !== 0) {
             isempty = true
@@ -31,7 +36,9 @@ let PastRecords = ()=>{
     return <>
         <div className="horizontalcenter flexiblerow spacearound">
             <button onClick={()=>{get()}} ><div className="verticalcenter card1 grow "><div className="horizontalcenter"><img className="img2" src="https://img.icons8.com/cotton/512/record.png"/></div><h1 className="midtext">Get Records</h1></div></button>
-            { isempty ? null : <button onClick={()=>{navigate('/pastrecords/edit')}} ><div className="verticalcenter card1 grow"><div className="horizontalcenter"><img className='img2' src="https://img.icons8.com/ios/512/plus-2-math.png"/></div><h1 className="midtext">Add Record</h1></div></button> }
+            { isempty ? <button onClick={()=>{navigate('/vaccines/pastrecords/edit')}} ><div className="verticalcenter card1 grow"><div className="horizontalcenter"><img className='img2' src="https://img.icons8.com/ios/512/plus-2-math.png"/></div><h1 className="midtext">Add Record</h1></div></button> : null }
+            { isempty ? <button onClick={()=>{navigate('/vaccines/pastrecords/edit')}} ><div className="verticalcenter card1 grow"><div className="horizontalcenter"><img className='img2' src="https://img.icons8.com/ios/512/plus-2-math.png"/></div><h1 className="midtext">Add Record</h1></div></button> : null }
+            {/* { isempty ? null : <button onClick={()=>{navigate('/pastrecords/edit')}} ><div className="verticalcenter card1 grow"><div className="horizontalcenter"><img className='img2' src="https://img.icons8.com/ios/512/plus-2-math.png"/></div><h1 className="midtext">Add Record</h1></div></button> } */}
             <Table>
                 <Table.Head>
                     <Table.TextHeaderCell>Name</Table.TextHeaderCell>
@@ -39,11 +46,11 @@ let PastRecords = ()=>{
                     
                 </Table.Head>
                 <Table.Body height={240}>
-                    {pastrecords.map((profile) => (
-                    <Table.Row key={profile.name} isSelectable onSelect={() => alert(profile.name)}>
-                        <Table.TextCell>{profile.name}</Table.TextCell>
+                {pastrecords.map((id) => (
+                    <Table.Row key={id.name}>
+                        <Table.TextCell>{id.name}</Table.TextCell>
                     </Table.Row>
-                    ))}
+                ))}
                 </Table.Body>
             </Table>
         </div>

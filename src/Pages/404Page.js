@@ -26,6 +26,11 @@ const NotFound = () =>{
                 <h3>{content.title}</h3>
                 <img height={"600"} width={"800"} src={content.hdurl} alt="" />
                 <p> {content.explanation} </p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
             </div>
     // </div>
 }
