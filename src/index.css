@@ -177,3 +177,9 @@ html{
   height: 220px;
   width: 220px;
 }
+.button4{
+  border-radius: 5px;
+  background-color: lightcoral;
+  border: none;
+  min-width: min-content;
+}
