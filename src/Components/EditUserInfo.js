@@ -36,10 +36,18 @@ let EditUserInfo = ()=>{
                         <button className="button4" >Alcoholic</button>
                         <button className="button4" >Male who have sex with males</button>
                     </div>
+                    <h1>Past travel destinations</h1>
+                    <div className="flexiblerow">
+                        <button className="button4" >South Asia</button>
+                    </div>
                     <br></br>
                     <button onClick={()=>{save()}} className="button is-primary is-light" >Save Changes</button>
                 </div>
             </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
         </div>
     )
 
