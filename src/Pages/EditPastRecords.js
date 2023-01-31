@@ -5,6 +5,10 @@ import DatePicker from "react-date-picker";
 
 let EditPastRecords = ()=>{
 
+    let AddVaccine = ()=>{
+
+    }
+
     const [startDate, onChangeStart] = useState(new Date());
     const [endDate, onChangeEnd] = useState(new Date());
 
@@ -16,6 +20,10 @@ let EditPastRecords = ()=>{
         <br />
         <br />
         <DatePicker onChange={onChangeEnd} value={endDate} />
+        <br />
+        <br />
+        <br />
+        <button onClick={()=>{AddVaccine()}} >Add Vaccine</button>
     </div>
 }
 
