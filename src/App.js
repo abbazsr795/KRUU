@@ -9,6 +9,7 @@ import UserInfoPage from './Pages/UserInfoPage'
 import VaccinesPage from './Pages/VaccinesPage'
 import PastRecords from './Pages/PastRecordsPage';
 import EditUserInfo from './Components/EditUserInfo';
+import EditPastRecords from './Pages/EditPastRecords';
 
 // import PastRecords from './Pages/PastRecordsPage';
 
@@ -20,6 +21,7 @@ const App = () => {
       <Route path='/signup'                 element={<SignUpPage/>}     />
       <Route path='/dashboard'              element={<DashboardPage/>}  />
       <Route path='/pastrecords'            element={<PastRecords/>}    />
+      <Route path='/pastrecords/edit'       element={<EditPastRecords/>}    />
       <Route path='/userinfo'               element={<UserInfoPage/>}   />
       <Route path='/userinfo/edit'          element={<EditUserInfo/>}   />
       <Route path='/vaccines'               element={<VaccinesPage/>}   />
