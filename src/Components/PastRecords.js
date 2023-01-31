@@ -42,7 +42,6 @@ let PastRecords = ()=>{
             <Table>
                 <Table.Head>
                     <Table.TextHeaderCell>Name</Table.TextHeaderCell>
-                    <Table.TextHeaderCell>Name</Table.TextHeaderCell>
                     
                 </Table.Head>
                 <Table.Body height={240}>
