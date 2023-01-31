@@ -19,7 +19,7 @@ let HomeComp = ()=>{
     }
 
     let toPastRecords = () => {
-        navigate('/pastrecords')
+        navigate('/vaccines/pastrecords')
     }
 
     let toUserInfo = () => {
