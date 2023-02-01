@@ -7,6 +7,8 @@ import Select from 'react-select'
 
 import { db } from "../FbStuff/fb"
 import { Switch } from "evergreen-ui"
+import { useRecoilValue } from "recoil"
+import { UserLogData } from "../States/UserRelated"
 
 
 
@@ -15,7 +17,14 @@ let AddVaccinePage = ()=>{
     let [values,setValue] = useState([])
     let [Bnumber,setBnumber] = useState(0)
     let [selected,setSelected] = useState('')
+
+    let uername = useRecoilValue(UserLogData)
+    
+    const [checked, setChecked] = useState(true)
     const [Tookdate, ontookdate] = useState(new Date());
+
+
+
 
     async function GetDropVals(){
         let h = []
@@ -49,7 +58,6 @@ let AddVaccinePage = ()=>{
     }
 
     let add = ()=>{
-        alert(selected.value)
 
     }
 
@@ -67,13 +75,22 @@ let AddVaccinePage = ()=>{
     ]
       
 
-    return <div>
+    return <div className="has-text-centered" >
+        <h1>
+            Add Vaccine
+        </h1>
         <h2>Select Vaccine</h2>
         <Select options={values} onChange={SelectedVal} />
         <h2>Seect Bosster Amount</h2>
         <Select options={BN} onChange={SelectedBN} />
         <DatePicker onChange={ontookdate} value={Tookdate} />
-        <button onClick={()=>{add()}} >Add</button>
+        <p>Have taken said vaccine before (Booster Vaccine)</p>
+        <div className="has-text-centered" >
+        <Switch checked={checked} onChange={(e) => setChecked(e.target.checked)} height={24} />
+        </div>
+
+
+        <button onClick={()=>{add()}} className="button is-light is-primary" >Add</button>
         
     </div>
 }
