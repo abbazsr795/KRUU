@@ -11,6 +11,7 @@ import PastRecordsPage from './Pages/PastRecordsPage';
 import EditUserInfo from './Components/EditUserInfo';
 import EditPastRecords from './Pages/EditPastRecords';
 import AddVaccinePage from './Pages/AddVaccinePage';
+import MyVaccines from './Pages/MyVaccines';
 
 // import PastRecords from './Pages/PastRecordsPage';
 
@@ -27,6 +28,7 @@ const App = () => {
       <Route    path='/userinfo'                        element={<UserInfoPage/>}     />
       <Route    path='/userinfo/edit'                   element={<EditUserInfo/>}     />
       <Route    path='/vaccines'                        element={<VaccinesPage/>}     />
+      <Route    path='/myvaccines'                      element={<MyVaccines/>}       />
       <Route    path='*'                                element={<NotFound/> }        />
     </Routes>
   )
