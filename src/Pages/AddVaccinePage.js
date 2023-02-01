@@ -7,8 +7,9 @@ import { db } from "../FbStuff/fb"
 
 let AddVaccinePage = ()=>{
 
-    let [value,setValue] = useState([])
-    let isempty = false
+    let [values,setValue] = useState([])
+    let [g, setG] = useState('')
+    let [Bnumber,setBnumber] = useState()
 
     async function GetDropVals(){
         let h = []
@@ -17,31 +18,37 @@ let AddVaccinePage = ()=>{
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
             let d = doc.data()
-            let g = {
-                name: d.name,
-                BNumber: d.BNumber
-            }
+            let g = d.Name
             h.push(g)
   // doc.data() is never undefined for query doc snapshots
         });
         setValue(h)
+        console.log(h)
 
-        if (value.length !== 0) {
-            isempty = true
-        }
+        // if (value.length !== 0) {
+        //     isempty = true
+        // }
+    }
+
+    let add = ()=>{
+        alert(Bnumber)
+
     }
 
     useEffect(()=>{
         GetDropVals()  
-    })
+    },[])
 
     return <div>
-        <Select value={"item1"}  onChange={(event)=>{setValue(event.target.value)}} >
-            { value.map((id)=>(
-                <option value={id.name}>id.name</option>
+        
+        <Select onChange={(event)=>{setValue(event.target.value)}} >
+            { values.map((id)=>(
+                <option value={id}>{id}</option>
             )) }
+
         </Select>
-        <button onClick={()=>{}} >Add</button>
+        <input type="text" onChange={(event)=>{setBnumber(event.target.value)}} />
+        <button onClick={()=>{add()}} >Add</button>
     </div>
 }
 

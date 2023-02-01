@@ -23,7 +23,7 @@ const DashboardPage = () => {
                     {/*When clicking the above buttons, the button colour should change and the vaccines listed below should change basedd on the selected country*/}
                 </div>
                 <div className="verticalcenter">
-                    <Link className="button is-light is-primary" to="/" > Add Vaccine </Link>
+                    <Link className="button is-light is-primary" to="/vaccines/add" > Add Vaccine </Link>
                     {/*In this place, a list of all upcoming vaccines will come*/}
                 </div>
             </div>
