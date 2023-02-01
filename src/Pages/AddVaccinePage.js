@@ -99,7 +99,6 @@ let AddVaccinePage = ()=>{
         <Switch checked={checked} onChange={(e) => setChecked(e.target.checked)} height={24} />
         </div>
 
-
         <button onClick={()=>{add()}} className="button is-light is-primary" >Add</button>
         
     </div>
