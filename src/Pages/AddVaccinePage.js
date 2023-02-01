@@ -1,6 +1,9 @@
-import { Select } from "evergreen-ui"
+
 import { collection, getDocs, query } from "firebase/firestore"
 import { useEffect, useState } from "react"
+
+import Select from 'react-select'
+
 import { db } from "../FbStuff/fb"
 
 
@@ -8,7 +11,6 @@ import { db } from "../FbStuff/fb"
 let AddVaccinePage = ()=>{
 
     let [values,setValue] = useState([])
-    let [g, setG] = useState('')
     let [Bnumber,setBnumber] = useState()
 
     async function GetDropVals(){
@@ -18,7 +20,10 @@ let AddVaccinePage = ()=>{
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
             let d = doc.data()
-            let g = d.Name
+            let g = {
+                value:d.Name,
+                label:d.Name
+            }
             h.push(g)
   // doc.data() is never undefined for query doc snapshots
         });
@@ -40,13 +45,7 @@ let AddVaccinePage = ()=>{
     },[])
 
     return <div>
-        
-        <Select onChange={(event)=>{setValue(event.target.value)}} >
-            { values.map((id)=>(
-                <option value={id}>{id}</option>
-            )) }
-
-        </Select>
+        <Select options={values} />
         <input type="text" onChange={(event)=>{setBnumber(event.target.value)}} />
         <button onClick={()=>{add()}} >Add</button>
     </div>
