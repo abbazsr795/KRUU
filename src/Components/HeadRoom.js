@@ -2,7 +2,7 @@ import React from "react";
 
 const HeadRoom = () => {
     return(
-        <div>
+        <div className="niceback">
             <br></br>
         </div>
     )
