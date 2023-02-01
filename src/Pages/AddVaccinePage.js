@@ -1,6 +1,7 @@
 import DatePicker from "react-date-picker"
 
-import { collection, getDocs, query } from "firebase/firestore"
+import { collection, getDocs, query, addDoc } from "firebase/firestore"
+
 import { useEffect, useState } from "react"
 
 import Select from 'react-select'
@@ -18,7 +19,7 @@ let AddVaccinePage = ()=>{
     let [Bnumber,setBnumber] = useState(0)
     let [selected,setSelected] = useState('')
 
-    let uername = useRecoilValue(UserLogData)
+    let useremail = useRecoilValue(UserLogData)
     
     const [checked, setChecked] = useState(true)
     const [Tookdate, ontookdate] = useState(new Date());
@@ -57,8 +58,17 @@ let AddVaccinePage = ()=>{
         // alert(selectval.value)
     }
 
-    let add = ()=>{
+    let add = async ()=>{
+        const docref = await addDoc(collection(db,"UserInfo"),{
+            email: useremail,
+            vaccine: selected,
+            checked: checked,
+            tookdate: Tookdate
+        })
 
+        if (docref!==""){
+            alert('success') 
+        }
     }
 
     useEffect(()=>{
