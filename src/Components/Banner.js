@@ -4,7 +4,7 @@ import SignUpPage from "../Pages/SignUpPage";
 
 const Banner = () => {
     return(
-        <div>
+        <div className="">
             <h1 className="massivetext heading1 horizontalcenter"> Welcome to Vaccinic</h1>
             <div className = "stack pa4">
                 <div className="stack">
