@@ -12,26 +12,7 @@ const DashboardPage = () => {
 
     return(
         <div>
-            <h1 className="massivetext heading1 horizontalcenter">Your upcoming vaccines</h1>
-            <br></br>
-            <div className="futurevaccines ma1">
-                <div className="horizontalcenter flexiblerow">
-                    <h3>Going to any regions in the future?</h3>
-                    <button className="button is-primary is-light" >East Asia</button>
-                    <button className="button is-primary is-light" >Europe</button>
-                    <button className="button is-primary is-light" >America</button>
-                    {/*When clicking the above buttons, the button colour should change and the vaccines listed below should change basedd on the selected country*/}
-                </div>
-                <div className="verticalcenter">
-                    <Link className="button is-light is-primary" to="/vaccines/add" > Add Vaccine </Link>
-                    {/*In this place, a list of all upcoming vaccines will come*/}
-                </div>
-            </div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            {/* <Footer/> */}
+            <h1 className="massivetext heading1 horizontalcenter">Future vaccines</h1>
         </div>
     )
 }
