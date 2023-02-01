@@ -1,3 +1,4 @@
+import DatePicker from "react-date-picker"
 
 import { collection, getDocs, query } from "firebase/firestore"
 import { useEffect, useState } from "react"
@@ -11,7 +12,9 @@ import { db } from "../FbStuff/fb"
 let AddVaccinePage = ()=>{
 
     let [values,setValue] = useState([])
-    let [Bnumber,setBnumber] = useState()
+    let [Bnumber,setBnumber] = useState(0)
+    let [selected,setSelected] = useState('')
+    const [Tookdate, ontookdate] = useState(new Date());
 
     async function GetDropVals(){
         let h = []
@@ -35,8 +38,17 @@ let AddVaccinePage = ()=>{
         // }
     }
 
+    let SelectedVal = (selectval)=>{
+        setSelected(selectval)
+        // alert(selectval.value)
+    }
+    let SelectedBN = (selectval)=>{
+        setBnumber(selectval)
+        // alert(selectval.value)
+    }
+
     let add = ()=>{
-        alert(Bnumber)
+        alert(selected.value)
 
     }
 
@@ -44,10 +56,24 @@ let AddVaccinePage = ()=>{
         GetDropVals()  
     },[])
 
+    
+    let BN = [
+        {value:1, label:1},
+        {value:2, label:2},
+        {value:3, label:3},
+        {value:4, label:4},
+        {value:5, label:5}
+    ]
+      
+
     return <div>
-        <Select options={values} />
-        <input type="text" onChange={(event)=>{setBnumber(event.target.value)}} />
+        <h2>Select Vaccine</h2>
+        <Select options={values} onChange={SelectedVal} />
+        <h2>Seect Bosster Amount</h2>
+        <Select options={BN} onChange={SelectedBN} />
+        <DatePicker onChange={ontookdate} value={Tookdate} />
         <button onClick={()=>{add()}} >Add</button>
+        
     </div>
 }
 
