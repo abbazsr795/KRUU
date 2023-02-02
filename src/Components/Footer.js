@@ -21,9 +21,8 @@ const Footer = () => {
     return(
         <div className='stack'>
             <div className="footer">
-                { rend ? null : <><button onClick={()=>{navigate('/')}} className="button is-light" >Back</button></> }
                 <p><a className="notextdeco bold f3" href="https://www.google.com/">Log Out</a></p> 
-                <p className='heading5 bold f3'>VACCINIC</p>
+                <a onClick={()=>{navigate('/')}}><p className='heading5 bold f3'>VACCINIC</p></a>
                 { userlogged ? <h3 className='f3 bold '> {user.email} </h3> : <h3 className='f3 bold '>not logged in</h3> }
             </div>
         </div>
