@@ -38,7 +38,7 @@ let EditUserInfo = ()=>{
                     <DatePicker onChange={onChangeBirth} value={birthDate} />
                     <br></br>
                     <h1>Health Conditions</h1>
-                    <div className="row spacebetween downborder"> <Switch checked={checked1} onChange={(e)=>{setChecked1(e.target.checked)}} height={24} /> <h2>Diabetes</h2></div>
+                    <div className="row spacebetween downborder">  <h2>Diabetes</h2> <Switch checked={checked1} onChange={(e)=>{setChecked1(e.target.checked)}} height={24} /></div>
                     <div className="row spacebetween downborder"><Switch checked={checked11} onChange={(e)=>{setChecked11(e.target.checked)}} height={24} /><h2>Chronic liver disease</h2></div>
                     <div className="row spacebetween downborder"><Switch checked={checked12} onChange={(e)=>{setChecked12(e.target.checked)}} height={24} /><h2>Heart or lung disease</h2></div>
                     <div className="row spacebetween downborder"><Switch checked={checked13} onChange={(e)=>{setChecked13(e.target.checked)}} height={24} /><h2>End-stage renal disease, or on hemodialysis</h2></div>
