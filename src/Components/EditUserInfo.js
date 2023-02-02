@@ -20,28 +20,22 @@ let EditUserInfo = ()=>{
                     <DatePicker onChange={onChangeBirth} value={birthDate} />
                     <br></br>
                     <h1>Health Conditions</h1>
-                    <div className="flexiblerow">
-                        <Switch/>
-                        <button className="button4" >Diabetes</button>
-                        <button className="button4" >Chronic liver disease</button>
-                        <button className="button4" >Heart or lung disease</button>
-                        <button className="button4" >End-stage renal disease, or on hemodialysis</button>
-                        <button className="button4" >Asplenia, complement deficiencies</button>
-                        <button className="button4" >{"Immunocompromised (excluding HIV infection)"}</button>
-                        <button className="button4" >{"HIV infection CD4 percentage and count <15% or <200 mm3"}</button>
-                        <button className="button4" >{"HIV infection CD4 percentage and count ≥15% and ≥200 mm3"}</button>
-                    </div>
+                    <div className="row spacebetween downborder"><h2>Diabetes</h2></div>
+                    <div className="row spacebetween downborder"><h2>Chronic liver disease</h2></div>
+                    <div className="row spacebetween downborder"><h2>Heart or lung disease</h2></div>
+                    <div className="row spacebetween downborder"><h2>End-stage renal disease, or on hemodialysis</h2></div>
+                    <div className="row spacebetween downborder"><h2>Asplenia, complement deficiencies</h2></div>
+                    <div className="row spacebetween downborder"><h2>{"Immunocompromised (excluding HIV infection)"}</h2></div>
+                    <div className="row spacebetween downborder"><h2>{"HIV infection CD4 percentage and count <15% or <200 mm3"}</h2></div>
+                    <div className="row spacebetween"><h2>{"HIV infection CD4 percentage and count ≥15% and ≥200 mm3"}</h2></div>
                     <h1>Other</h1>
-                    <div className="flexiblerow">
-                        <button className="button4" >Pregnant</button>
-                        <button className="button4" >Work in healthcare</button>
-                        <button className="button4" >Alcoholic</button>
-                        <button className="button4" >Male who have sex with males</button>
-                    </div>
+                    <div className="row spacebetween downborder"><h2>Pregnant</h2></div>
+                    <div className="row spacebetween downborder"><h2>Work in healthcare</h2></div>
+                    <div className="row spacebetween downborder"><h2>Alcoholic</h2></div>
+                    <div className="row spacebetween"><h2>Male who have sex with males</h2></div>
                     <h1>Past travel destinations</h1>
-                    <div className="flexiblerow">
-                        <button className="button4" >South Asia</button>
-                    </div>
+                    <div className="row spacebetween downborder"><h2>South East Asia</h2></div>
+                    <div className="row spacebetween"><h2>North America</h2></div>
                     <br></br>
                     <button onClick={()=>{save()}} className="button is-primary is-light" >Save Changes</button>
                 </div>

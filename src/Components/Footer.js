@@ -19,12 +19,12 @@ const Footer = () => {
 
     return(
         <div className='stack'>
-            <footer className="footer">
+            <div className="footer">
                 { rend ? null : <><button onClick={()=>{navigate('/')}} className="button is-light" >Back</button></> }
-                <p><a className="notextdeco  f3" href="https://www.google.com/">Log Out</a></p> 
-                <p className='heading5 f3'>VACCINIC</p>
-                { userlogged ? <h3 className='f3'> {user.email} </h3> : <h3>not logged in</h3> }
-            </footer>
+                <p><a className="notextdeco bold f3" href="https://www.google.com/">Log Out</a></p> 
+                <p className='heading5 bold f3'>VACCINIC</p>
+                { userlogged ? <h3 className='f3 bold '> {user.email} </h3> : <h3 className='f3 bold '>not logged in</h3> }
+            </div>
         </div>
     )
 }
