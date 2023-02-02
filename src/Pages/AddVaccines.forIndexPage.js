@@ -11,7 +11,7 @@ let AddVaccinesforIndex = ()=>{
     let [vaccname,setVaccName] = useState('')
     let [vaccdesc,setVaccDesc] = useState('')
     let [vaccurl,setVaccurl] = useState('')
-    let [vaccregion,setVaccregion] = useState(["", "","","","",""])
+    let [vaccregion,setVaccregion] = useState([])
 
     values = [
         {value: "Northern Asia", label: ""},
@@ -47,22 +47,28 @@ let AddVaccinesforIndex = ()=>{
         // alert(selectval.value)
     }
 
-    // useEffect(()=>{
-    //     for (let i = 0; i < vaccregion.length; i++) {
-    //         values.push({
-    //             value: vaccregion[i],
-    //             label: vaccregion[i]
-    //         })
-    //       }
-    //     console.log(values)
-    // },[vaccregion, values])
+    useEffect(()=>{
+        for (let i = 0; i < vaccregion.length; i++) {
+            values.push({
+                value: vaccregion[i],
+                label: vaccregion[i]
+            })
+          }
+        console.log(values)
+    },[vaccregion, values])
 
     return <div>
+        <h3>Name of Vaccine</h3>
         <input value={vaccname} onchange={(event)=>{setVaccName(event.target.value)}} />
-        <textarea value={vaccdesc} onchange={(event)=>{setVaccDesc(event.target.value)}} />
-        <textarea value={vaccurl} onchange={(event)=>{setVaccurl(event.target.value)}} />
-        <Select options={values} onChange={SelectedVal()} />
+        <h3>Description</h3>
+        <textarea  onchange={(event)=>{setVaccDesc(event.target.value)}} />
+        <h3>URL</h3>
+        <input onchange={(event)=>{setVaccurl(event.target.value)}} /> 
+        <h3>Region</h3>
+        <Select options={values} onChange={SelectedVal} />
+
         <button onClick={()=>{add()}} >Add</button>
+        {/* <h1>This works</h1> */}
     </div>
 
 }
