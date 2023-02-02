@@ -9,20 +9,20 @@ const Banner = () => {
                 <div className="stack">
                     <div className="flexiblerow">
                         <h1 className="bold ultramassivetext bannertext1">Vaccinic is an all in one vaccine management tool</h1>
-                        <img src="https://img.icons8.com/plasticine/512/clinic.png"/>
+                        <img className="bannerimage" src="https://img.icons8.com/plasticine/512/clinic.png"/>
                     </div>
                     <div className="flexiblerow banner2 ">
-                        <img src="https://img.icons8.com/plasticine/512/syringe.png"/>
+                        <img className="bannerimage" src="https://img.icons8.com/plasticine/512/syringe.png"/>
                         <h1 className="bold ultramassivetext bannertext1">Currently Vaccinic has over 15 different vaccines</h1>
                     </div>
                     <h1 className="heading2 horizontalcenter">With Vaccinic you can</h1>
                     <div className="flexiblerow spacearound ">
                         <div className="card2 grad1 stack pa3">
-                            <img src="https://img.icons8.com/plasticine/512/treatment-plan.png"/>
+                            <img  src="https://img.icons8.com/plasticine/512/treatment-plan.png"/>
                             <h1>Keepp track of your past vaccines</h1>
                         </div>
                         <div className="card2 grad1 stack pa3">
-                            <img src="https://img.icons8.com/plasticine/512/new-moon.png"/>
+                            <img  src="https://img.icons8.com/plasticine/512/new-moon.png"/>
                             <h1>Get insights and updates on future vaccines</h1>
                         </div>
                         <div className="card2 grad1 stack pa3">
