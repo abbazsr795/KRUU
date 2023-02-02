@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 .emailandpasswordbox{
   background-color: white;
   border-radius: 5px;
@@ -10,6 +11,9 @@
   display: flex;
   justify-content: center;
   padding-bottom: 15px;
+}
+.ariel{
+  font-family: 'Inter', sans-serif;
 }
 .roboto{
   font-family: 'Roboto Mono', monospace;
@@ -197,7 +201,7 @@
   color: whitesmoke;
 }
 .whiteback{
-  background-color: lightblue;
+  background-color: white;
 }
 .spacebetween{
   display: flex;
@@ -208,9 +212,6 @@
   padding-top: 5px;
   padding-bottom: 5px;
   border-color: lightgrey;
-}
-.bannertext1{
-  width: 60%;
 }
 .bannerimage{
   width: 30%;
@@ -248,6 +249,32 @@ input{
 h1{
   color: black;
 }
-
-
+.logo{
+  height: 50px;
+  width: 50px;
+}
+.header{
+ height: 60px;
+ border-radius: 20px;
+ display: flex;
+ align-items: center;
+ min-width: 60%;
+}
+.centeralign{
+  display: flex;
+  align-items: center;
+}
+.gap10{
+  gap: 10px;
+}
+.smalltext{
+  font-size: 20px;
+}
+.btn99{
+  border-radius: 10px;
+  padding: 7px;
+}
+.textsize44{
+  font-size: 2vw;
+}
 
