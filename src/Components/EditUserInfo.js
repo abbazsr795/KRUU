@@ -5,7 +5,7 @@ import { useState } from "react";
 
 let EditUserInfo = ()=>{
 
-    const [checked1, setChecked1] = useState(false)
+    const [checked1, setChecked1]   = useState(false)
     const [checked11, setChecked11] = useState(false)
     const [checked12, setChecked12] = useState(false)
     const [checked13, setChecked13] = useState(false)
@@ -14,12 +14,12 @@ let EditUserInfo = ()=>{
     const [checked16, setChecked16] = useState(false)
     const [checked17, setChecked17] = useState(false)
 
-    const [checked2, setChecked2] = useState(false)
+    const [checked2, setChecked2]   = useState(false)
     const [checked21, setChecked21] = useState(false)
     const [checked22, setChecked22] = useState(false)
     const [checked23, setChecked23] = useState(false)
 
-    const [checked3, setChecked3] = useState(false)
+    const [checked3, setChecked3]   = useState(false)
     const [checked31, setChecked31] = useState(false)
 
     let save = ()=>{
