@@ -1,4 +1,5 @@
 import DatePicker from "react-date-picker"
+import { Switch } from "evergreen-ui"
 import { useState } from "react";
 
 let EditUserInfo = ()=>{
@@ -20,6 +21,7 @@ let EditUserInfo = ()=>{
                     <br></br>
                     <h1>Health Conditions</h1>
                     <div className="flexiblerow">
+                        <Switch/>
                         <button className="button4" >Diabetes</button>
                         <button className="button4" >Chronic liver disease</button>
                         <button className="button4" >Heart or lung disease</button>
