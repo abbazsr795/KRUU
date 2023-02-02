@@ -17,6 +17,7 @@ const Footer = () => {
     let user = useRecoilValue(UserLogData)
 
 
+
     return(
         <div className='stack'>
             <div className="footer">

@@ -133,11 +133,11 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   font-size: 3em;
 }
 .card2{
-  background-color: whitesmoke;
+  background-color: #CDE6FF;
   width: 40ex;
   margin: 8px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
 }
 .card7{
   width: 40ex;
@@ -202,10 +202,21 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 }
 .downborder{
   border-bottom: solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-color: lightgrey;
 }
 .bannertext1{
   width: 60%;
 }
 .bannerimage{
   width: 30%;
+  height: w;
+}
+html{
+  padding: 5px;
+}
+.bigbtn{
+  border-radius: 10px;
+  border: none;
 }
