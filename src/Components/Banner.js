@@ -49,7 +49,7 @@ const Banner = () => {
             <div className="flexiblerow spacearound ">
             <div className="card2 grad1 stack pa3">
                 <img  src="https://img.icons8.com/plasticine/512/treatment-plan.png"/>
-                <h1>Keepp track of your past vaccines</h1>
+                <h1>Keep track of your past vaccines</h1>
             </div>
             <div className="card2 grad1 stack pa3">
                 <img  src="https://img.icons8.com/plasticine/512/new-moon.png"/>
