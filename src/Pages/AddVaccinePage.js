@@ -85,24 +85,34 @@ let AddVaccinePage = ()=>{
     ]
       
 
-    return <div className="has-text-centered" >
-        <h1>
-            Add Vaccine
-        </h1>
-        <h2>Select Vaccine</h2>
-        <Select options={values} onChange={SelectedVal} />
-        <h2>Seect Bosster Amount</h2>
-        <Select options={BN} onChange={SelectedBN} />
-        <DatePicker onChange={ontookdate} value={Tookdate} />
-        <p>Have taken said vaccine before (Booster Vaccine)</p>
-        <div className="has-text-centered" >
-        <Switch checked={checked} onChange={(e) => setChecked(e.target.checked)} height={24} />
+    return(
+    <div className="stack">
+        <br/>
+        <br/>
+        <div className="horizontalcenter">
+            <div className="card4 lightblue pa4" >
+                <h1>
+                    Add Vaccine
+                </h1>
+                <h2>Select Vaccine</h2>
+                <Select options={values} onChange={SelectedVal} />
+                <br/>
+                <h2>Seect Bosster Amount</h2>
+                <Select options={BN} onChange={SelectedBN} />
+                <br/>
+                <DatePicker onChange={ontookdate} value={Tookdate} />
+                <br/>
+                <br/>
+                <div className="row spacebetween" >
+                <p>Have taken said vaccine before (Booster Vaccine)</p>
+                <Switch checked={checked} onChange={(e) => setChecked(e.target.checked)} height={24} />
+                </div>
+                <div className="horizontalcenter"><button onClick={()=>{add()}} className="button is-light is-primary" >Add</button></div>
+            </div>
         </div>
-
-
-        <button onClick={()=>{add()}} className="button is-light is-primary" >Add</button>
-        
     </div>
+    )
+
 }
 
 export default AddVaccinePage
