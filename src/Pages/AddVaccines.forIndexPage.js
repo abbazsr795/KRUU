@@ -57,19 +57,30 @@ let AddVaccinesforIndex = ()=>{
         console.log(values)
     },[vaccregion, values])
 
-    return <div>
-        <h3>Name of Vaccine</h3>
-        <input value={vaccname} onchange={(event)=>{setVaccName(event.target.value)}} />
-        <h3>Description</h3>
-        <textarea  onchange={(event)=>{setVaccDesc(event.target.value)}} />
-        <h3>URL</h3>
-        <input onchange={(event)=>{setVaccurl(event.target.value)}} /> 
-        <h3>Region</h3>
-        <Select options={values} onChange={SelectedVal} />
-
-        <button onClick={()=>{add()}} >Add</button>
-        {/* <h1>This works</h1> */}
+    return(
+    <div className="stack">
+        <br></br>
+        <br></br>
+        <div className="horizontalcenter">
+            <div className="card4 lightblue pa4">
+                <h3>Name of Vaccine</h3>
+                <input value={vaccname} onchange={(event)=>{setVaccName(event.target.value)}} />
+                <br/>
+                <h3>Description</h3>
+                <textarea  onchange={(event)=>{setVaccDesc(event.target.value)}} />
+                <br/>
+                <h3>URL</h3>
+                <input onchange={(event)=>{setVaccurl(event.target.value)}} />
+                <br/> 
+                <h3>Region</h3>
+                <Select options={values} onChange={SelectedVal} />
+                <br/>
+                <button onClick={()=>{add()}} >Add</button>
+                {/* <h1>This works</h1> */}
+            </div>
+        </div>
     </div>
+    )
 
 }
 
