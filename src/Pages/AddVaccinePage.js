@@ -100,7 +100,10 @@ let AddVaccinePage = ()=>{
                 <h2>Seect Bosster Amount</h2>
                 <Select options={BN} onChange={SelectedBN} />
                 <br/>
-                <DatePicker onChange={ontookdate} value={Tookdate} />
+                <div className="row spacebetween">
+                    <p>When did you take the vaccine</p>
+                    <DatePicker onChange={ontookdate} value={Tookdate} />
+                </div>
                 <br/>
                 <br/>
                 <div className="row spacebetween" >
