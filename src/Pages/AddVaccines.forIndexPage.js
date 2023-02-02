@@ -7,12 +7,26 @@ let AddVaccinesforIndex = ()=>{
 
     let values = []
 
-
     let [vaccselected,setSelected] = useState('')
     let [vaccname,setVaccName] = useState('')
     let [vaccdesc,setVaccDesc] = useState('')
     let [vaccurl,setVaccurl] = useState('')
-    let [vaccregion,setVaccregion] = useState(["Northern Asia","Central Asia","South America","Western Asia", "Southern Asia","Eastern Asia", "South Eastern Asia","Europe","Oceania","Africa","North America"])
+    let [vaccregion,setVaccregion] = useState(["", "","","","",""])
+
+    values = [
+        {value: "Northern Asia", label: ""},
+        {value: "Central Asia", label: "Central Asia" },
+        {value: "South America", label: "South America"},
+        {value: "Western Asia", label: "Western Asia"},
+        {value: "Western Asia", label:"Western Asia"},
+        {value: "Southern Asia", label: "Southern Asia"},
+        {value: "Eastern Asia",label: "Eastern Asia"},
+        {value: "South Eastern Asia", label:"South Eastern Asia"},
+        {value:"Europe", label:"Europe"},
+        {value:"Oceania", label:"Oceania"},
+        {value:"North America", label:"North America"},
+        {value:"Africa", label:"Africa"}
+    ]
 
     let add = async ()=>{
         const docref = await addDoc(collection(db,"Index"),{
@@ -33,14 +47,15 @@ let AddVaccinesforIndex = ()=>{
         // alert(selectval.value)
     }
 
-    useEffect(()=>{
-        for (let i = 0; i < vaccregion.length; i++) {
-            values.push({
-                value: vaccregion[i],
-                label: vaccregion[i]
-            })
-          }
-    },[vaccregion, values])
+    // useEffect(()=>{
+    //     for (let i = 0; i < vaccregion.length; i++) {
+    //         values.push({
+    //             value: vaccregion[i],
+    //             label: vaccregion[i]
+    //         })
+    //       }
+    //     console.log(values)
+    // },[vaccregion, values])
 
     return <div>
         <input value={vaccname} onchange={(event)=>{setVaccName(event.target.value)}} />
