@@ -33,7 +33,7 @@ let AddVaccinesforIndex = ()=>{
             name: vaccname,
             desc: vaccdesc,
             url:  vaccurl,
-            vaccregion: vaccselected
+            vaccregion: vaccselected.label
         })
 
         if (docref!==""){
@@ -64,7 +64,7 @@ let AddVaccinesforIndex = ()=>{
         <div className="horizontalcenter">
             <div className="card4 lightblue pa4">
                 <h3>Name of Vaccine</h3>
-                <input value={vaccname} onchange={(event)=>{setVaccName(event.target.value)}} />
+                <input onchange={(event)=>{setVaccName(event.target.value)}} />
                 <br/>
                 <h3>Description</h3>
                 <textarea  onchange={(event)=>{setVaccDesc(event.target.value)}} />

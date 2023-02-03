@@ -60,7 +60,7 @@ let AddVaccinePage = ()=>{
 
     let add = async ()=>{
         const docref = await addDoc(collection(db,"UserInfo"),{
-            email: useremail,
+            email: useremail.email,
             vaccine: selected,
             checked: checked,
             tookdate: Tookdate
@@ -97,7 +97,7 @@ let AddVaccinePage = ()=>{
                 <h2>Select Vaccine</h2>
                 <Select options={values} onChange={SelectedVal} />
                 <br/>
-                <h2>Seect Bosster Amount</h2>
+                <h2>Select Booster Amount</h2>
                 <Select options={BN} onChange={SelectedBN} />
                 <br/>
                 <div className="row spacebetween">
