@@ -277,4 +277,13 @@ h1{
 .textsize44{
   font-size: 2vw;
 }
+.img99{
+  border-radius: 15px;
+}
+.border10{
+  border-radius: 10px;
+}
+.fit{
+  width: fit-content;
+}
 
