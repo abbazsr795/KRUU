@@ -144,7 +144,7 @@
   background-color: white;
   width: 40ex;
   margin: 8px;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 10px;
 }
 .card7{
@@ -276,5 +276,14 @@ h1{
 }
 .textsize44{
   font-size: 2vw;
+}
+.img99{
+  border-radius: 15px;
+}
+.border10{
+  border-radius: 10px;
+}
+.fit{
+  width: fit-content;
 }
 

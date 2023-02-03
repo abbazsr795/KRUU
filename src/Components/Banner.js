@@ -15,17 +15,17 @@ const Banner = () => {
             </div>
             <h1 className="heading2 horizontalcenter has-text-centered">With Vaccinic you can</h1>
             <div className="flexiblerow spacearound pa0">
-            <div className="card2 grad1 stack pa3">
+            <div className="card2 grad1 stack pa3 grow">
                 <img  src="https://img.icons8.com/plasticine/512/treatment-plan.png"/>
-                <h1>Keep track of your past vaccines</h1>
+                <div className="horizontalcenter"><h1>Keep track of your past vaccines</h1></div>
             </div>
-            <div className="card2 grad1 stack pa3">
+            <div className="card2 grad1 stack pa3 grow">
                 <img  src="https://img.icons8.com/plasticine/512/new-moon.png"/>
-                <h1>Get insights and updates on future vaccines</h1>
+                <div className="horizontalcenter"><h1>Get insights and updates on future vaccines</h1></div>
             </div>
-            <div className="card2 grad1 stack pa3">
+            <div className="card2 grad1 stack pa3 grow">
                 <img src="https://img.icons8.com/plasticine/512/map-marker.png"/>
-                <h1>Get vaccine recommendations based on location</h1>
+                <div className="horizontalcenter"><h1>Get vaccine recommendations based on location</h1></div>
             </div>
             </div>
             <br/>
