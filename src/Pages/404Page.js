@@ -23,12 +23,13 @@ const NotFound = () =>{
                 <h1 className='title'>No Such Page</h1>
                 <button className="button is-primary" onClick={()=>{navigate('/')}} >Back</button>
                 <br></br>
+                <br></br>
                 <p className='black'>While you are here, here's the NASA pic of the day</p>
                 <br></br>
                 <h3 className='black'>{content.title}</h3>
                 <img className='img99' height={"600"} width={"800"} src={content.hdurl} alt="" />
                 <br></br>
-                <div className='horizontalcenter'><p className='whiteback pa4 border10 fit black'> {content.explanation} </p></div>
+                <div className='horizontalcenter ma5'><p className='whiteback pa4 border10 fit black'> {content.explanation} </p></div>
                 <br/>
                 <br/>
                 <br/>
