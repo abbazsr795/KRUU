@@ -24,9 +24,6 @@ let AddVaccinePage = ()=>{
     const [checked, setChecked] = useState(true)
     const [Tookdate, ontookdate] = useState(new Date());
 
-
-
-
     async function GetDropVals(){
         let h = []
         const q = query(collection(db, "Vaccines"));
@@ -74,7 +71,6 @@ let AddVaccinePage = ()=>{
     useEffect(()=>{
         GetDropVals()  
     },[])
-
     
     let BN = [
         {value:1, label:1},
