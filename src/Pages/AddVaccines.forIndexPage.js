@@ -7,10 +7,10 @@ let AddVaccinesforIndex = ()=>{
 
     let values = []
 
-    let [vaccselected,setSelected] = useState('')
-    let [vaccname,setVaccName] = useState('')
-    let [vaccdesc,setVaccDesc] = useState('')
-    let [vaccurl,setVaccurl] = useState('')
+    let [vaccselected,setSelected] = useState('empty')
+    let [vaccname,setVaccName] = useState('empty')
+    let [vaccdesc,setVaccDesc] = useState('empty')
+    let [vaccurl,setVaccurl] = useState('empty')
     let [vaccregion,setVaccregion] = useState([])
 
     values = [
@@ -18,7 +18,6 @@ let AddVaccinesforIndex = ()=>{
         {value: "Central Asia", label: "Central Asia" },
         {value: "South America", label: "South America"},
         {value: "Western Asia", label: "Western Asia"},
-        {value: "Western Asia", label:"Western Asia"},
         {value: "Southern Asia", label: "Southern Asia"},
         {value: "Eastern Asia",label: "Eastern Asia"},
         {value: "South Eastern Asia", label:"South Eastern Asia"},
