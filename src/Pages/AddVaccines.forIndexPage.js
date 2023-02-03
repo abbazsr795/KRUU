@@ -7,10 +7,10 @@ let AddVaccinesforIndex = ()=>{
 
     let values = []
 
-    let [vaccselected,setSelected] = useState('empty')
-    let [vaccname,setVaccName] = useState('empty')
-    let [vaccdesc,setVaccDesc] = useState('empty')
-    let [vaccurl,setVaccurl] = useState('empty')
+    let [vaccselected,setSelected] = useState('')
+    let [vaccname,setVaccName] = useState('')
+    let [vaccdesc,setVaccDesc] = useState('')
+    let [vaccurl,setVaccurl] = useState('')
     let [vaccregion,setVaccregion] = useState([])
 
     values = [
@@ -45,16 +45,28 @@ let AddVaccinesforIndex = ()=>{
         setSelected(selectval)
         // alert(selectval.value)
     }
+    let vaccnameset = (event)=>{
+        setVaccName(event.target.value)
+        // alert(selectval.value)
+    }
+    let vaccdescset = (event)=>{
+        setVaccDesc(event.target.value)
+        // alert(selectval.value)
+    }
+    let vaccurlset = (event)=>{
+        setVaccurl(event.target.value)
+        // alert(selectval.value)
+    }
 
-    useEffect(()=>{
-        for (let i = 0; i < vaccregion.length; i++) {
-            values.push({
-                value: vaccregion[i],
-                label: vaccregion[i]
-            })
-          }
-        console.log(values)
-    },[vaccregion, values])
+    // useEffect(()=>{
+    //     for (let i = 0; i < vaccregion.length; i++) {
+    //         values.push({
+    //             value: vaccregion[i],
+    //             label: vaccregion[i]
+    //         })
+    //       }
+    //     console.log(values)
+    // },[vaccregion, values])
 
     return(
     <div className="stack">
@@ -63,13 +75,13 @@ let AddVaccinesforIndex = ()=>{
         <div className="horizontalcenter">
             <div className="card4 lightblue pa4">
                 <h3>Name of Vaccine</h3>
-                <input onchange={(event)=>{setVaccName(event.target.value)}} />
+                <input value={vaccname} onChange={vaccnameset} />
                 <br/>
                 <h3>Description</h3>
-                <textarea  onchange={(event)=>{setVaccDesc(event.target.value)}} />
+                <textarea value={vaccdesc} onChange={vaccdescset} />
                 <br/>
                 <h3>URL</h3>
-                <input onchange={(event)=>{setVaccurl(event.target.value)}} />
+                <input value={vaccurl} onChange={vaccurlset} />
                 <br/> 
                 <h3>Region</h3>
                 <Select options={values} onChange={SelectedVal} />
