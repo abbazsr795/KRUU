@@ -50,10 +50,6 @@ let AddVaccinePage = ()=>{
         setSelected(selectval)
         // alert(selectval.value)
     }
-    let SelectedBN = (selectval)=>{
-        setBnumber(selectval)
-        // alert(selectval.value)
-    }
 
     let add = async ()=>{
         const docref = await addDoc(collection(db,"Vaccines"),{
@@ -92,9 +88,6 @@ let AddVaccinePage = ()=>{
                 </h1>
                 <h2>Select Vaccine</h2>
                 <Select options={values} onChange={SelectedVal} />
-                <br/>
-                <h2>Select Booster Amount</h2>
-                <Select options={BN} onChange={SelectedBN} />
                 <br/>
                 <div className="row spacebetween">
                     <p>When did you take the vaccine</p>

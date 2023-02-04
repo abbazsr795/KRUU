@@ -14,7 +14,7 @@ const MyVaccines = () => {
     }
 
     let toAddVaccines = () => {
-        navigate('/vaccines/add' )
+        navigate('/vaccines/addvaccine' )
     }
 
     return(

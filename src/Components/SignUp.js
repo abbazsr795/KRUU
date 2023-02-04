@@ -87,7 +87,7 @@ const SignUp = () => {
             alcholic: checked22,
             gay: checked23,
 
-            seasia: checked3,
+            nasia: checked3,
             namerica: checked31
         })
 
@@ -128,7 +128,7 @@ const SignUp = () => {
                     <h1>Past travel destinations</h1>
                     <div className="flexiblerow">
                         <p>Northern Asia</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked3} onChange={(e)=>{setChecked3(e.target.value)}} />
                         <p>Central Asia</p>
                         <Switch height={24} />
                         <p>South America</p>
