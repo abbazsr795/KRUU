@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { db } from "../FbStuff/fb";
 import { collection, query, where, getDocs } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 
 const VaccinesPage = () => {
 
     let [listofdata, Setusestate] = useState([])
+    let navigate = useNavigate()
 
     let getdata = async ()=>{
         let g = []
@@ -32,7 +34,7 @@ const VaccinesPage = () => {
                 </div>
                 {
                     listofdata.map(p=>
-                        <div className="card2 verticalcenter grow">
+                        <div className="card2 verticalcenter grow" >
                             <h1> {p.name} </h1>
                             <h2> {p.desc} </h2>
                         </div>)

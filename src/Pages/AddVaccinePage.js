@@ -39,7 +39,6 @@ let AddVaccinePage = ()=>{
   // doc.data() is never undefined for query doc snapshots
         });
         setValue(h)
-        console.log(h)
 
         // if (value.length !== 0) {
         //     isempty = true
@@ -95,10 +94,6 @@ let AddVaccinePage = ()=>{
                 </div>
                 <br/>
                 <br/>
-                <div className="row spacebetween" >
-                <p>Have taken said vaccine before (Booster Vaccine)</p>
-                <Switch checked={checked} onChange={(e) => setChecked(e.target.checked)} height={24} />
-                </div>
                 <div className="horizontalcenter"><button onClick={()=>{add()}} className="button is-light is-primary" >Add</button></div>
             </div>
         </div>

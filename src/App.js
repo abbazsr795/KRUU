@@ -28,7 +28,7 @@ const App = () => {
       <Route    path='/vaccines/pastrecords'            element={<PastRecordsPage/>}      />
       <Route    path='/vaccines/pastrecords/edit'       element={<EditPastRecords/>}      />
       <Route    path='/vaccines/addvaccine'             element={<AddVaccinePage/>}       />
-      <Route    path='/vaccines/adddose'                element={<AddNewDose/>}           />
+      <Route    path='/vaccines/adddose/:name'          element={<AddNewDose/>}           />
       <Route    path='/userinfo'                        element={<UserInfoPage/>}         />
       <Route    path='/userinfo/edit'                   element={<EditUserInfo/>}         />
       <Route    path='/vaccines'                        element={<VaccinesPage/>}         />
