@@ -8,8 +8,8 @@ let AddNewDose = ()=>{
 
     let [values, Setusestate] = useState([])
 
-    // let params = useParams();
-    // let nme = ''
+    let params = useParams();
+    let nme = params.nme
 
     let getdata = async ()=>{
 
@@ -22,9 +22,10 @@ let AddNewDose = ()=>{
             // doc.data() is never undefined for query doc snapshots
             let d = doc.data().vaccine
             g.push(d)
+            console.log(d)
         });
         Setusestate(g)
-        console.log(values)
+        console.log(g)
     }
 
     useEffect(()=>{
@@ -33,6 +34,7 @@ let AddNewDose = ()=>{
     },[])
 
     return <div>
+        <h1> {nme} </h1>
         <button onClick={()=>{getdata()}} >S</button>
         <Select options={values} onChange={Setusestate} />
 
