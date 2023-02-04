@@ -96,13 +96,7 @@ const SignUp = () => {
             navigate('/')
         }
 
-    }
-
-    let save = ()=>{
-
-    }
-
-    
+    } 
 
     return <>
         <h1 className="horizontalcenter heading2">Sign Up</h1>
