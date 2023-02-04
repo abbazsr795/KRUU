@@ -23,14 +23,14 @@ let AddNewDose = ()=>{
     let params = useParams();
     let nme = params.name
 
+    if (past!==false) {
+        ontookdate(new Date())
+    }
+    if (current!==Tookdate){
+        g = Tookdate - current
+        alert(g)
+    }
     let addDose = async ()=>{
-        if (past!==false) {
-            ontookdate(new Date())
-        }
-        if (current!==Tookdate){
-            g = Tookdate - current
-            alert(g)
-        }
         const docref = await addDoc(collection(db,"Dose"),{
             email: useremail.email,
             vaccine: nme,
