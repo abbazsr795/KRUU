@@ -1,43 +1,60 @@
 import { db } from "../FbStuff/fb"
-import { collection, query, where, getDocs } from "firebase/firestore";
+
+import { Switch } from "evergreen-ui"
+import DatePicker from "react-date-picker"
+import { collection, getDocs, query, addDoc } from "firebase/firestore"
 import { useEffect, useState } from "react";
 import Select from 'react-select'
 import { useParams } from "react-router-dom";
+import { useRecoilValue } from "recoil";
+import { UserLogData } from "../States/UserRelated";
 
 let AddNewDose = ()=>{
 
-    let [values, Setusestate] = useState([])
+    let g = null
+    let useremail = useRecoilValue(UserLogData)
+    const [Tookdate, ontookdate] = useState(new Date());
+    let current = new Date()
+
+    let [past,setpast] = useState(false)
+    let [recurring,setreuccing] = useState(false)
+    let [recurringnumber,setrreuccingnumber] = useState(0)
 
     let params = useParams();
-    let nme = params.nme
+    let nme = params.name
 
-    let getdata = async ()=>{
+    let addDose = async ()=>{
+        if (past!==false) {
+            ontookdate(new Date())
+        }
+        if (current!==Tookdate){
+            g = Tookdate - current
+            alert(g)
+        }
+        const docref = await addDoc(collection(db,"Dose"),{
+            email: useremail.email,
+            vaccine: nme,
+            recurringnumber: recurringnumber,
+            recurringdays: g,
+            tookdate: Tookdate
+        })
 
-        let g = []
-
-        const q = query(collection(db, "Vaccines"));
-
-        const querySnapshot = await getDocs(q);
-            querySnapshot.forEach((doc) => {
-            // doc.data() is never undefined for query doc snapshots
-            let d = doc.data().vaccine
-            g.push(d)
-            console.log(d)
-        });
-        Setusestate(g)
-        console.log(g)
+        if (docref!==""){
+            // alert('success') 
+            alert(Tookdate +" "+current +" "+ g+" ")
+        }
     }
 
     useEffect(()=>{
-
-        // nme = params.name
     },[])
 
     return <div>
-        <h1> {nme} </h1>
-        <button onClick={()=>{getdata()}} >S</button>
-        <Select options={values} onChange={Setusestate} />
+        <h1>Vaccine {nme} </h1>
+        <p>Taken Before?</p>
+        <Switch checked={past}  onChange={(e)=>{setpast(e.target.checked)}} height={24} />
+        {past ? <DatePicker onChange={ontookdate} value={Tookdate} /> : null }
 
+        <button onClick={()=>{addDose()}} >Add Dose</button>
     </div>
 
 }
