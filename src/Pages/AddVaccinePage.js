@@ -56,7 +56,7 @@ let AddVaccinePage = ()=>{
     }
 
     let add = async ()=>{
-        const docref = await addDoc(collection(db,"UserInfo"),{
+        const docref = await addDoc(collection(db,"Vaccines"),{
             email: useremail.email,
             vaccine: selected,
             checked: checked,

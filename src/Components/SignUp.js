@@ -5,50 +5,14 @@ import { useNavigate, Link } from "react-router-dom"
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { UserLogData } from "../States/UserRelated";
-import { useSetRecoilState } from "recoil";
+import { useRecoilValue, useSetRecoilState } from "recoil";
 import { UserLog } from "../States/UserRelated";
 import DatePicker from "react-date-picker"
 import { collection, getDocs, query, addDoc } from "firebase/firestore"
 import { Switch } from "evergreen-ui"
+import { db } from "../FbStuff/fb";
 
 const SignUp = () => {
-
-    let [email,setEmail] = useState('')
-    let [password,setPassword] = useState('')
-
-    let setuserdata = useSetRecoilState(UserLogData)
-    let setUserl = useSetRecoilState(UserLog)
-
-    let emailSet=(event)=>{
-        setEmail(event.target.value)
-    }
-
-    let passwordSet=(event)=>{
-        setPassword(event.target.value)
-    }
-
-    let handleuserCreation = (auth,email, password)=>{
-
-        createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-            // Signed in 
-            const user = userCredential.user;
-            setuserdata({
-                email: user.email
-            })
-            setUserl(true)
-            // alert(user.email)
-        })
-        .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            // ..
-            alert(errorCode+" "+errorMessage)
-        });
-
-
-
-    }
 
     const [checked1, setChecked1]   = useState(false)
     const [checked11, setChecked11] = useState(false)
@@ -67,11 +31,75 @@ const SignUp = () => {
     const [checked3, setChecked3]   = useState(false)
     const [checked31, setChecked31] = useState(false)
 
+    const [birthDate, onChangeBirth] = useState(new Date());
+
+    let useremail = useRecoilValue(UserLogData)
+    let [email,setEmail] = useState('')
+    let [password,setPassword] = useState('')
+
+    let setuserdata = useSetRecoilState(UserLogData)
+    let setUserl = useSetRecoilState(UserLog)
+
+    let emailSet=(event)=>{
+        setEmail(event.target.value)
+    }
+
+    let passwordSet=(event)=>{
+        setPassword(event.target.value)
+    }
+
+    let handleuserCreation = async (auth,email, password)=>{
+
+        await createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            setuserdata({
+                email: user.email,
+            })
+            setUserl(true)
+            // alert(user.email)
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            // ..
+            alert(errorCode+" "+errorMessage)
+        });
+
+        const docref = await addDoc(collection(db,"UserInfo"),{
+            email: useremail.email,
+            dob: birthDate,
+
+            diabetes: checked1,
+            cld: checked11,
+            hld: checked12,
+            endstageRDorhd: checked13,
+            asplenia: checked14,
+            immunocompromised: checked15,
+            hivcd4countl15p: checked16,
+            hivcd4countg15p: checked17,
+
+            preg: checked2,
+            workhealthcare: checked21,
+            alcholic: checked22,
+            gay: checked23,
+
+            seasia: checked3,
+            namerica: checked31
+        })
+
+        if (docref!==""){
+            alert('success') 
+        }
+
+    }
+
     let save = ()=>{
 
     }
 
-    const [birthDate, onChangeBirth] = useState(new Date());
+    
 
     return <>
         <h1 className="horizontalcenter heading2">Sign Up</h1>
@@ -82,8 +110,8 @@ const SignUp = () => {
                     <input className="inputbox" onChange={emailSet} />
                     <h1>Password</h1>
                     <input className="inputbox" type={"password"} onChange={passwordSet} />
-                    <h1>Name</h1>
-                    <input className="inputbox" onChange={passwordSet} />
+                    {/* <h1>Name</h1>
+                    <input className="inputbox" onChange={passwordSet} /> */}
                     <br/>
                     <div className="row spacebetween"><h3>Date of birth</h3><DatePicker onChange={onChangeBirth} value={birthDate} /></div>
                     <h1>Health Conditions</h1>
