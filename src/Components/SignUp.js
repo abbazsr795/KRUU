@@ -14,6 +14,8 @@ import { db } from "../FbStuff/fb";
 
 const SignUp = () => {
 
+    let navigate = useNavigate()
+
     const [checked1, setChecked1]   = useState(false)
     const [checked11, setChecked11] = useState(false)
     const [checked12, setChecked12] = useState(false)
@@ -91,6 +93,7 @@ const SignUp = () => {
 
         if (docref!==""){
             alert('success') 
+            navigate('/')
         }
 
     }
