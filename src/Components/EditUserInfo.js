@@ -52,8 +52,30 @@ let EditUserInfo = ()=>{
                     <div className="row spacebetween downborder"><h2>Alcoholic</h2><Switch checked={checked22}  onChange={(e)=>{setChecked22(e.target.checked)}} height={24} /></div>
                     <div className="row spacebetween"><h2>Male who have sex with males</h2><Switch checked={checked23}  onChange={(e)=>{setChecked23(e.target.checked)}} height={24} /></div>
                     <h1>Past travel destinations</h1>
-                    <div className="row spacebetween downborder"><h2>South East Asia</h2><Switch checked={checked3}  onChange={(e)=>{setChecked3(e.target.checked)}} height={24} /></div>
-                    <div className="row spacebetween"><h2>North America</h2><Switch checked={checked31}  onChange={(e)=>{setChecked31(e.target.checked)}} height={24} /></div>
+                    <div className="flexiblerow">
+                        <p>Northern Asia</p>
+                        <Switch height={24} />
+                        <p>Central Asia</p>
+                        <Switch height={24} />
+                        <p>South America</p>
+                        <Switch height={24} />
+                        <p>Western Asia</p>
+                        <Switch height={24} />
+                        <p>Southern Asia</p>
+                        <Switch height={24} />
+                        <p>Eastern Asia</p>
+                        <Switch height={24} />
+                        <p>South Eastern Asia</p>
+                        <Switch height={24} />
+                        <p>Europe</p>
+                        <Switch height={24} />
+                        <p>Oceania</p>
+                        <Switch height={24} />
+                        <p>North America</p>
+                        <Switch height={24} />
+                        <p>Africa</p>
+                        <Switch height={24} />
+                    </div>
                     <br></br>
                     <button onClick={()=>{save()}} className="button is-primary is-light" >Save Changes</button>
                 </div>
