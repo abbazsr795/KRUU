@@ -7,7 +7,7 @@ import { UserLogData } from "../States/UserRelated";
 import { Switch } from "evergreen-ui"
 import Select from 'react-select'
 
-const DashboardPage = () => {
+const FutureVaccinePage = () => {
 
     let navigate = useNavigate()
     let userd = useRecoilValue(UserLogData)
@@ -19,4 +19,4 @@ const DashboardPage = () => {
     )
 }
 
-export default DashboardPage
+export default FutureVaccinePage

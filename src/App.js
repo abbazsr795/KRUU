@@ -1,7 +1,7 @@
 import './App.css';
 import SignInPage from './Pages/SignInPage';
 import SignUpPage from './Pages/SignUpPage';
-import DashboardPage from './Pages/DashboardPage';
+import FutureVaccinePage from './Pages/FutureVaccinePage';
 import { Routes, Route } from 'react-router-dom'
 import NotFound from './Pages/404Page';
 import Home from './Pages/HomePage';
@@ -24,7 +24,7 @@ const App = () => {
       <Route    path='/'                                element={<Home/>}                 />
       <Route    path='/signin'                          element={<SignInPage/>}           />
       <Route    path='/signup'                          element={<SignUpPage/>}           />
-      <Route    path='/dashboard'                       element={<DashboardPage/>}        />
+      <Route    path='/dashboard'                       element={<FutureVaccinePage/>}        />
       <Route    path='/recommendedvaccine'              element={<RecommendedVaccinePage/>}/>
       <Route    path='/index/edit'                      element={<AddVaccinesforIndex/>}  />
       <Route    path='/vaccines/pastrecords'            element={<PastRecordsPage/>}      />
