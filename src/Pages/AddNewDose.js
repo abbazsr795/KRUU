@@ -19,6 +19,7 @@ let AddNewDose = ()=>{
     let [past,setpast] = useState(false)
     let [recurring,setreuccing] = useState(false)
     let [recurringnumber,setrreuccingnumber] = useState(0)
+    let [selected,setSelected] = useState('')
 
     let params = useParams();
     let nme = params.name
@@ -55,6 +56,11 @@ let AddNewDose = ()=>{
         {value:5, label:5}
     ]
 
+    let SelectedVal = (selectval)=>{
+        setSelected(selectval)
+        // alert(selectval.value)
+    }
+
     // useEffect(()=>{
     // },[])
 
@@ -62,7 +68,7 @@ let AddNewDose = ()=>{
         <h1>Vaccine {nme} </h1>
         <p>Taken Before?</p>
         <Switch checked={past} onChange={(e)=>{setpast(e.target.checked)}} height={24} />
-        {past ? <><h3>When did you take the vaccine?</h3><DatePicker onChange={ontookdate} value={Tookdate} /><h3>Recurring?</h3> <Switch checked={recurring} onChange={(e)=>{setreuccing(e.target.checked)}} height={24} /> {reccuring ? <div><Select options={BN} onChange={SelectedVal} /></div> : null} </> : null }
+        {past ? <><h3>When did you take the vaccine?</h3><DatePicker onChange={ontookdate} value={Tookdate} /><h3>Recurring?</h3> <Switch checked={recurring} onChange={(e)=>{setreuccing(e.target.checked)}} height={24} /> {recurring ? <div><Select options={BN} onChange={SelectedVal} /></div> : null} </> : null }
 
         <button onClick={()=>{addDose()}} >Add Dose</button>
     </div>
