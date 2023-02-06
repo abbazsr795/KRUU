@@ -15,33 +15,6 @@ const DashboardPage = () => {
     return(
         <div className="stack">
             <h1 className="massivetext heading1 horizontalcenter">Future vaccines</h1>
-            <div className="choosefutureregion  stack">
-                <h1>Planning to go somewhere?</h1>
-                <div className="flexiblerow">
-                    <p>Northern Asia</p>
-                    <Switch height={24} />
-                    <p>Central Asia</p>
-                    <Switch height={24} />
-                    <p>South America</p>
-                    <Switch height={24} />
-                    <p>Western Asia</p>
-                    <Switch height={24} />
-                    <p>Southern Asia</p>
-                    <Switch height={24} />
-                    <p>Eastern Asia</p>
-                    <Switch height={24} />
-                    <p>South Eastern Asia</p>
-                    <Switch height={24} />
-                    <p>Europe</p>
-                    <Switch height={24} />
-                    <p>Oceania</p>
-                    <Switch height={24} />
-                    <p>North America</p>
-                    <Switch height={24} />
-                    <p>Africa</p>
-                    <Switch height={24} />
-                </div>
-            </div>
         </div>
     )
 }
