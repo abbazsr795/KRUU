@@ -30,6 +30,15 @@ let AddNewDose = ()=>{
         g = Tookdate - current
         alert(g)
     }
+
+
+    let Datewithrecurringnumber =()=>{
+        return <div>
+            <DatePicker onChange={ontookdate} value={Tookdate} /> 
+            <Switch checked={recurring} onChange = {(e)=>{setreuccing(e.target.value)}} />
+        </div>
+    }
+
     let addDose = async ()=>{
         const docref = await addDoc(collection(db,"Dose"),{
             email: useremail.email,
@@ -40,8 +49,8 @@ let AddNewDose = ()=>{
         })
 
         if (docref!==""){
-            // alert('success') 
-            alert(Tookdate +" "+current +" "+ g+" ")
+            alert('success') 
+            // alert(Tookdate +" "+current +" "+ g+" ")
         }
     }
 
@@ -52,7 +61,7 @@ let AddNewDose = ()=>{
         <h1>Vaccine {nme} </h1>
         <p>Taken Before?</p>
         <Switch checked={past}  onChange={(e)=>{setpast(e.target.checked)}} height={24} />
-        {past ? <DatePicker onChange={ontookdate} value={Tookdate} /> : null }
+        {past ? <Datewithrecurringnumber/> : null }
 
         <button onClick={()=>{addDose()}} >Add Dose</button>
     </div>
