@@ -11,7 +11,7 @@ let PastRecords = ()=>{
     let getdata = async ()=>{
         let g = []
 
-        const q = query(collection(db, "Records"));
+        const q = query(collection(db, "Vaccines"));
 
         const querySnapshot = await getDocs(q);
             querySnapshot.forEach((doc) => {
@@ -23,13 +23,12 @@ let PastRecords = ()=>{
     }
     return(
             <div className="verticalcenter">
-                <button onClick={()=>{getdata()}} >Get Data</button>
+                <button onClick={()=>{getdata()}} className={"button is-primary is-light"} >Get Data</button>
                     {/*In this place, a list of all upcoming vaccines will come*/}
                 {
                     listofdata.map(p=>
                         <div className="card2 verticalcenter grow" onClick={()=>{navigate('/vaccines/adddose/'+p.name)}}>
-                            <h1> {p.name} </h1>
-                            <h2> {p.description} </h2>
+
                         </div>)
                 }
                 </div>

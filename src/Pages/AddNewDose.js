@@ -57,7 +57,7 @@ let AddNewDose = ()=>{
     ]
 
     let SelectedVal = (selectval)=>{
-        setSelected(selectval)
+        setrreuccingnumber(selectval)
         // alert(selectval.value)
     }
 
