@@ -24,7 +24,7 @@ const App = () => {
       <Route    path='/'                                element={<Home/>}                 />
       <Route    path='/signin'                          element={<SignInPage/>}           />
       <Route    path='/signup'                          element={<SignUpPage/>}           />
-      <Route    path='/dashboard'                       element={<FutureVaccinePage/>}        />
+      <Route    path='/futurevaccine'                   element={<FutureVaccinePage/>}        />
       <Route    path='/recommendedvaccine'              element={<RecommendedVaccinePage/>}/>
       <Route    path='/index/edit'                      element={<AddVaccinesforIndex/>}  />
       <Route    path='/vaccines/pastrecords'            element={<PastRecordsPage/>}      />

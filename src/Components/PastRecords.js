@@ -23,8 +23,7 @@ let PastRecords = ()=>{
     }
     return(
             <div className="verticalcenter">
-                <button onClick={()=>{getdata()}} >Get Data</button>
-                    {/*In this place, a list of all upcoming vaccines will come*/}
+                <div className="horizontalcenter"><button className="button1 grow" onClick={()=>{getdata()}} >Get Data</button></div>
                 {
                     listofdata.map(p=>
                         <div className="card2 verticalcenter grow" onClick={()=>{navigate('/vaccines/adddose/'+p.name)}}>

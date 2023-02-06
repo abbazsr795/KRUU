@@ -58,14 +58,31 @@ let AddNewDose = ()=>{
     // useEffect(()=>{
     // },[])
 
-    return <div>
-        <h1>Vaccine {nme} </h1>
-        <p>Taken Before?</p>
-        <Switch checked={past} onChange={(e)=>{setpast(e.target.checked)}} height={24} />
-        {past ? <><h3>When did you take the vaccine?</h3><DatePicker onChange={ontookdate} value={Tookdate} /><h3>Recurring?</h3> <Switch checked={recurring} onChange={(e)=>{setreuccing(e.target.checked)}} height={24} /> </> : null }
-
-        <button onClick={()=>{addDose()}} >Add Dose</button>
+    return(
+    <div className="stack">
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+            <div className="horizontalcenter">
+            <div className="card4 whiteback pa3">
+                <div className="horizontalcenter">
+                    <div className="stack">
+                        <h1>Vaccine {nme} </h1>
+                        <div className="row spacebetween">
+                            <p>Taken Before?</p>
+                            <Switch checked={past} onChange={(e)=>{setpast(e.target.checked)}} height={24} />
+                        </div>
+                        <br></br>
+                        {past ? <><h3>When did you take the vaccine?</h3><DatePicker onChange={ontookdate} value={Tookdate} /><br></br><div className="row spacebetween"><h3>Recurring?</h3> <Switch checked={recurring} onChange={(e)=>{setreuccing(e.target.checked)}} height={24} /></div> </> : null }
+                        <br></br>
+                        <button onClick={()=>{addDose()}} className="button is-primary is-light" >Add Dose</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    )
 
 }
 
