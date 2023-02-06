@@ -23,21 +23,14 @@ let AddNewDose = ()=>{
     let params = useParams();
     let nme = params.name
 
-    if (past!==false) {
-        ontookdate(new Date())
-    }
-    if (current!==Tookdate){
-        g = Tookdate - current
-        alert(g)
-    }
-
-
-    let Datewithrecurringnumber =()=>{
-        return <div>
-            <DatePicker onChange={ontookdate} value={Tookdate} /> 
-            <Switch checked={recurring} onChange = {(e)=>{setreuccing(e.target.value)}} />
-        </div>
-    }
+    // if (past!==false) {
+    //     ontookdate(new Date())
+    // }
+    // if (current!==Tookdate){
+    //     g = current- Tookdate
+    //     // console.log(g)
+    //     // alert(g)
+    // }
 
     let addDose = async ()=>{
         const docref = await addDoc(collection(db,"Dose"),{
@@ -54,14 +47,22 @@ let AddNewDose = ()=>{
         }
     }
 
-    useEffect(()=>{
-    },[])
+    let BN = [
+        {value:1, label:1},
+        {value:2, label:2},
+        {value:3, label:3},
+        {value:4, label:4},
+        {value:5, label:5}
+    ]
+
+    // useEffect(()=>{
+    // },[])
 
     return <div>
         <h1>Vaccine {nme} </h1>
         <p>Taken Before?</p>
-        <Switch checked={past}  onChange={(e)=>{setpast(e.target.checked)}} height={24} />
-        {past ? <Datewithrecurringnumber/> : null }
+        <Switch checked={past} onChange={(e)=>{setpast(e.target.checked)}} height={24} />
+        {past ? <><h3>When did you take the vaccine?</h3><DatePicker onChange={ontookdate} value={Tookdate} /><h3>Recurring?</h3> <Switch checked={recurring} onChange={(e)=>{setreuccing(e.target.checked)}} height={24} /> {reccuring ? <div><Select options={BN} onChange={SelectedVal} /></div> : null} </> : null }
 
         <button onClick={()=>{addDose()}} >Add Dose</button>
     </div>
