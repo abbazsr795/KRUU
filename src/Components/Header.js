@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Button } from "evergreen-ui";
 
 const Header = () => {
 
@@ -7,13 +8,16 @@ const Header = () => {
 
     return(
         <div className="horizontalcenter">
+            <br></br>
+            <br></br>
             <div className="header row spacebetween flexiblerow">
                 <div className="row centeralign">
                     <img className="logo" src="https://img.icons8.com/external-justicon-lineal-color-justicon/512/external-vaccine-science-justicon-lineal-color-justicon-1.png"/>
                     <h1 className="ariel textsize44">VACCINIC</h1>
                 </div>
                 <div className="row centeralign gap10">
-                    <a onClick={() => navigate('/signup')}><h1 className="ariel textsize44 smalltext btn99 whiteback">Sign Up</h1></a>
+                    <Button onClick={() => navigate('/vaccines')} className='button is-primary is-light is-large fit' >Vaccines</Button>
+                    <Button onClick={() => navigate('/signup')} className='button is-primary is-light is-large fit' >Sign Up</Button>
                 </div>
             </div>
         </div>

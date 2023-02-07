@@ -275,7 +275,7 @@ h1{
   padding: 7px;
 }
 .textsize44{
-  font-size: 2.5vw;
+  font-size: 20px;
 }
 .img99{
   border-radius: 15px;
@@ -300,4 +300,10 @@ h1{
 .bottompad0{
   padding-bottom: 0;
 }
-
+.btn37 :hover{
+  border-bottom: solid;
+  border-color: white;
+}
+.fit{
+  width: 100px;
+}
