@@ -26,14 +26,14 @@ let AddVaccinePage = ()=>{
 
     async function GetDropVals(){
         let h = []
-        const q = query(collection(db, "Vaccines"));
+        const q = query(collection(db, "Index"));
 
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
             let d = doc.data()
             let g = {
-                value:d.Name,
-                label:d.Name
+                value:d.name,
+                label:d.name
             }
             h.push(g)
   // doc.data() is never undefined for query doc snapshots
@@ -53,7 +53,7 @@ let AddVaccinePage = ()=>{
     let add = async ()=>{
         const docref = await addDoc(collection(db,"Vaccines"),{
             email: useremail.email,
-            vaccine: selected,
+            vaccine: selected.label,
             checked: checked,
             tookdate: Tookdate
         })

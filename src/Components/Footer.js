@@ -1,6 +1,8 @@
 import 'bulma/css/bulma.min.css';
 
-import { useRecoilValue } from "recoil";
+import { getAuth, signOut } from "firebase/auth";
+import { toaster } from 'evergreen-ui';
+import { useRecoilState, useRecoilValue, useResetRecoilState } from "recoil";
 import { RenderComp } from "../States/Misc";
 import { useNavigate } from "react-router-dom"
 import { useState } from 'react';
@@ -13,16 +15,29 @@ const Footer = () => {
 
     let navigate = useNavigate()
 
-    let userlogged = useRecoilValue(UserLog)
+    let [userlogged, setuserlogged] = useRecoilState(UserLog)
     let user = useRecoilValue(UserLogData)
 
-
+    const auth = getAuth();
+    
+    const logout = (auth)=>{
+        signOut(auth).then(() => {
+            // Sign-out successful.
+            toaster.success('Successfully logged out')
+            setuserlogged(false)
+            navigate('/')
+            
+        }).catch((error) => {
+            // An error happened.
+            alert("Not logged out. try again later "+error)
+        });
+    }
 
     return(
         <div className='stack'>
             <div className="footer">
-                <p><a className="notextdeco bold f3 " href="https://www.google.com/">Log Out</a></p> 
-                <a onClick={()=>{navigate('/')}}><p className='heading5 bold f3'>Home</p></a>
+                <p><button className="notextdeco bold f3 " onClick={()=>{logout(auth)}}>Log Out</button></p> 
+                <button onClick={()=>{navigate('/')}}>home</button>
                 { userlogged ? <h3 className='f3 bold'> {user.email} </h3> : <h3 className='f3 bold '>not logged in</h3> }
             </div>
         </div>

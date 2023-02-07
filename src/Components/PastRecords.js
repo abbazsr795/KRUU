@@ -27,7 +27,7 @@ let PastRecords = ()=>{
                 {
                     listofdata.map(p=>
                         <div className="card2 verticalcenter grow" onClick={()=>{navigate('/vaccines/adddose/'+p.name)}}>
-
+                            <p> {p.vaccine} </p>
                         </div>)
                 }
                 </div>
