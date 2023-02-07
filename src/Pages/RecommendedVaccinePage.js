@@ -1,3 +1,4 @@
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useRecoilValue } from "recoil";
 import { Link } from "react-router-dom";
@@ -7,14 +8,10 @@ import { UserLogData } from "../States/UserRelated";
 import { Switch } from "evergreen-ui"
 import Select from 'react-select'
 
-const DashboardPage = () => {
-
-    let navigate = useNavigate()
-    let userd = useRecoilValue(UserLogData)
-
+const RecommendedVaccinePage = () => {
     return(
         <div className="stack">
-            <h1 className="massivetext heading1 horizontalcenter">Future vaccines</h1>
+            <h1 className="massivetext heading1 horizontalcenter">Recommended vaccines</h1>
             <div className="choosefutureregion  stack">
                 <h1>Planning to go somewhere?</h1>
                 <div className="flexiblerow">
@@ -46,4 +43,4 @@ const DashboardPage = () => {
     )
 }
 
-export default DashboardPage
+export default RecommendedVaccinePage

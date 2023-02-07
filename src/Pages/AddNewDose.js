@@ -68,8 +68,10 @@ let AddNewDose = ()=>{
         <h1>Vaccine {nme} </h1>
         <p>Taken Before?</p>
         <Switch checked={past} onChange={(e)=>{setpast(e.target.checked)}} height={24} />
-        {past ? <><h3>When did you take the vaccine?</h3><DatePicker onChange={ontookdate} value={Tookdate} /><h3>Recurring?</h3> <Switch checked={recurring} onChange={(e)=>{setreuccing(e.target.checked)}} height={24} /> {recurring ? <div><Select options={BN} onChange={SelectedVal} /></div> : null} </> : null }
-
+        {past ? <><h3>When did you take the vaccine?</h3><DatePicker onChange={ontookdate} value={Tookdate} /> </> : null }
+        <h3>Recurring?</h3> 
+        <Switch checked={recurring} onChange={(e)=>{setreuccing(e.target.checked)}} height={24} />
+        {recurring ? <Select options={BN} onChange={SelectedVal} /> : null}
         <button onClick={()=>{addDose()}} >Add Dose</button>
     </div>
 
