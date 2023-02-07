@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 import Select from 'react-select'
 
 import { db } from "../FbStuff/fb"
-import { Switch } from "evergreen-ui"
+import { Switch, toaster } from "evergreen-ui"
 import { useRecoilValue } from "recoil"
 import { UserLogData } from "../States/UserRelated"
 
@@ -59,7 +59,7 @@ let AddVaccinePage = ()=>{
         })
 
         if (docref!==""){
-            alert('success') 
+            toaster.success('Success')
         }
     }
 
@@ -89,8 +89,8 @@ let AddVaccinePage = ()=>{
                 <Select options={values} onChange={SelectedVal} />
                 <br/>
                 <div className="row spacebetween">
-                    <p>When did you take the vaccine</p>
-                    <DatePicker onChange={ontookdate} value={Tookdate} />
+                    <p>When did you take the vaccine</p><DatePicker onChange={ontookdate} value={Tookdate} />
+                    
                 </div>
                 <br/>
                 <br/>

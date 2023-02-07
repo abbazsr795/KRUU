@@ -1,6 +1,6 @@
 import { db } from "../FbStuff/fb"
 
-import { Switch } from "evergreen-ui"
+import { Switch, toaster } from "evergreen-ui"
 import DatePicker from "react-date-picker"
 import { collection, getDocs, query, addDoc } from "firebase/firestore"
 import { useEffect, useState } from "react";
@@ -20,6 +20,9 @@ let AddNewDose = ()=>{
     let [recurring,setreuccing] = useState(false)
     let [recurringnumber,setrreuccingnumber] = useState(0)
     let [selected,setSelected] = useState('')
+    let [selecteddays,setSelecteddays] = useState('')
+
+    const [startDate, onChangeStart] = useState(new Date());
 
     let params = useParams();
     let nme = params.name
@@ -37,13 +40,13 @@ let AddNewDose = ()=>{
         const docref = await addDoc(collection(db,"Dose"),{
             email: useremail.email,
             vaccine: nme,
-            recurringnumber: recurringnumber,
+            recurringnumber: selected,
             recurringdays: g,
             tookdate: Tookdate
         })
 
         if (docref!==""){
-            alert('success') 
+            toaster.success('success')
             // alert(Tookdate +" "+current +" "+ g+" ")
         }
     }
@@ -60,6 +63,7 @@ let AddNewDose = ()=>{
         setrreuccingnumber(selectval)
         // alert(selectval.value)
     }
+
 
     // useEffect(()=>{
     // },[])
@@ -84,7 +88,7 @@ let AddNewDose = ()=>{
                         <br></br>
                         <p>Recurring?</p>
                         <Switch checked={recurring} onChange={(e)=>{setreuccing(e.target.checked)}} height={24} />
-                        {recurring ? <Select options={BN} onChange={SelectedVal} /> : null}
+                        {recurring ? <><Select options={BN} onChange={SelectedVal} /><p>Next Dose in? <DatePicker onChange={onChangeStart} value={startDate} /> </p></> : null}
                         <br></br>
                         <button onClick={()=>{addDose()}} className="button is-primary is-light" >Add Dose</button>
                     </div>

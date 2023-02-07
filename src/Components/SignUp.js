@@ -8,7 +8,7 @@ import { UserLogData } from "../States/UserRelated";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { UserLog } from "../States/UserRelated";
 import DatePicker from "react-date-picker"
-import { collection, getDocs, query, addDoc } from "firebase/firestore"
+import { collection,  addDoc } from "firebase/firestore"
 import { Switch } from "evergreen-ui"
 import { db } from "../FbStuff/fb";
 
@@ -32,6 +32,15 @@ const SignUp = () => {
 
     const [checked3, setChecked3]   = useState(false)
     const [checked31, setChecked31] = useState(false)
+    const [checked32, setChecked32] = useState(false)
+    const [checked33, setChecked33] = useState(false)
+    const [checked34, setChecked34] = useState(false)
+    const [checked35, setChecked35] = useState(false)
+    const [checked36, setChecked36] = useState(false)
+    const [checked37, setChecked37] = useState(false)
+    const [checked38, setChecked38] = useState(false)
+    const [checked39, setChecked39] = useState(false)
+    const [checked390, setChecked390] = useState(false)
 
     const [birthDate, onChangeBirth] = useState(new Date());
 
@@ -88,7 +97,16 @@ const SignUp = () => {
             gay: checked23,
 
             nasia: checked3,
-            namerica: checked31
+            casia: checked31,
+            samerica: checked32,
+            wasia: checked33,
+            sasia: checked34,
+            easia: checked35,
+            seasia: checked36,
+            europe: checked37,
+            oceania: checked38,
+            namerica: checked39,
+            africa: checked390
         })
 
         if (docref!==""){
@@ -127,28 +145,28 @@ const SignUp = () => {
                     <div className="row spacebetween"><h2>Male who have sex with males</h2><Switch checked={checked23}  onChange={(e)=>{setChecked23(e.target.checked)}} height={24} /></div>
                     <h1>Past travel destinations</h1>
                     <div className="flexiblerow">
-                        <p>Northern Asia</p>
-                        <Switch height={24} checked={checked3} onChange={(e)=>{setChecked3(e.target.value)}} />
+                    <p>Northern Asia</p>
+                        <Switch height={24} checked={checked3}  onChange={(e)=>{setChecked3(e.target.checked)}} />
                         <p>Central Asia</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked31}  onChange={(e)=>{setChecked31(e.target.checked)}} />
                         <p>South America</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked32}  onChange={(e)=>{setChecked32(e.target.checked)}} />
                         <p>Western Asia</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked33}  onChange={(e)=>{setChecked33(e.target.checked)}} />
                         <p>Southern Asia</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked34}  onChange={(e)=>{setChecked34(e.target.checked)}} />
                         <p>Eastern Asia</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked35}  onChange={(e)=>{setChecked35(e.target.checked)}} />
                         <p>South Eastern Asia</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked36}  onChange={(e)=>{setChecked36(e.target.checked)}} />
                         <p>Europe</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked37}  onChange={(e)=>{setChecked37(e.target.checked)}} />
                         <p>Oceania</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked38}  onChange={(e)=>{setChecked38(e.target.checked)}} />
                         <p>North America</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked39}  onChange={(e)=>{setChecked390(e.target.checked)}} />
                         <p>Africa</p>
-                        <Switch height={24} />
+                        <Switch height={24} checked={checked390}  onChange={(e)=>{setChecked390(e.target.checked)}} />
                     </div>
                     <br></br>
                     <br></br>
