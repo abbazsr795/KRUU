@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { db } from "../FbStuff/fb"
 import Select from 'react-select'
 import { collection, getDocs, query, addDoc } from "firebase/firestore"
+import { Switch } from "evergreen-ui"
 
 let AddVaccinesforIndex = ()=>{
 
@@ -10,6 +11,8 @@ let AddVaccinesforIndex = ()=>{
 
     let country_url = "https://restcountries.com/v2/all"
 
+    const [checked, setChecked] = useState(false)
+    const [checked1, setChecked1] = useState(false)
     let [vaccselected,setSelected] = useState('')
     let [vaccselected1,setSelected1] = useState('')
     let [vaccname,setVaccName] = useState('')
@@ -109,11 +112,12 @@ let AddVaccinesforIndex = ()=>{
                 <h3>URL</h3>
                 <input value={vaccurl} onChange={vaccurlset} />
                 <br/> 
-                <h3>Region</h3>
-                <Select options={values} onChange={SelectedVal} />
+                <Switch checked={checked} height={24} onChange={(e)=>{setChecked(e.target.checked)}}  />
+                {checked ? <><h3>Region</h3><Select options={values} onChange={SelectedVal} /></> : null }
                 <br/>
+                <Switch checked={checked1} height={24} onChange={(e)=>{setChecked1(e.target.checked)}}  />
                 <h3>Countries</h3>
-                <Select options={countries} onChange={SelectedVal1} />
+                {checked1 ? <Select options={countries} onChange={SelectedVal1} /> : null }
                 <br/>
                 <button onClick={()=>{add()}} >Add</button>
                 {/* <h1>This works</h1> */}
