@@ -5,6 +5,7 @@ import { collection, getDocs, query, addDoc } from "firebase/firestore"
 
 let AddVaccinesforIndex = ()=>{
 
+    let countries =[]
     let values = []
 
     let country_url = "https://restcountries.com/v2/all"
@@ -29,6 +30,11 @@ let AddVaccinesforIndex = ()=>{
         {value:"Africa", label:"Africa"},
         {value:"All", label:"All"}
     ]
+
+    let d = async () =>{
+        let f = await fetch(country_url).then((g)=>g.json())
+        console.log(f)
+    }
 
     let add = async ()=>{
         const docref = await addDoc(collection(db,"Index"),{
@@ -70,6 +76,10 @@ let AddVaccinesforIndex = ()=>{
     //       }
     //     console.log(values)
     // },[vaccregion, values])
+
+    useEffect(()=>{
+        d()
+    },[])
 
     return(
     <div className="stack">
