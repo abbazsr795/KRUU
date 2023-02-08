@@ -311,3 +311,8 @@ h1{
   border: none;
   background-color: white;
 }
+.footerbutton :hover{
+  border-bottom: solid;
+  border-color: #DFDFDF;
+  border-radius: 3px;
+}
