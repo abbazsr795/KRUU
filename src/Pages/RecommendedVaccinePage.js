@@ -9,10 +9,10 @@ import { Switch } from "evergreen-ui"
 import Select from 'react-select'
 
 const RecommendedVaccinePage = () => {
-    return(
+    return <>
         <div className="stack">
             <h1 className="massivetext heading1 horizontalcenter">Recommended vaccines</h1>
-            <div className="choosefutureregion  stack">
+            {/* <div className="choosefutureregion  stack">
                 <h1>Planning to go somewhere?</h1>
                 <div className="flexiblerow">
                     <p>Northern Asia</p>
@@ -37,10 +37,9 @@ const RecommendedVaccinePage = () => {
                     <Switch height={24} />
                     <p>Africa</p>
                     <Switch height={24} />
-                </div>
+                </div> */}
             </div>
-        </div>
-    )
+        </>
 }
 
 export default RecommendedVaccinePage
