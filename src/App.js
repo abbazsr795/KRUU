@@ -15,6 +15,8 @@ import MyVaccines from './Pages/MyVaccines';
 import AddVaccinesforIndex from './Pages/AddVaccines.forIndexPage';
 import AddNewDose from './Pages/AddNewDose';
 import RecommendedVaccinePage from './Pages/RecommendedVaccinePage';
+import byCountry from './Components/byCountry';
+import byMCondition from './Components/byMCondition';
 
 // import PastRecords from './Pages/PastRecordsPage';
 
@@ -35,6 +37,8 @@ const App = () => {
       <Route    path='/userinfo/edit'                   element={<EditUserInfo/>}         />
       <Route    path='/vaccines'                        element={<VaccinesPage/>}         />
       <Route    path='/myvaccines'                      element={<MyVaccines/>}           />
+      <Route    path='/bymcondition'                    element={<byMCondition/>}           />
+      <Route    path='/bycountry'                       element={<byCountry/>}           />
       <Route    path='*'                                element={<NotFound/> }            />
     </Routes>
   )

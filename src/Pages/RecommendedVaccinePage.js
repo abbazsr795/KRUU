@@ -9,37 +9,18 @@ import { Switch } from "evergreen-ui"
 import Select from 'react-select'
 
 const RecommendedVaccinePage = () => {
-    return <>
-        <div className="stack">
-            <h1 className="massivetext heading1 horizontalcenter">Recommended vaccines</h1>
-            {/* <div className="choosefutureregion  stack">
-                <h1>Planning to go somewhere?</h1>
-                <div className="flexiblerow">
-                    <p>Northern Asia</p>
-                    <Switch height={24} />
-                    <p>Central Asia</p>
-                    <Switch height={24} />
-                    <p>South America</p>
-                    <Switch height={24} />
-                    <p>Western Asia</p>
-                    <Switch height={24} />
-                    <p>Southern Asia</p>
-                    <Switch height={24} />
-                    <p>Eastern Asia</p>
-                    <Switch height={24} />
-                    <p>South Eastern Asia</p>
-                    <Switch height={24} />
-                    <p>Europe</p>
-                    <Switch height={24} />
-                    <p>Oceania</p>
-                    <Switch height={24} />
-                    <p>North America</p>
-                    <Switch height={24} />
-                    <p>Africa</p>
-                    <Switch height={24} />
-                </div> */}
+
+    let navigate = useNavigate()
+
+    return(
+        <div>
+            <h1 className="horizontalcenter massivetext heading1">Your Vaccines</h1>
+            <div className="horizontalcenter flexiblerow spacearound">
+                <button className="bigbtn grow" onClick={()=>{navigate('/bycountry')}} ><div className="verticalcenter card1 grow grad3"><div className="horizontalcenter"><img className="img2" src="https://img.icons8.com/dotty/512/country.png"/></div><h1 className="midtext">By Country</h1></div></button>
+                <button className="bigbtn grow" onClick={()=>{navigate('/bymcondition')}} ><div className="verticalcenter card1 grow "><div className="horizontalcenter"><img className="img2" src="https://img.icons8.com/ios/512/health-book.png"/></div><h1 className="midtext">By Condition</h1></div></button>
             </div>
-        </>
+        </div>
+    )
 }
 
 export default RecommendedVaccinePage
