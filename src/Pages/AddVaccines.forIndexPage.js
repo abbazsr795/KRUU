@@ -1,24 +1,34 @@
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import { db } from "../FbStuff/fb"
 import Select from 'react-select'
-import { collection, getDocs, query, addDoc } from "firebase/firestore"
+import { where,collection, getDocs, query, addDoc } from "firebase/firestore"
+
 import { Switch } from "evergreen-ui"
 
 let AddVaccinesforIndex = ()=>{
 
     let countries =[]
+
     let values = []
+
+    let mednumber = 0
 
     let country_url = "https://restcountries.com/v2/all"
 
     const [checked, setChecked] = useState(false)
     const [checked1, setChecked1] = useState(false)
+    const [checked2, setChecked2] = useState(false)
     let [vaccselected,setSelected] = useState('')
     let [vaccselected1,setSelected1] = useState('')
     let [vaccname,setVaccName] = useState('')
     let [vaccdesc,setVaccDesc] = useState('')
     let [vaccurl,setVaccurl] = useState('')
     let [vaccregion,setVaccregion] = useState([])
+
+    let [medrecord,setmedrecord] = useState([])
+
+    let [medinput,setmedinput] = useState('')
+    let [medselect,setmedselect] = useState('')
 
     values = [
         {value: "Northern Asia", label: ""},
@@ -35,6 +45,20 @@ let AddVaccinesforIndex = ()=>{
         {value:"All", label:"All"}
     ]
 
+    medselect = [
+        {value:'',label:''},
+        {value:'',label:''},
+    ]
+
+    let addmedicalcondition1 = ()=>{
+        let m = {
+            m: medinput,
+            ms: medselect
+        }
+        setmedrecord([...medrecord,m])
+        console.log(medrecord)
+    }
+
     let d = async () =>{
         let f = await fetch(country_url).then((g)=>g.json())
         for (let i = 0; i < f.length; i++) {
@@ -45,7 +69,6 @@ let AddVaccinesforIndex = ()=>{
             }
             countries.push(g)
         }
-        console.log(countries)
     }
 
     let add = async ()=>{
@@ -54,6 +77,7 @@ let AddVaccinesforIndex = ()=>{
             desc: vaccdesc,
             url:  vaccurl,
             vaccregion: vaccselected.label
+
         })
 
         if (docref!==""){
@@ -83,16 +107,6 @@ let AddVaccinesforIndex = ()=>{
         // alert(selectval.value)
     }
 
-    // useEffect(()=>{
-    //     for (let i = 0; i < vaccregion.length; i++) {
-    //         values.push({
-    //             value: vaccregion[i],
-    //             label: vaccregion[i]
-    //         })
-    //       }
-    //     console.log(values)
-    // },[vaccregion, values])
-
     useEffect(()=>{
         d()
     },[])
@@ -112,16 +126,21 @@ let AddVaccinesforIndex = ()=>{
                 <h3>URL</h3>
                 <input value={vaccurl} onChange={vaccurlset} />
                 <br/> 
+                <h3>Region</h3>
                 <Switch checked={checked} height={24} onChange={(e)=>{setChecked(e.target.checked)}}  />
-                {checked ? <><h3>Region</h3><Select options={values} onChange={SelectedVal} /></> : null }
+                {checked ? <><Select options={values} onChange={SelectedVal} /></> : null }
                 <br/>
-                <Switch checked={checked1} height={24} onChange={(e)=>{setChecked1(e.target.checked)}}  />
+                <h3>medical conditions</h3>
+                <Switch checked={checked2} height={24} onChange={(e)=>{setChecked2(e.target.checked)}}  />
+                {checked2 ? <div><Select options={values} onChange={SelectedVal} /><input className="inputbox" onChange={setmedinput} /><button onClick={()=>{addmedicalcondition1()}} className={'button is-primary is-light'} >Add</button></div> : null}
                 <h3>Countries</h3>
+                <Switch checked={checked1} height={24} onChange={(e)=>{setChecked1(e.target.checked)}}  />
                 {checked1 ? <Select options={countries} onChange={SelectedVal1} /> : null }
                 <br/>
                 <button onClick={()=>{add()}} >Add</button>
                 {/* <h1>This works</h1> */}
             </div>
+            {/* {medcondition.map(element=><div>{element}</div>)} */}
         </div>
     </div>
     )

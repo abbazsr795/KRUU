@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 const VaccinesPage = () => {
 
     let [listofdata, Setusestate] = useState([])
+    let f = []
     let navigate = useNavigate()
 
     let getdata = async ()=>{
@@ -27,9 +28,14 @@ const VaccinesPage = () => {
         getdata()
     },[])
 
+    let add = ()=>{
+        f.push('as')
+    }
+
     return(
         <div>
             <h1 className="heading1 pa2 massivetext horizontalcenter">A list of all the vaccines in our database</h1>
+            <button onClick={()=>{add()}} >d</button>
             <div className="flexiblerow">
                 {
                     listofdata.map(p=>
