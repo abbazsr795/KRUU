@@ -64,6 +64,7 @@
   padding: 0;
   padding-left: 10px;
   padding-right: 10px;
+  height: fit-content;
 }
 .notextdeco{
   text-decoration: none;
@@ -183,9 +184,11 @@
   min-height: 200px;
 }
 .card4{
-  width: 60ex;
+  width: 50ex;
   min-width: 40ex;
   border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .img2{
   height: 220px;
@@ -310,4 +313,9 @@ h1{
 .btn76{
   border: none;
   background-color: white;
+}
+.footerbutton :hover{
+  border-bottom: solid;
+  border-color: #DFDFDF;
+  border-radius: 3px;
 }

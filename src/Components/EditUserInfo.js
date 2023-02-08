@@ -143,29 +143,18 @@ let EditUserInfo = ()=>{
                     <div className="row spacebetween downborder"><h2>Alcoholic</h2><Switch checked={checked22}  onChange={(e)=>{setChecked22(e.target.checked)}} height={24} /></div>
                     <div className="row spacebetween"><h2>Male who have sex with males</h2><Switch checked={checked23}  onChange={(e)=>{setChecked23(e.target.checked)}} height={24} /></div>
                     <h1>Past travel destinations</h1>
-                    <div className="flexiblerow">
-                        <p>Northern Asia</p>
-                        <Switch height={24} checked={checked3}  onChange={(e)=>{setChecked3(e.target.checked)}} />
-                        <p>Central Asia</p>
-                        <Switch height={24} checked={checked31}  onChange={(e)=>{setChecked31(e.target.checked)}} />
-                        <p>South America</p>
-                        <Switch height={24} checked={checked32}  onChange={(e)=>{setChecked32(e.target.checked)}} />
-                        <p>Western Asia</p>
-                        <Switch height={24} checked={checked33}  onChange={(e)=>{setChecked33(e.target.checked)}} />
-                        <p>Southern Asia</p>
-                        <Switch height={24} checked={checked34}  onChange={(e)=>{setChecked34(e.target.checked)}} />
-                        <p>Eastern Asia</p>
-                        <Switch height={24} checked={checked35}  onChange={(e)=>{setChecked35(e.target.checked)}} />
-                        <p>South Eastern Asia</p>
-                        <Switch height={24} checked={checked36}  onChange={(e)=>{setChecked36(e.target.checked)}} />
-                        <p>Europe</p>
-                        <Switch height={24} checked={checked37}  onChange={(e)=>{setChecked37(e.target.checked)}} />
-                        <p>Oceania</p>
-                        <Switch height={24} checked={checked38}  onChange={(e)=>{setChecked38(e.target.checked)}} />
-                        <p>North America</p>
-                        <Switch height={24} checked={checked39}  onChange={(e)=>{setChecked39(e.target.checked)}} />
-                        <p>Africa</p>
-                        <Switch height={24} checked={checked390}  onChange={(e)=>{setChecked390(e.target.checked)}} />
+                    <div className="stack">
+                        <div className="row spacebetween downborder"><p>Northern Asia</p><Switch height={24} checked={checked3}  onChange={(e)=>{setChecked3(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Central Asia</p><Switch height={24} checked={checked31}  onChange={(e)=>{setChecked31(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>South America</p><Switch height={24} checked={checked32}  onChange={(e)=>{setChecked32(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Western Asia</p><Switch height={24} checked={checked33}  onChange={(e)=>{setChecked33(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Southern Asia</p><Switch height={24} checked={checked34}  onChange={(e)=>{setChecked34(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Eastern Asia</p><Switch height={24} checked={checked35}  onChange={(e)=>{setChecked35(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>South Eastern Asia</p><Switch height={24} checked={checked36}  onChange={(e)=>{setChecked36(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Europe</p><Switch height={24} checked={checked37}  onChange={(e)=>{setChecked37(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Oceania</p><Switch height={24} checked={checked38}  onChange={(e)=>{setChecked38(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>North America</p><Switch height={24} checked={checked39}  onChange={(e)=>{setChecked39(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Africa</p><Switch height={24} checked={checked390}  onChange={(e)=>{setChecked390(e.target.checked)}} /></div>                        
                     </div>
                     <br></br>
                     <button onClick={()=>{save()}} className="button is-primary is-light" >Save Changes</button>
