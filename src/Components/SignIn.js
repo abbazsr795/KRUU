@@ -49,6 +49,9 @@ const SignIn = () => {
 
     return <>
             <h1 className="horizontalcenter heading2">Sign In</h1>
+            <br></br>
+            <div className="horizontalcenter"><Link to='/signup' >Don't have an account?</Link></div>
+            <br></br>
             <div className="horizontalcenter">
                 <div className="emailandpasswordbox">
                     <div>
@@ -61,9 +64,6 @@ const SignIn = () => {
                     <div className="horizontalcenter">
                             <button className="button1 grow" onClick={()=>{letsignin(getAuth(),email,password)}} >Sign In</button>
                     </div>
-                    <br></br>
-                    <br></br>
-                        <Link to='/signup' >Don't have an account?</Link>
                     </div>
                 </div>
             </div>
