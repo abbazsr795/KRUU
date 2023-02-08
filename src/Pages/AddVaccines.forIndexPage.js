@@ -64,7 +64,7 @@ let AddVaccinesforIndex = ()=>{
     let addmedicalcondition1 = ()=>{
         let m = {
             m: medinput,
-            ms: medselect
+            ms: vaccselected2
         }
         setmedrecord([...medrecord,m])
         console.log(medrecord)
