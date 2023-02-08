@@ -8,6 +8,7 @@ import '../index.css'
 import 'tachyons'
 import { useSetRecoilState } from "recoil";
 import { UserLog, UserLogData } from "../States/UserRelated";
+import { toaster } from "evergreen-ui";
 
 const SignIn = () => {
 
@@ -41,7 +42,7 @@ const SignIn = () => {
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            alert(errorCode+" : "+errorMessage)
+            toaster.danger('Error  | '+errorCode+" : "+errorMessage)
         });
     }
 
