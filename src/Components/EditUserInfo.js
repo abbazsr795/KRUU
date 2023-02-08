@@ -48,8 +48,31 @@ let EditUserInfo = ()=>{
             querySnapshot.forEach((doc) => {
             // doc.data() is never undefined for query doc snapshots
             let d = doc.data()
-            g.push(d)
+            setChecked1(d.diabetes)
+            setChecked11(d.cld)
+            setChecked12(d.hld)
+            setChecked13(d.endstageRDorhd)
+            setChecked14(d.asplenia)
+            setChecked15(d.immunocompromised)
+            setChecked16(d.hivcd4countl15p)
+            setChecked17(d.hivcd4countg15p)
             
+            setChecked2(d.preg)
+            setChecked21(d.workhealthcare)
+            setChecked22(d.alcholic)
+            setChecked23(d.gay)
+
+            setChecked3(d.nasia)
+            setChecked31(d.casia)
+            setChecked32(d.samerica)
+            setChecked33(d.wasia)
+            setChecked34(d.sasia)
+            setChecked35(d.easia)
+            setChecked36(d.seasia)
+            setChecked37(d.europe)
+            setChecked38(d.oceania)
+            setChecked39(d.namerica)
+            setChecked390(d.africa)
         });
 
         if (g.length!==0) {
