@@ -164,7 +164,7 @@ const SignUp = () => {
                         <p>Oceania</p>
                         <Switch height={24} checked={checked38}  onChange={(e)=>{setChecked38(e.target.checked)}} />
                         <p>North America</p>
-                        <Switch height={24} checked={checked39}  onChange={(e)=>{setChecked390(e.target.checked)}} />
+                        <Switch height={24} checked={checked39}  onChange={(e)=>{setChecked39(e.target.checked)}} />
                         <p>Africa</p>
                         <Switch height={24} checked={checked390}  onChange={(e)=>{setChecked390(e.target.checked)}} />
                     </div>

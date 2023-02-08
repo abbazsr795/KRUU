@@ -37,6 +37,7 @@ const SignIn = () => {
                 email: user.email
             })
             setUserl(true)
+            toaster.notify('Logged in as :'+user.email)
             navigate('/')
         })
         .catch((error) => {

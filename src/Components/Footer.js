@@ -2,16 +2,14 @@ import 'bulma/css/bulma.min.css';
 
 import { getAuth, signOut } from "firebase/auth";
 import { toaster } from 'evergreen-ui';
-import { useRecoilState, useRecoilValue, useResetRecoilState } from "recoil";
-import { RenderComp } from "../States/Misc";
+import { useRecoilState, useRecoilValue } from "recoil";
 import { useNavigate } from "react-router-dom"
-import { useState } from 'react';
 import { UserLog, UserLogData  } from '../States/UserRelated';
 
 const Footer = () => {
 
 
-    let rend = useRecoilValue(RenderComp)
+    // let rend = useRecoilValue(RenderComp)
 
     let navigate = useNavigate()
 
