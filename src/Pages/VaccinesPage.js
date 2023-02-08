@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { db } from "../FbStuff/fb";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
@@ -23,10 +23,13 @@ const VaccinesPage = () => {
         Setusestate(g)
     }
 
+    useEffect(()=>{
+        getdata()
+    },[])
+
     return(
         <div>
             <h1 className="heading1 pa2 massivetext horizontalcenter">A list of all the vaccines in our database</h1>
-            <div className="horizontalcenter"><button className="button1 grow" onClick={()=>{getdata()}} >Get Vaccines</button></div>
             <div className="flexiblerow">
                 {
                     listofdata.map(p=>

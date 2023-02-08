@@ -1,7 +1,7 @@
 import DatePicker from "react-date-picker"
 // import { collection, getDocs, query, addDoc } from "firebase/firestore"
-import { collection, query, getDocs, where, doc  } from "firebase/firestore";
-import { Switch } from "evergreen-ui"
+import { collection, query, getDocs, where, doc, updateDoc } from "firebase/firestore";
+import { Switch, toaster } from "evergreen-ui"
 import { useEffect, useState } from "react";
 
 import { db } from "../FbStuff/fb";
@@ -11,6 +11,7 @@ import { UserLogData } from "../States/UserRelated";
 let EditUserInfo = ()=>{
 
     let email = useRecoilValue(UserLogData)
+    let [id,Setid] = useState('')
 
     const [checked1, setChecked1]   = useState(false)
     const [checked11, setChecked11] = useState(false)
@@ -42,13 +43,13 @@ let EditUserInfo = ()=>{
         let g = []
 
         const q = query(collection(db, "UserInfo"), where("email","==",email.email));
-        const q1 = doc(db,"UserInfo",email.email)
 
         const querySnapshot = await getDocs(q);
+
             querySnapshot.forEach((doc) => {
             // doc.data() is never undefined for query doc snapshots
             let d = doc.data()
-            console.log(d.diabetes)
+            Setid(doc.id)
             setChecked1(d.diabetes)
             setChecked11(d.cld)
             setChecked12(d.hld)
@@ -75,14 +76,39 @@ let EditUserInfo = ()=>{
             setChecked39(d.namerica)
             setChecked390(d.africa)
         });
-
     }
 
+    let save = async ()=>{
+        console.log(id)
+        await updateDoc(id, {
+            diabetes: checked1,
+            cld: checked11,
+            hld: checked12,
+            endstageRDorhd: checked13,
+            asplenia: checked14,
+            immunocompromised: checked15,
+            hivcd4countl15p: checked16,
+            hivcd4countg15p: checked17,
 
-    
+            preg: checked2,
+            workhealthcare: checked21,
+            alcholic: checked22,
+            gay: checked23,
 
-    let save = ()=>{
-        
+            nasia: checked3,
+            casia: checked31,
+            samerica: checked32,
+            wasia: checked33,
+            sasia: checked34,
+            easia: checked35,
+            seasia: checked36,
+            europe: checked37,
+            oceania: checked38,
+            namerica: checked39,
+            africa: checked390
+          }).then(
+            toaster.success('Success')
+          ).catch(console.log('asd'))
     }
 
     useEffect(()=>{

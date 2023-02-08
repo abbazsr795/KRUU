@@ -7,6 +7,8 @@ let AddVaccinesforIndex = ()=>{
 
     let values = []
 
+    let country_url = "https://restcountries.com/v2/all"
+
     let [vaccselected,setSelected] = useState('')
     let [vaccname,setVaccName] = useState('')
     let [vaccdesc,setVaccDesc] = useState('')
@@ -24,7 +26,8 @@ let AddVaccinesforIndex = ()=>{
         {value:"Europe", label:"Europe"},
         {value:"Oceania", label:"Oceania"},
         {value:"North America", label:"North America"},
-        {value:"Africa", label:"Africa"}
+        {value:"Africa", label:"Africa"},
+        {value:"All", label:"All"}
     ]
 
     let add = async ()=>{
