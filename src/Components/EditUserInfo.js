@@ -48,6 +48,7 @@ let EditUserInfo = ()=>{
             querySnapshot.forEach((doc) => {
             // doc.data() is never undefined for query doc snapshots
             let d = doc.data()
+            console.log(d.diabetes)
             setChecked1(d.diabetes)
             setChecked11(d.cld)
             setChecked12(d.hld)
@@ -75,42 +76,18 @@ let EditUserInfo = ()=>{
             setChecked390(d.africa)
         });
 
-        if (g.length!==0) {
-            setChecked1(g[0])
-            setChecked11(g[1])
-            setChecked12(g[2])
-            setChecked13(g[3])
-            setChecked14(g[4])
-            setChecked15(g[5])
-            setChecked16(g[6])
-            setChecked17(g[7])
-
-            setChecked2(g[8])
-            setChecked21(g[9])
-            setChecked22(g[10])
-            setChecked23(g[11])
-
-            setChecked3(g[12])
-            setChecked31(g[13])
-            setChecked32(g[14])
-            setChecked33(g[15])
-            setChecked34(g[16])
-            setChecked35(g[17])
-            setChecked36(g[18])
-            setChecked37(g[19])
-            setChecked38(g[20])
-            setChecked39(g[21])
-            setChecked390(g[22])
-        }
-        console.log(g)
     }
 
 
     
 
     let save = ()=>{
-        getuserinfo()
+        
     }
+
+    useEffect(()=>{
+        getuserinfo()
+    },[])
 
         
 
