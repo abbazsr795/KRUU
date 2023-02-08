@@ -120,6 +120,8 @@ const SignUp = () => {
         <h1 className="horizontalcenter heading2">Sign Up</h1>
         <div className="horizontalcenter">
             <div className="">
+                <div className="horizontalcenter"><Link to='/signin' >Already have an account?</Link></div>
+                <br></br>
                 <div className="card4 lightblue pa3 verticalcenter">
                     <h1>Email</h1>
                     <input className="inputbox" onChange={emailSet} />
@@ -174,9 +176,6 @@ const SignUp = () => {
                    <div className="horizontalcenter">
                         <button className="button1 grow" onClick={()=>{ handleuserCreation(getAuth(), email, password) }} >Sign Up</button>
                    </div>
-                   <br></br>
-                   <br></br>
-                   <div className="horizontalcenter"><Link to='/signin' >Already have an account?</Link></div>
                 </div>
             </div>
         </div>
