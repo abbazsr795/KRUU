@@ -174,13 +174,13 @@ const SignUp = () => {
                         <div className="row spacebetween downborder"><p>Oceania</p><Switch height={24} checked={checked38}  onChange={(e)=>{setChecked38(e.target.checked)}} /></div>
                         <div className="row spacebetween downborder"><p>Central Asia</p><Switch height={24} checked={checked39}  onChange={(e)=>{setChecked39(e.target.checked)}} /></div>
                         <div className="row spacebetween downborder"><p>Western Europe</p><Switch height={24} checked={checked390}  onChange={(e)=>{setChecked390(e.target.checked)}} /></div>
-                        <div className="row spacebetween downborder"><p>Southern Europe</p><Switch height={24} checked={checked390}  onChange={(e)=>{setChecked391(e.target.checked)}} /></div>
-                        <div className="row spacebetween downborder"><p>Western Asia</p><Switch height={24} checked={checked390}  onChange={(e)=>{setChecked392(e.target.checked)}} /></div>
-                        <div className="row spacebetween downborder"><p>Northern Africa</p><Switch height={24} checked={checked390}  onChange={(e)=>{setChecked393(e.target.checked)}} /></div>
-                        <div className="row spacebetween downborder"><p>Western Africa</p><Switch height={24} checked={checked390}  onChange={(e)=>{setChecked394(e.target.checked)}} /></div>
-                        <div className="row spacebetween downborder"><p>Middle Africa</p><Switch height={24} checked={checked390}  onChange={(e)=>{setChecked395(e.target.checked)}} /></div>
-                        <div className="row spacebetween downborder"><p>Eastern Africa</p><Switch height={24} checked={checked390}  onChange={(e)=>{setChecked396(e.target.checked)}} /></div>
-                        <div className="row spacebetween downborder"><p>Southern Africa</p><Switch height={24} checked={checked390}  onChange={(e)=>{setChecked397(e.target.checked)}} /></div>                        
+                        <div className="row spacebetween downborder"><p>Southern Europe</p><Switch height={24} checked={checked391}  onChange={(e)=>{setChecked391(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Western Asia</p><Switch height={24} checked={checked392}  onChange={(e)=>{setChecked392(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Northern Africa</p><Switch height={24} checked={checked393}  onChange={(e)=>{setChecked393(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Western Africa</p><Switch height={24} checked={checked394}  onChange={(e)=>{setChecked394(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Middle Africa</p><Switch height={24} checked={checked395}  onChange={(e)=>{setChecked395(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Eastern Africa</p><Switch height={24} checked={checked396}  onChange={(e)=>{setChecked396(e.target.checked)}} /></div>
+                        <div className="row spacebetween downborder"><p>Southern Africa</p><Switch height={24} checked={checked397}  onChange={(e)=>{setChecked397(e.target.checked)}} /></div>                        
                     </div>
                     <br></br>
                     <br></br>
