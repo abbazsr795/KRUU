@@ -3,7 +3,7 @@ import { db } from "../FbStuff/fb"
 import Select from 'react-select'
 import { where,collection, getDocs, query, addDoc } from "firebase/firestore"
 
-import { Switch } from "evergreen-ui"
+import { Switch, toaster } from "evergreen-ui"
 
 let AddVaccinesforIndex = ()=>{
 
@@ -67,13 +67,18 @@ let AddVaccinesforIndex = ()=>{
     ]
 
     let addmedicalcondition1 = ()=>{
-        if (medinput!==""){
-            let m = {
-                m: medinput,
-                ms: vaccselected2
-            }
+        let m = {
+            m: medinput,
+            ms: vaccselected2.label
+        }
+
+        if (medrecord.length!==0) {
             setmedrecord([...medrecord,m])
             console.log(medrecord)
+        }
+        else {
+            setmedrecord([m])
+            toaster.warning("Once more")
         }
     }
 
