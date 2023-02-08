@@ -20,6 +20,7 @@ let AddVaccinesforIndex = ()=>{
     const [checked2, setChecked2] = useState(false)
     let [vaccselected,setSelected] = useState('')
     let [vaccselected1,setSelected1] = useState('')
+    let [vaccselected2,setSelected2] = useState('')
     let [vaccname,setVaccName] = useState('')
     let [vaccdesc,setVaccDesc] = useState('')
     let [vaccurl,setVaccurl] = useState('')
@@ -93,6 +94,10 @@ let AddVaccinesforIndex = ()=>{
         setSelected1(selectval)
         // alert(selectval.value)
     }
+    let SelectedVal2 = (selectval)=>{
+        setSelected2(selectval)
+        // alert(selectval.value)
+    }
 
     let vaccnameset = (event)=>{
         setVaccName(event.target.value)
@@ -132,7 +137,7 @@ let AddVaccinesforIndex = ()=>{
                 <br/>
                 <h3>medical conditions</h3>
                 <Switch checked={checked2} height={24} onChange={(e)=>{setChecked2(e.target.checked)}}  />
-                {checked2 ? <div><Select options={values} onChange={SelectedVal} /><input className="inputbox" onChange={setmedinput} /><button onClick={()=>{addmedicalcondition1()}} className={'button is-primary is-light'} >Add</button></div> : null}
+                {checked2 ? <div><Select options={medselect} onChange={SelectedVal2} /><input className="inputbox" onChange={setmedinput} /><button onClick={()=>{addmedicalcondition1()}} className={'button is-primary is-light'} >Add</button></div> : null}
                 <h3>Countries</h3>
                 <Switch checked={checked1} height={24} onChange={(e)=>{setChecked1(e.target.checked)}}  />
                 {checked1 ? <Select options={countries} onChange={SelectedVal1} /> : null }
