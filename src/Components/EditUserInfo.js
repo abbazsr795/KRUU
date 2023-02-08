@@ -48,7 +48,14 @@ let EditUserInfo = ()=>{
             querySnapshot.forEach((doc) => {
             // doc.data() is never undefined for query doc snapshots
             let d = doc.data()
-            g.push(d)
+            setChecked1()
+            setChecked11(g[1])
+            setChecked12(g[2])
+            setChecked13(g[3])
+            setChecked14(g[4])
+            setChecked15(g[5])
+            setChecked16(g[6])
+            setChecked17(g[7])
             
         });
 
