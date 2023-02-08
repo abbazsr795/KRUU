@@ -36,9 +36,9 @@ const Footer = () => {
     return(
         <div className='stack'>
             <div className="footer">
-                <p><button className="notextdeco bold f3 " onClick={()=>{logout(auth)}}>Log Out</button></p> 
-                <button onClick={()=>{navigate('/')}}>home</button>
-                { userlogged ? <h3 className='f3 bold'> {user.email} </h3> : <h3 className='f3 bold '>not logged in</h3> }
+                <p><button className="btn76" onClick={()=>{logout(auth)}}><h1 className='f3'>Log Out</h1></button></p> 
+                <button className='btn76' onClick={()=>{navigate('/')}}><h1 className='f3'>Home</h1></button>
+                { userlogged ? <h1 className='f3'> {user.email} </h1> : <h1 className='f3'>not logged in</h1> }
             </div>
         </div>
     )

@@ -52,7 +52,7 @@
   border-radius: 3px;
 }
 .footer{
-
+  background-color: white;
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -306,4 +306,8 @@ h1{
 }
 .fit{
   width: 100px;
+}
+.btn76{
+  border: none;
+  background-color: white;
 }
