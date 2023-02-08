@@ -7,7 +7,7 @@ import { Switch, toaster } from "evergreen-ui"
 
 let AddVaccinesforIndex = ()=>{
 
-    let countries =[]
+    let [countries,setcountries] = useState([])
 
     let values = []
 
@@ -24,7 +24,6 @@ let AddVaccinesforIndex = ()=>{
     let [vaccname,setVaccName] = useState('')
     let [vaccdesc,setVaccDesc] = useState('')
     let [vaccurl,setVaccurl] = useState('')
-    let [vaccregion,setVaccregion] = useState([])
 
     let [medrecord,setmedrecord] = useState([])
 
@@ -75,23 +74,28 @@ let AddVaccinesforIndex = ()=>{
         if (medrecord.length!==0) {
             setmedrecord([...medrecord,m])
             console.log(medrecord)
+            toaster.notify("added entry")
         }
         else {
             setmedrecord([m])
             toaster.warning("Once more")
         }
+
+        
     }
 
     let d = async () =>{
+        let countries1 = []
         let f = await fetch(country_url).then((g)=>g.json())
         for (let i = 0; i < f.length; i++) {
             let name = f[i].name
             let g = {
-                value:name,
+                value:"country",
                 label:name
             }
-            countries.push(g)
+            countries1.push(g)
         }
+        setcountries(countries1)
     }
 
     let add = async ()=>{
@@ -99,12 +103,13 @@ let AddVaccinesforIndex = ()=>{
             name: vaccname,
             desc: vaccdesc,
             url:  vaccurl,
-            vaccregion: vaccselected.label
-
+            vaccregion: vaccselected.label,
+            vacccountry: vaccselected1.label,
+            medrecord: medrecord
         })
 
         if (docref!==""){
-            alert('success') 
+            toaster.success("Success")
         }
     }
 
@@ -136,6 +141,7 @@ let AddVaccinesforIndex = ()=>{
 
     useEffect(()=>{
         d()
+        
     },[])
 
     return(
@@ -164,7 +170,7 @@ let AddVaccinesforIndex = ()=>{
                 <Switch checked={checked1} height={24} onChange={(e)=>{setChecked1(e.target.checked)}}  />
                 {checked1 ? <Select options={countries} onChange={SelectedVal1} /> : null }
                 <br/>
-                <button onClick={()=>{add()}} >Add</button>
+                <button onClick={()=>{add()}} className={"button is-primary is-light"} >Add</button>
                 {/* <h1>This works</h1> */}
             </div>
             {/* {medcondition.map(element=><div>{element}</div>)} */}
