@@ -47,8 +47,18 @@ let AddVaccinesforIndex = ()=>{
     ]
 
     medselect = [
-        {value:'',label:''},
-        {value:'',label:''},
+        {value:'diabetes',label:'Diabetes'},
+        {value:'cld',label:'Chronic liver disease'},
+        {value:'hld',label:'Heart or lung disease'},
+        {value:'endstageRDorhd',label:'End-stage renal disease, or on hemodialysis'},
+        {value:'asplenia',label:'Asplenia, complement deficiencies'},
+        {value:'immunocompromised',label:'Immunocompromised (excluding HIV infection)'},
+        {value:'hivcd4countl15p',label:'HIV infection CD4 percentage and count <15% or <200 mm3'},
+        {value:'hivcd4countg15p',label:'HIV infection CD4 percentage and count ≥15% and ≥200 mm3'},
+        {value:'preg',label:'Pregnant'},
+        {value:'workhealthcare',label:'Work in healthcare'},
+        {value:'alcholic',label:'Alcoholic'},
+        {value:'gay',label:'Male who have sex with males'},
     ]
 
     let addmedicalcondition1 = ()=>{
