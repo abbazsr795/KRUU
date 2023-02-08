@@ -31,6 +31,11 @@ let AddVaccinesforIndex = ()=>{
     let [medinput,setmedinput] = useState('')
     let [medselect,setmedselect] = useState('')
 
+
+    let g = (e)=>{
+        setmedinput(e.target.value)
+    }
+
     values = [
         {value: "Northern Asia", label: ""},
         {value: "Central Asia", label: "Central Asia" },
@@ -62,12 +67,14 @@ let AddVaccinesforIndex = ()=>{
     ]
 
     let addmedicalcondition1 = ()=>{
-        let m = {
-            m: medinput,
-            ms: vaccselected2
+        if (medinput!==""){
+            let m = {
+                m: medinput,
+                ms: vaccselected2
+            }
+            setmedrecord([...medrecord,m])
+            console.log(medrecord)
         }
-        setmedrecord([...medrecord,m])
-        console.log(medrecord)
     }
 
     let d = async () =>{
@@ -147,7 +154,7 @@ let AddVaccinesforIndex = ()=>{
                 <br/>
                 <h3>medical conditions</h3>
                 <Switch checked={checked2} height={24} onChange={(e)=>{setChecked2(e.target.checked)}}  />
-                {checked2 ? <div><Select options={medselect} onChange={SelectedVal2} /><input className="inputbox" onChange={setmedinput} /><button onClick={()=>{addmedicalcondition1()}} className={'button is-primary is-light'} >Add</button></div> : null}
+                {checked2 ? <div><Select options={medselect} onChange={SelectedVal2} /><input className="inputbox" onChange={g} /><button onClick={()=>{addmedicalcondition1()}} className={'button is-primary is-light'} >Add</button></div> : null}
                 <h3>Countries</h3>
                 <Switch checked={checked1} height={24} onChange={(e)=>{setChecked1(e.target.checked)}}  />
                 {checked1 ? <Select options={countries} onChange={SelectedVal1} /> : null }
