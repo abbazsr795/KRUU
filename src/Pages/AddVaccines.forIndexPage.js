@@ -11,6 +11,7 @@ let AddVaccinesforIndex = ()=>{
     let country_url = "https://restcountries.com/v2/all"
 
     let [vaccselected,setSelected] = useState('')
+    let [vaccselected1,setSelected1] = useState('')
     let [vaccname,setVaccName] = useState('')
     let [vaccdesc,setVaccDesc] = useState('')
     let [vaccurl,setVaccurl] = useState('')
@@ -33,7 +34,15 @@ let AddVaccinesforIndex = ()=>{
 
     let d = async () =>{
         let f = await fetch(country_url).then((g)=>g.json())
-        console.log(f)
+        for (let i = 0; i < f.length; i++) {
+            let name = f[i].name
+            let g = {
+                value:name,
+                label:name
+            }
+            countries.push(g)
+        }
+        console.log(countries)
     }
 
     let add = async ()=>{
@@ -49,11 +58,15 @@ let AddVaccinesforIndex = ()=>{
         }
     }
 
-
     let SelectedVal = (selectval)=>{
         setSelected(selectval)
         // alert(selectval.value)
     }
+    let SelectedVal1 = (selectval)=>{
+        setSelected1(selectval)
+        // alert(selectval.value)
+    }
+
     let vaccnameset = (event)=>{
         setVaccName(event.target.value)
         // alert(selectval.value)
@@ -98,6 +111,9 @@ let AddVaccinesforIndex = ()=>{
                 <br/> 
                 <h3>Region</h3>
                 <Select options={values} onChange={SelectedVal} />
+                <br/>
+                <h3></h3>
+                <Select options={countries} onChange={SelectedVal1} />
                 <br/>
                 <button onClick={()=>{add()}} >Add</button>
                 {/* <h1>This works</h1> */}
