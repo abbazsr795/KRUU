@@ -5,9 +5,13 @@ import { collection, getDocs, query, addDoc } from "firebase/firestore"
 
 let AddVaccinesforIndex = ()=>{
 
+    let countries =[]
     let values = []
 
+    let country_url = "https://restcountries.com/v2/all"
+
     let [vaccselected,setSelected] = useState('')
+    let [vaccselected1,setSelected1] = useState('')
     let [vaccname,setVaccName] = useState('')
     let [vaccdesc,setVaccDesc] = useState('')
     let [vaccurl,setVaccurl] = useState('')
@@ -24,8 +28,22 @@ let AddVaccinesforIndex = ()=>{
         {value:"Europe", label:"Europe"},
         {value:"Oceania", label:"Oceania"},
         {value:"North America", label:"North America"},
-        {value:"Africa", label:"Africa"}
+        {value:"Africa", label:"Africa"},
+        {value:"All", label:"All"}
     ]
+
+    let d = async () =>{
+        let f = await fetch(country_url).then((g)=>g.json())
+        for (let i = 0; i < f.length; i++) {
+            let name = f[i].name
+            let g = {
+                value:name,
+                label:name
+            }
+            countries.push(g)
+        }
+        console.log(countries)
+    }
 
     let add = async ()=>{
         const docref = await addDoc(collection(db,"Index"),{
@@ -40,11 +58,15 @@ let AddVaccinesforIndex = ()=>{
         }
     }
 
-
     let SelectedVal = (selectval)=>{
         setSelected(selectval)
         // alert(selectval.value)
     }
+    let SelectedVal1 = (selectval)=>{
+        setSelected1(selectval)
+        // alert(selectval.value)
+    }
+
     let vaccnameset = (event)=>{
         setVaccName(event.target.value)
         // alert(selectval.value)
@@ -68,6 +90,10 @@ let AddVaccinesforIndex = ()=>{
     //     console.log(values)
     // },[vaccregion, values])
 
+    useEffect(()=>{
+        d()
+    },[])
+
     return(
     <div className="stack">
         <br></br>
@@ -85,6 +111,9 @@ let AddVaccinesforIndex = ()=>{
                 <br/> 
                 <h3>Region</h3>
                 <Select options={values} onChange={SelectedVal} />
+                <br/>
+                <h3>Countries</h3>
+                <Select options={countries} onChange={SelectedVal1} />
                 <br/>
                 <button onClick={()=>{add()}} >Add</button>
                 {/* <h1>This works</h1> */}
