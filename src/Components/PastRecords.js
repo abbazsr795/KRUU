@@ -1,17 +1,20 @@
-import { collection, query, getDocs } from "firebase/firestore";
+import { collection, query, getDocs, where } from "firebase/firestore";
 import { db } from "../FbStuff/fb";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useRecoilValue } from "recoil";
+import { UserLogData } from "../States/UserRelated";
 
 let PastRecords = ()=>{
 
     let [listofdata, Setusestate] = useState([])
     let navigate = useNavigate()
+    let useremail = useRecoilValue(UserLogData)
 
     let getdata = async ()=>{
         let g = []
 
-        const q = query(collection(db, "Vaccines"));
+        const q = query(collection(db, "Vaccines"), where("email","==",useremail.email));
 
         const querySnapshot = await getDocs(q);
             querySnapshot.forEach((doc) => {
@@ -21,9 +24,13 @@ let PastRecords = ()=>{
         });
         Setusestate(g)
     }
+
+    useEffect(()=>{
+        getdata()
+    },[])
+
     return(
             <div className="verticalcenter">
-                <div className="horizontalcenter"><button className="button1 grow" onClick={()=>{getdata()}} >Get Data</button></div>
                 {
                     listofdata.map(p=>
                         <div className="card2 verticalcenter grow" onClick={()=>{navigate('/vaccines/adddose/'+p.vaccine)}}>
