@@ -38,7 +38,7 @@ const FutureVaccinePage = () => {
 
     return <div className="stack">
             <h1 className="massivetext heading1 horizontalcenter">Future vaccines</h1>
-            <div className="horizontalcenter">
+            <div className="">
                 <div className="flexiblerow">
                     {
                             fdoses.map(p=>

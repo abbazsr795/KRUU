@@ -326,3 +326,7 @@ h1{
 .heightfit{
   height: fit-content;
 }
+.justifycenter{
+  display: flex;
+  justify-content: center;
+}
