@@ -30,12 +30,31 @@ let MoreData = ()=>{
     },[])
 
     return <>
-        <h1> {name} </h1>
-        {
-            data.map((item)=> <div>
-                {item.desc}
-            </div> )
-        }
+    <br></br>
+    <br></br>
+        <div className="horizontalcenter">
+            <div className="card2 pa4">
+                <h1> {name} </h1>
+                {
+                    data.map((item)=> <div>
+                        <h2 className="bold">Description</h2>
+                        {item.desc}
+                        <br></br>
+                        <br></br>
+                        <h2 className="bold">Side effects</h2>
+                        {item.sideeffects}
+                        <br></br>
+                        <br></br>
+                        <h2 className="bold">High risk induvidual</h2>
+                        {item.highriskindividuals}
+                        <br></br>
+                        <br></br>
+                        <h2 className="bold">What you have to be careful of</h2>
+                        {item.warning}
+                    </div> )
+                }
+            </div>
+        </div>
     </>
 
 }

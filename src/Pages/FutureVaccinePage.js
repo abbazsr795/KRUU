@@ -39,12 +39,12 @@ const FutureVaccinePage = () => {
     return <div className="stack">
             <h1 className="massivetext heading1 horizontalcenter">Future vaccines</h1>
             <div className="">
-                <div className="flexiblerow">
+                <div className="stack">
                     {
                             fdoses.map(p=>
-                                <div className="card2 verticalcenter grow" >
-                                    <h1>vaccine name {p.vaccine} </h1>
-                                    <h2>to be taken on : {p.getdata} </h2>
+                                <div className="cardh flexiblerow spacebetween" >
+                                    <h1 className="bold">Vaccine name {p.vaccine} </h1>
+                                    <h1>To be taken on : {p.getdata} </h1>
                                 </div>)
                     }
                 </div>

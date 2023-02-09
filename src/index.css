@@ -143,7 +143,8 @@
 }
 .card2{
   background-color: white;
-  width: 40ex;
+  width: 50ex;
+  min-width: 40ex;
   margin: 8px;
   border-radius: 15px;
   padding: 10px;
@@ -329,4 +330,12 @@ h1{
 .justifycenter{
   display: flex;
   justify-content: center;
+}
+.cardh{
+  background-color: white;
+  margin: 8px;
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }

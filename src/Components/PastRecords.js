@@ -31,12 +31,15 @@ let PastRecords = ()=>{
 
     return(
             <div className="verticalcenter">
-                {
-                    listofdata.map(p=>
-                        <div className="card2 verticalcenter grow" onClick={()=>{navigate('/vaccines/adddose/'+p.vaccine)}}>
-                            <p> {p.vaccine} </p>
-                        </div>)
-                }
+                <div className="horizontalcenter"><button className="button1 grow" onClick={()=>{getdata()}} >Get Data</button></div>
+                <div className="stack">
+                    {
+                           listofdata.map(p=>
+                            <div className="cardh spacebetween" onClick={()=>{navigate('/vaccines/adddose/'+p.vaccine)}}>
+                                <h1 className="bold"> {p.vaccine} </h1>
+                            </div>)
+                    }
+                </div>
                 </div>
     )
 }
