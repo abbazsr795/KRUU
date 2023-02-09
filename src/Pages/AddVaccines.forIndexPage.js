@@ -22,6 +22,7 @@ let AddVaccinesforIndex = ()=>{
     let [vaccdesc,setVaccDesc] = useState('')
 
     let [vaccabr,vaccabrset] = useState('')
+    let [typevac,typevacset] = useState('')
     let [vacccat,vacccatset] = useState('')
     let [vaccconditions,vaccconditionsset] = useState('')
     let [vacchighriskindividuals,vacchighriskindividualsset] = useState('')
@@ -105,6 +106,10 @@ let AddVaccinesforIndex = ()=>{
         setVaccDesc(event.target.value)
         // alert(selectval.value)
     }
+    let typevacSet = (event)=>{
+        typevacset(event.target.value)
+        // alert(selectval.value)
+    }
     let vaccAbrset = (event)=>{
         vaccabrset(event.target.value)
         // alert(selectval.value)
@@ -160,6 +165,8 @@ let AddVaccinesforIndex = ()=>{
                 <br/>
                 <h3>Side Effects</h3>
                 <textarea value={vaccsideeffects} onChange={vaccSideeffectsset} />
+                <h3>Types of Vaccine</h3>
+                <textarea value={typevac} onChange={typevacSet} />
                 <br/>
                 <br/>
                 <h3>High risk Individuals</h3>
@@ -168,7 +175,7 @@ let AddVaccinesforIndex = ()=>{
                 <h3>Regions</h3>
                 <textarea value={vaccregions} onChange={vaccRegionsset} />
                 <br/>
-                <h3>Becareful if you have</h3>
+                <h3>Be carefulif you are</h3>
                 <textarea value={vaccwarning} onChange={vaccWarningset} />
                 <br/>
 

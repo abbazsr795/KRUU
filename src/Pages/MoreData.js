@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "../FbStuff/fb";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 let MoreData = ()=>{
 
@@ -22,11 +22,20 @@ let MoreData = ()=>{
             g.push(d)
         });
         setdata(g)
+        console.log(data)
     }
 
+    useEffect(()=>{
+        getdata()
+    },[])
+
     return <>
-    <h1> {name} </h1>
-    <div> {data} </div>
+        <h1> {name} </h1>
+        {
+            data.map((item)=> <div>
+                {item.desc}
+            </div> )
+        }
     </>
 
 }
