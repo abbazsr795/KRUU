@@ -31,7 +31,6 @@ let PastRecords = ()=>{
 
     return(
             <div className="verticalcenter">
-                <div className="horizontalcenter"><button className="button1 grow" onClick={()=>{getdata()}} >Get Data</button></div>
                 <div className="stack">
                     {
                            listofdata.map(p=>
