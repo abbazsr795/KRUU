@@ -28,22 +28,43 @@ const VaccinesPage = () => {
         getdata()
     },[])
 
-    let add = ()=>{
-        f.push('as')
-    }
-
     return(
         <div>
             <h1 className="heading1 pa2 massivetext horizontalcenter">A list of all the vaccines in our database</h1>
-            <button onClick={()=>{add()}} >d</button>
             <div className="flexiblerow">
                 {
                     listofdata.map(p=>
-                        <div className="card2 verticalcenter grow" >
+                        <div className="card2 verticalcenter grow" onClick={()=>{navigate('/dose/'+p.name)}} >
                             <h1> {p.name} </h1>
                             <h2> {p.desc} </h2>
                         </div>)
                 }
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
             </div>
         </div>
     )

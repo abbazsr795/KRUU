@@ -17,6 +17,7 @@ import AddNewDose from './Pages/AddNewDose';
 import RecommendedVaccinePage from './Pages/RecommendedVaccinePage';
 import byCountry from './Components/byCountry';
 import byMCondition from './Components/byMCondition';
+import MoreData from './Pages/MoreData';
 
 // import PastRecords from './Pages/PastRecordsPage';
 
@@ -27,6 +28,7 @@ const App = () => {
       <Route    path='/signin'                          element={<SignInPage/>}           />
       <Route    path='/signup'                          element={<SignUpPage/>}           />
       <Route    path='/futurevaccine'                   element={<FutureVaccinePage/>}        />
+      <Route    path='/dose'                            element={<MoreData/>}        />
       <Route    path='/recommendedvaccine'              element={<RecommendedVaccinePage/>}/>
       <Route    path='/index/edit'                      element={<AddVaccinesforIndex/>}  />
       <Route    path='/vaccines/pastrecords'            element={<PastRecordsPage/>}      />

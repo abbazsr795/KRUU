@@ -161,8 +161,6 @@ let AddVaccinesforIndex = ()=>{
                 <h3>Side Effects</h3>
                 <textarea value={vaccsideeffects} onChange={vaccSideeffectsset} />
                 <br/>
-                <h3>Vaccine Conditions for adults</h3>
-                <textarea value={vaccconditions} onChange={vaccConditionsset} />
                 <br/>
                 <h3>High risk Individuals</h3>
                 <textarea value={vacchighriskindividuals} onChange={vaccHighriskindividualsset} />

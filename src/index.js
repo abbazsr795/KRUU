@@ -17,6 +17,12 @@ root.render(
     <RecoilRoot>
       <BrowserRouter>
         <App/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <Footer/>
       </BrowserRouter>
     </RecoilRoot>
