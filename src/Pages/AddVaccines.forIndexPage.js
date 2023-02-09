@@ -41,7 +41,8 @@ let AddVaccinesforIndex = ()=>{
             highriskindividuals: vacchighriskindividuals,
             regions: vaccregions,
             sideeffects: vaccsideeffects,
-            warning: vaccwarning
+            warning: vaccwarning,
+            vactype: typevac
         })
 
         if (docref!==""){
