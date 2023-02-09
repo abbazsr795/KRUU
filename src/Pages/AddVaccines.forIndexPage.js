@@ -3,32 +3,52 @@ import { db } from "../FbStuff/fb"
 import Select from 'react-select'
 import { where,collection, getDocs, query, addDoc } from "firebase/firestore"
 
-import { Switch } from "evergreen-ui"
+import { Switch, toaster } from "evergreen-ui"
 
 let AddVaccinesforIndex = ()=>{
 
-    let countries =[]
+    // let [countries,setcountries] = useState([])
 
     let values = []
 
-    let mednumber = 0
+    // let mednumber = 0
 
-    let country_url = "https://restcountries.com/v2/all"
+    // let country_url = "https://restcountries.com/v2/all"
 
-    const [checked, setChecked] = useState(false)
-    const [checked1, setChecked1] = useState(false)
-    const [checked2, setChecked2] = useState(false)
-    let [vaccselected,setSelected] = useState('')
-    let [vaccselected1,setSelected1] = useState('')
+    // let [vaccselected,setSelected] = useState('')
+    // let [vaccselected1,setSelected1] = useState('')
+    // let [vaccselected2,setSelected2] = useState('')
     let [vaccname,setVaccName] = useState('')
     let [vaccdesc,setVaccDesc] = useState('')
-    let [vaccurl,setVaccurl] = useState('')
-    let [vaccregion,setVaccregion] = useState([])
 
-    let [medrecord,setmedrecord] = useState([])
+    let [vaccabr,vaccabrset] = useState('')
+    let [typevac,typevacset] = useState('')
+    let [vacccat,vacccatset] = useState('')
+    let [vaccconditions,vaccconditionsset] = useState('')
+    let [vacchighriskindividuals,vacchighriskindividualsset] = useState('')
+    let [vaccregions,vaccregionsset] = useState('')
+    let [vaccsideeffects,vaccsideeffectsset] = useState('')
+    let [vaccwarning,vaccwarningset] = useState('')
 
-    let [medinput,setmedinput] = useState('')
-    let [medselect,setmedselect] = useState('')
+    let add = async ()=>{
+        
+        const docref = await addDoc(collection(db,"Index"),{
+            name: vaccname,
+            desc: vaccdesc,
+            abr: vaccabr,
+            cat: vacccat,
+            conditions:vaccconditions,
+            highriskindividuals: vacchighriskindividuals,
+            regions: vaccregions,
+            sideeffects: vaccsideeffects,
+            warning: vaccwarning
+        })
+
+        if (docref!==""){
+            toaster.success("Success")
+        }
+    }
+    
 
     values = [
         {value: "Northern Asia", label: ""},
@@ -45,7 +65,7 @@ let AddVaccinesforIndex = ()=>{
         {value:"All", label:"All"}
     ]
 
-    medselect = [
+    let medselect = [
         {value:'diabetes',label:'Diabetes'},
         {value:'cld',label:'Chronic liver disease'},
         {value:'hld',label:'Heart or lung disease'},
@@ -60,49 +80,23 @@ let AddVaccinesforIndex = ()=>{
         {value:'gay',label:'Male who have sex with males'},
     ]
 
-    let addmedicalcondition1 = ()=>{
-        let m = {
-            m: medinput,
-            ms: medselect
-        }
-        setmedrecord([...medrecord,m])
-        console.log(medrecord)
-    }
+   
 
-    let d = async () =>{
-        let f = await fetch(country_url).then((g)=>g.json())
-        for (let i = 0; i < f.length; i++) {
-            let name = f[i].name
-            let g = {
-                value:name,
-                label:name
-            }
-            countries.push(g)
-        }
-    }
+    // let d = async () =>{
+    //     let countries1 = []
+    //     let f = await fetch(country_url).then((g)=>g.json())
+    //     for (let i = 0; i < f.length; i++) {
+    //         let name = f[i].name
+    //         let g = {
+    //             value:"country",
+    //             label:name
+    //         }
+    //         countries1.push(g)
+    //     }
+    //     setcountries(countries1)
+    // }
 
-    let add = async ()=>{
-        const docref = await addDoc(collection(db,"Index"),{
-            name: vaccname,
-            desc: vaccdesc,
-            url:  vaccurl,
-            vaccregion: vaccselected.label
-
-        })
-
-        if (docref!==""){
-            alert('success') 
-        }
-    }
-
-    let SelectedVal = (selectval)=>{
-        setSelected(selectval)
-        // alert(selectval.value)
-    }
-    let SelectedVal1 = (selectval)=>{
-        setSelected1(selectval)
-        // alert(selectval.value)
-    }
+    
 
     let vaccnameset = (event)=>{
         setVaccName(event.target.value)
@@ -112,14 +106,44 @@ let AddVaccinesforIndex = ()=>{
         setVaccDesc(event.target.value)
         // alert(selectval.value)
     }
-    let vaccurlset = (event)=>{
-        setVaccurl(event.target.value)
+    let typevacSet = (event)=>{
+        typevacset(event.target.value)
+        // alert(selectval.value)
+    }
+    let vaccAbrset = (event)=>{
+        vaccabrset(event.target.value)
+        // alert(selectval.value)
+    }
+    let vaccCatset = (event)=>{
+        vacccatset(event.target.value)
+        // alert(selectval.value)
+    }
+    let vaccSideeffectsset = (event)=>{
+        vaccsideeffectsset(event.target.value)
+        // alert(selectval.value)
+    }
+    let vaccConditionsset = (event)=>{
+        vaccconditionsset(event.target.value)
+        // alert(selectval.value)
+    }
+    let vaccHighriskindividualsset = (event)=>{
+        vacchighriskindividualsset(event.target.value)
+        // alert(selectval.value)
+    }
+    let vaccRegionsset = (event)=>{
+        vaccregionsset(event.target.value)
+        // alert(selectval.value)
+    }
+    let vaccWarningset = (event)=>{
+        vaccwarningset(event.target.value)
         // alert(selectval.value)
     }
 
-    useEffect(()=>{
-        d()
-    },[])
+
+    // useEffect(()=>{
+    //     d()
+        
+    // },[])
 
     return(
     <div className="stack">
@@ -133,21 +157,30 @@ let AddVaccinesforIndex = ()=>{
                 <h3>Description</h3>
                 <textarea value={vaccdesc} onChange={vaccdescset} />
                 <br/>
-                <h3>URL</h3>
-                <input value={vaccurl} onChange={vaccurlset} />
-                <br/> 
-                <h3>Region</h3>
-                <Switch checked={checked} height={24} onChange={(e)=>{setChecked(e.target.checked)}}  />
-                {checked ? <><Select options={values} onChange={SelectedVal} /></> : null }
+                <h3>Abbreviation</h3>
+                <input value={vaccabr} onChange={vaccAbrset} />
                 <br/>
-                <h3>medical conditions</h3>
-                <Switch checked={checked2} height={24} onChange={(e)=>{setChecked2(e.target.checked)}}  />
-                {checked2 ? <div><Select options={values} onChange={SelectedVal} /><input className="inputbox" onChange={setmedinput} /><button onClick={()=>{addmedicalcondition1()}} className={'button is-primary is-light'} >Add</button></div> : null}
-                <h3>Countries</h3>
-                <Switch checked={checked1} height={24} onChange={(e)=>{setChecked1(e.target.checked)}}  />
-                {checked1 ? <Select options={countries} onChange={SelectedVal1} /> : null }
+                <h3>Category</h3>
+                <textarea value={vacccat} onChange={vaccCatset} />
                 <br/>
-                <button onClick={()=>{add()}} >Add</button>
+                <h3>Side Effects</h3>
+                <textarea value={vaccsideeffects} onChange={vaccSideeffectsset} />
+                <h3>Types of Vaccine</h3>
+                <textarea value={typevac} onChange={typevacSet} />
+                <br/>
+                <br/>
+                <h3>High risk Individuals</h3>
+                <textarea value={vacchighriskindividuals} onChange={vaccHighriskindividualsset} />
+                <br/>
+                <h3>Regions</h3>
+                <textarea value={vaccregions} onChange={vaccRegionsset} />
+                <br/>
+                <h3>Be carefulif you are</h3>
+                <textarea value={vaccwarning} onChange={vaccWarningset} />
+                <br/>
+
+
+                <button onClick={()=>{add()}} className={"button is-primary is-light"} >Add</button>
                 {/* <h1>This works</h1> */}
             </div>
             {/* {medcondition.map(element=><div>{element}</div>)} */}

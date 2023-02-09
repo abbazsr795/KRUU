@@ -62,7 +62,7 @@ const SignIn = () => {
                         <br></br>
                         <br></br>
                     <div className="horizontalcenter">
-                            <button className="button1 grow" onClick={()=>{letsignin(getAuth(),email,password)}} >Sign In</button>
+                            <button onClick={()=>{letsignin(getAuth(),email,password)}} className="button is-primary is-light" >Sign In</button>
                     </div>
                     </div>
                 </div>

@@ -89,7 +89,7 @@ let AddVaccinePage = ()=>{
                 <Select options={values} onChange={SelectedVal} />
                 <br/>
                 <div className="row spacebetween">
-                    <p>When did you take the vaccine</p><DatePicker onChange={ontookdate} value={Tookdate} />
+                    {/* <p>When did you take the vaccine</p><DatePicker onChange={ontookdate} value={Tookdate} /> */}
                     
                 </div>
                 <br/>
