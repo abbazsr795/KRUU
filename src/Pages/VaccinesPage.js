@@ -32,7 +32,6 @@ const VaccinesPage = () => {
     return(
         <div>
             <h1 className="heading1 pa2 massivetext horizontalcenter">A list of all the vaccines in our database</h1>
-<<<<<<< HEAD
             <div className="horizontalcenter">
                 <div className="flexiblerow">
                     <Alert intent="warning" title="Refere to CDC for more information" marginBottom={32} > <a href='https://www.cdc.gov/' >Click here</a> </Alert>
@@ -40,9 +39,6 @@ const VaccinesPage = () => {
                     <Alert intent="warning" title="Refere to Mayo Clinic for more information" marginBottom={32} > <a href='https://www.mayoclinic.org/' >Click here</a> </Alert>
                 </div>
             </div>
-            <button onClick={()=>{add()}} >d</button>
-=======
->>>>>>> 06b789233e5529082a4230f5e9c96dc4c93624d6
             <div className="flexiblerow">
                 {
                     listofdata.map(p=>
