@@ -7,10 +7,7 @@ import { useNavigate } from "react-router-dom"
 import { UserLog, UserLogData  } from '../States/UserRelated';
 
 const Footer = () => {
-
-
     // let rend = useRecoilValue(RenderComp)
-
     let navigate = useNavigate()
 
     let [userlogged, setuserlogged] = useRecoilState(UserLog)
