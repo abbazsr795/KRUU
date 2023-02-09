@@ -46,7 +46,7 @@ let AddVaccinesforIndex = ()=>{
         })
 
         if (docref!==""){
-            toaster.success("Success")
+            toaster.success("Success")  
         }
     }
     
