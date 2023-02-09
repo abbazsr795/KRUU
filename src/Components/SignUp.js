@@ -186,7 +186,7 @@ const SignUp = () => {
                     <br></br>
                     <br></br>
                    <div className="horizontalcenter">
-                        <button oonClick={()=>{ handleuserCreation(getAuth(), email, password) }} className="button is-primary is-light" >Sign Up</button>
+                        <button onClick={()=>{ handleuserCreation(getAuth(), email, password) }} className="button is-primary is-light" >Sign Up</button>
                    </div>
                 </div>
             </div>

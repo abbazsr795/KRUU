@@ -347,3 +347,8 @@ h1{
   margin-left: 20px;
   margin-right: 20px;
 }
+.textcard999{
+  border-radius: 7px;
+  width: fit-content;
+  padding: 5px;
+}

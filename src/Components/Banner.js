@@ -10,7 +10,7 @@ const Banner = () => {
             <br></br>
             <div className="horizontalcenter ">
                 <div className="stack">
-                    <div className="has-text-centered"><h1 className="bold ultramassivetext roboto">Welcome to <p className="lobster">VACCINIC</p>An all in tool to manage your vaccines</h1></div>
+                    <div className="has-text-centered"><h1 className="bold ultramassivetext roboto">Welcome to <p className="lobster">VACCINIC</p>An all in one tool to manage your vaccines</h1></div>
                 </div>
             </div>
             <h1 className="heading2 horizontalcenter has-text-centered">With Vaccinic you can</h1>
