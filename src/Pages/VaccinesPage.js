@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../FbStuff/fb";
 import { collection, query, where, getDocs } from "firebase/firestore";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Alert } from "evergreen-ui";
 
 
 const VaccinesPage = () => {
@@ -35,6 +36,13 @@ const VaccinesPage = () => {
     return(
         <div>
             <h1 className="heading1 pa2 massivetext horizontalcenter">A list of all the vaccines in our database</h1>
+            <div className="horizontalcenter">
+                <div className="flexiblerow">
+                    <Alert intent="warning" title="Refere to CDC for more information" marginBottom={32} > <a href='https://www.cdc.gov/' >Click here</a> </Alert>
+                    <Alert intent="warning" title="Refere to NHS for more information" marginBottom={32} > <a href='https://www.nhs.uk/' >Click here</a> </Alert>
+                    <Alert intent="warning" title="Refere to Mayo Clinic for more information" marginBottom={32} > <a href='https://www.mayoclinic.org/' >Click here</a> </Alert>
+                </div>
+            </div>
             <button onClick={()=>{add()}} >d</button>
             <div className="flexiblerow">
                 {
