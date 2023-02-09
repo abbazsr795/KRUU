@@ -42,7 +42,7 @@ const VaccinesPage = () => {
             <div className="flexiblerow">
                 {
                     listofdata.map(p=>
-                        <div className="card21 verticalcenter grow" onClick={()=>{navigate('/editvaccine/'+p.name)}} >
+                        <div className="card21 verticalcenter grow" onClick={()=>{navigate('/moreinfo/'+p.name)}} >
                             <h1> {p.name} </h1>
                         </div>)
                 }

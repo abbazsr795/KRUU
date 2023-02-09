@@ -18,7 +18,6 @@ let PastRecords = ()=>{
 
         const querySnapshot = await getDocs(q);
             querySnapshot.forEach((doc) => {
-            // doc.data() is never undefined for query doc snapshots
             let d = doc.data()
             g.push(d)
         });
@@ -34,7 +33,7 @@ let PastRecords = ()=>{
                 <div className="stack">
                     {
                            listofdata.map(p=>
-                            <div className="cardh spacebetween" onClick={()=>{navigate('/vaccines/adddose/'+p.vaccine)}}>
+                            <div className="cardh spacebetween" onClick={()=>{navigate('/editvaccine/'+p.vaccine)}}>
                                 <h1 className="bold"> {p.vaccine} </h1>
                             </div>)
                     }
