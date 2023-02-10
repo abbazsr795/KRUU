@@ -24,6 +24,7 @@ import Condition from './Pages/Condition';
 import { UserLog } from './States/UserRelated';
 import { RecoilValue, useRecoilValue } from 'recoil';
 import { TSideSheet } from './Components/SideSheet';
+import { Underdev } from './Components/underdev';
 
 
 // import PastRecords from './Pages/PastRecordsPage';
@@ -50,10 +51,11 @@ const App = () => {
       <Route    path='/vaccines'                        element={<VaccinesPage/>}         />
       <Route    path='/myvaccines'                      element={<MyVaccines/>}           />
       <Route    path='/byage'                           element={<Age/>}                  />
-      <Route    path='/bycondition'                     element={<Condition/>}                  />
+      <Route    path='/bycondition'                     element={<Condition/>}            />
       <Route    path='/bycountry'                       element={<Countries/>}            /> 
       <Route    path='/bycountry/:name/:reg/:'          element={<Countries/>}            /> 
       <Route    path='*'                                element={<NotFound/> }            />
+      <Route    path='/underdev'                        element={<Underdev/>}            />
     </Routes>
   </>
 }

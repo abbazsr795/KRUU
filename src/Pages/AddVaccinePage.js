@@ -81,6 +81,11 @@ let AddVaccinePage = ()=>{
     <div className="stack">
         <br/>
         <div className="horizontalcenter">
+            <div className="flexiblerow">
+                <Alert intent="warning" title="To add a dose" marginBottom={32} > <a href='/vaccines/pastrecords' >Click here</a> </Alert>
+            </div>
+        </div>
+        <div className="horizontalcenter">
             <div className="card4 lightblue pa4" >
                 <h1>
                     Add Vaccine
