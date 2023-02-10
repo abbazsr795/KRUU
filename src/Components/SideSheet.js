@@ -1,8 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { SideSheet, Pane, Heading, Card, Button } from 'evergreen-ui'
+import { useNavigate } from 'react-router-dom'
 
 export function TSideSheet() {
+
+    let navigate = useNavigate()
+    
     const [isShown, setIsShown] = React.useState(false)
   
     return (
@@ -22,12 +26,12 @@ export function TSideSheet() {
             </Pane>
           </Pane>
           <Pane flex="1" overflowY="scroll" background="tint1" padding={16}>
-            <h1 className='greyhover'>Home</h1>
-            <h1>Vaccine Index</h1>
-            <h1>My Doses</h1>
-            <h1>Recommended Vaccines</h1>
-            <h1>Current Vaccines</h1>
-            <h1>Add Vaccines</h1>
+            <a onClick={() => {navigate("/")}}><h1>Home</h1></a>
+            <a onClick={() => {navigate('/vaccines')}}><h1>Vaccine Index</h1></a>
+            <a onClick={() => {navigate("/futurevaccine")}}><h1>My Doses</h1></a>
+            <a onClick={() => {navigate('/recommendedvaccine')}}><h1>Recommended Vaccines</h1></a>
+            <a onClick={() => {navigate('/vaccines/pastrecords')}}><h1>Current Vaccines</h1></a>
+            <a onClick={() => {navigate('/vaccines/addvaccine')}}><h1>Add Vaccines</h1></a>
           </Pane>
         </SideSheet>
         <Button onClick={() => setIsShown(true)}><img className='icon' src='https://img.icons8.com/ios-filled/512/stripped-patterns.png'/></Button>
