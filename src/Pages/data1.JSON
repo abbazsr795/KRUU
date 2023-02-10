@@ -1,0 +1,50 @@
+[
+   {
+      "VaccineName" : ["Influenza inactivated (IIV4) or Influenza recombinant (RIV4)"], 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" : ["Influenza live, attenuated (LAIV4)"], 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" : ["Tetanus, diphtheria, pertussis (Tdap or Td)"], 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" : ["Measles, Mumps & Rubella(MMR)"], 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" : ["Varicella(VAR)"], 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" : ["Zoster recombinant(RZV)"], 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" : ["Human papillomavirus (HPV)"], 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" : ["Pneumococcal (PCV15, PCV20, PPSV23)"], 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" : ["Hepatitis A(Hep A)"], 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" : ["Hepatitis B(Hep A)"], 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" :"Meningococcal serogroups A, C, W, Y(MenACWY)", 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   },
+   {
+      "VaccineName" : "Meningococcal B (MenB)", 
+      "Age" : ["19 to 26", "","","27 to 49", "","","50 to 64", "","",">65","",""]
+   }
+]
