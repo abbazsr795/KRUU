@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Footer from './Components/Footer';
-
+import { TSideSheet } from './Components/SideSheet';
 
 // import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';

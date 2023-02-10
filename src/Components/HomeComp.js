@@ -62,9 +62,10 @@ let HomeComp = ()=>{
                             <h1 className="ultrasmalltext"> {user.email} </h1>
                             {usernamebool? <h2>user.username</h2> : null}
                             <h3></h3>
+                            <button  className="button btn43 is-primary is-light" onClick={()=>{navigate('/userinfo/edit')}} >Edit</button>
                         </div>
                     </div>
-                    <div className="alignitems-center"><button className="button is-primary is-light" onClick={()=>{navigate('/userinfo/edit')}} >Edit</button></div>
+                    <div className="alignitems-center"></div>
                 </div>
             </div>
             <br></br>

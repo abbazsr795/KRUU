@@ -34,19 +34,28 @@ let Conditions = ()=>{
         {
             data.map(d=><div>
                 <p> {d.Vaccinename} </p>
-                <p> {d.preg} </p>
-                <p> {d.immunocompromised} </p>
-                <p> {d.hivcd4countl15p} </p>
-                <p> {d.hivcd4countg15p} </p>
-                <p> {d.asplenia} </p>
-                <p> {d.endstageRDorhd} </p>
-                <p> {d.Heartorlungdisease} </p>
-                <p> {d.Chronicliverdiease} </p>
-                <p> {d.diabetes} </p>
-                <p> {d.workhealthcare} </p>
-                <p> {d.gay} </p>
+                <p>Vaccine </p><p style={{color:d.preg[1]}} > {d.preg[0]} </p>
+                <p>preg </p><p style={{color:d.immunocompromised[1]}} > {d.immunocompromised[0]} </p>
+                <p></p><p style={{color:d.hivcd4countl15p[1]}} > {d.hivcd4countl15p[0]} </p>
+                <p></p><p style={{color:d.hivcd4countg15p[1]}} > {d.hivcd4countg15p[0]} </p>
+                <p></p><p style={{color:d.asplenia[1]}} > {d.asplenia[0]} </p>
+                <p></p><p style={{color:d.endstageRDorhd[1]}} > {d.endstageRDorhd[0]} </p>
+                <p></p><p style={{color:d.Heartorlungdisease[1]}} > {d.Heartorlungdisease[0]} </p>
+                <p></p><p style={{color:d.Chronicliverdiease[1]}} > {d.Chronicliverdiease[0]} </p>
+                <p></p><p style={{color:d.diabetes[1]}} > {d.diabetes[0]} </p>
+                <p></p><p style={{color:d.workhealthcare[1]}} > {d.workhealthcare[0]} </p>
+                <p></p><p style={{color:d.gay[1]}} > {d.gay[0]} </p>
             </div>)
         }
+    <h1 className="massivetext heading1 horizontalcenter">By Conditions</h1>
+    <br></br>
+    <br></br>
+    <div className="flexiblerow">
+        <h1>Recommended vaccination for adults who meet age requirement, lack documentation of vaccination, or lack evidence of past infection</h1>
+        <h1>Recommended vaccination for adults with an additional risk factor or another indication</h1>
+        <h1>Recommended vaccination based on shared clinical decision-making</h1>
+        <h1>No recommendation/Not applicable</h1>
+    </div>
     </>
 
 }
