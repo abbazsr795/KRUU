@@ -28,16 +28,6 @@ let MoreData = ()=>{
     useEffect(()=>{
         getdata()
     },[])
-    
-    let getPoints = (str) => {
-        for (let i = 0; i < str.length + 1; i++) {
-            let j = 0
-            if (str.slice(i) == "-"){
-                console.log(str.slice(j,i))
-                j = i + 1
-            }
-          }
-    }
 
     return <>
     <br></br>
