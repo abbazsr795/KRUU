@@ -15,7 +15,7 @@ let Countries = ()=>{
                     <div className="card2">
                         <h1>Region : </h1>
                         <p> {d.Region} </p>
-                        <h1>Routine Vaccines</h1>
+                        <h1>Routine Vaccines :</h1>
                         <p> {Constant_RoutineVaccine.map(f=><div>{f}</div>)} </p>
                     </div>
                 </Pane>} >
