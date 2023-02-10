@@ -434,3 +434,10 @@ h1{
 .grey{
   background-color: #E2E2E2;
 }
+.cardfit{
+  background-color: white;
+  width: fit-content;
+  margin: 8px;
+  border-radius: 15px;
+  padding: 10px;
+}
