@@ -22,7 +22,12 @@ export function TSideSheet() {
         >
           <Pane zIndex={1} flexShrink={0} elevation={0} backgroundColor="white">
             <Pane padding={16}>
-              <Heading size={600}>VACCINIC</Heading>
+              <Heading size={600}>
+                <div className='row'>
+                    <img className='icon3' src='https://img.icons8.com/external-justicon-lineal-color-justicon/512/external-vaccine-science-justicon-lineal-color-justicon-1.png'/>
+                    <h1>VACCINIC</h1>
+                </div>
+              </Heading>
             </Pane>
           </Pane>
           <Pane flex="1" overflowY="scroll" background="tint1" padding={16}>
