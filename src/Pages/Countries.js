@@ -11,12 +11,14 @@ let Countries = ()=>{
         <h1 className="massivetext heading1 horizontalcenter">By Countries</h1>
         <div className="flexiblerow justifycontent-center">
             {
-                countries.map(d=> <Popover content={<Pane width={300} height={400} >
+                countries.map(d=> <Popover content={<Pane width={300} height={700} >
                     <div className="card2">
                         <h1>Region : </h1>
                         <p> {d.Region} </p>
                         <h1>Routine Vaccines</h1>
                         <p> {Constant_RoutineVaccine.map(f=><div>{f}</div>)} </p>
+                        {/* <p> {d.RecommendedVaccines.map(o=><div> {o} </div>)} </p> */}
+                        <p> {d.RecommendedVaccines.map(o=><p> {o} </p>)} </p>
                     </div>
                 </Pane>} >
                     <div> <div className="card21 horizontalcenter grow"> {<h1>{d.Country}</h1>} </div> </div>

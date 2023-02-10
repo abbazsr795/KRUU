@@ -1,21 +1,30 @@
 import DatePicker from "react-date-picker"
 // import { collection, getDocs, query, addDoc } from "firebase/firestore"
 import { collection, query, getDocs, where, doc, updateDoc } from "firebase/firestore";
+import { getAuth, updateProfile } from "firebase/auth";
+
 import { Switch, toaster } from "evergreen-ui"
 import { useEffect, useState } from "react";
 
 import { db } from "../FbStuff/fb";
-import { useRecoilValue } from "recoil";
+import { useRecoilValue, useRecoilState } from "recoil";
 import { UserLogData } from "../States/UserRelated";
+
+
 
 let EditUserInfo = ()=>{
 
+    let [userstate,setuserstate] = useRecoilState(UserLogData)
+
     let [usernames,setusername1] = useState('')
-    let [usernames1,setusernam1] = useState('')
 
     let user = useRecoilValue(UserLogData)
-    let [username,usernameset] = useState(false)
+    let [username,usernameset] = useState(true)
     let [id,Setid] = useState('')
+
+
+
+
 
     const [checked1, setChecked1]   = useState(false)
     const [checked11, setChecked11] = useState(false)
@@ -90,7 +99,31 @@ let EditUserInfo = ()=>{
         });
     }
 
-    let save = async ()=>{
+    let updateusername = ()=>{
+        const auth = getAuth();
+        updateProfile(auth.currentUser, {
+        displayName: usernames, photoURL: "https://example.com/jane-q-user/profile.jpg", email:userstate.email
+        }).then(() => {
+        // Profile updated!
+            toaster.success("profile has been updated")
+            const user = auth.currentUser;
+            if (user){
+                toaster.notify(user.displayName)
+                setuserstate({
+                    username: user.displayName,
+                    email: userstate.email
+                })
+            }
+        // ...
+        }).catch((error) => {
+        // An error occurred
+        // ...
+            toaster.danger("Error "+error)
+        });
+    }
+
+    let save = ()=>{
+        updateusername()
         // console.log(id)
         // await updateDoc(id, {
         //     diabetes: checked1,
@@ -131,12 +164,16 @@ let EditUserInfo = ()=>{
 
     }
 
+    let Setusername = (event)=>{
+        setusername1(event.target.value)
+    }
+
     
 
     useEffect(()=>{
         getuserinfo()
-        if (user.username!==""){
-            usernameset(true)
+        if (user.username===""){
+            usernameset(false)
         }
     },[])
 
@@ -151,7 +188,7 @@ let EditUserInfo = ()=>{
             <div className="horizontalcenter">
                 <div className="card2 lightblue pa3 verticalcenter">
                     {username ? <h1> {user.username} </h1> : <h1>User name is not provided</h1> }
-                    <input type="text" placeholder="User name" onChange={setusername1} value={usernames} />
+                    <input type="text" placeholder="User name" onChange={Setusername} value={usernames} />
                     <br/>
                     <div className="row spacebetween"><h3>Date of birth</h3><DatePicker onChange={onChangeBirth} value={birthDate} /></div>
                     <h1>Health Conditions</h1>
