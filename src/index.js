@@ -9,7 +9,6 @@ import { TSideSheet } from './Components/SideSheet';
 // import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
-import TBreadcrumb from './Components/BreadCrumbs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -17,7 +16,6 @@ root.render(
   // <React.StrictMode>
     <RecoilRoot>
       <BrowserRouter>
-      <TBreadcrumb/>
         <App/>
         <br/>
         <br/>
