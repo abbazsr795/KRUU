@@ -28,6 +28,16 @@ let MoreData = ()=>{
     useEffect(()=>{
         getdata()
     },[])
+    
+    let getPoints = (str) => {
+        for (let i = 0; i < str.length + 1; i++) {
+            let j = 0
+            if (str.slice(i) == "-"){
+                console.log(str.slice(j,i))
+                j = i + 1
+            }
+          }
+    }
 
     return <>
     <br></br>
@@ -42,6 +52,7 @@ let MoreData = ()=>{
                         <br></br>
                         <br></br>
                         <h2 className="bold">Side effects</h2>
+                        {getPoints(item.sideeffects)}
                         {item.sideeffects}
                         <br></br>
                         <br></br>

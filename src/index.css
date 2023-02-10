@@ -54,6 +54,8 @@
 .footer{
   background-color: white;
   bottom: 0;
+  right: 0;
+  left: 0;
   position: fixed;
   width: 100%;
   margin-top: 10px;
@@ -62,9 +64,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .notextdeco{
   text-decoration: none;

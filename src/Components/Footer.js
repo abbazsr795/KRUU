@@ -38,10 +38,10 @@ const Footer = () => {
             </div>
         </div> */}
         <div className='flexiblerow footer spacebetween'>
-            <a className='notextdeco' onClick={()=>{logout(auth)}}>Log Out</a>
-            <a className='notextdeco' onClick={()=>{logout(auth)}}>Home</a>
-            <a className='notextdeco' onClick={()=>{logout(auth)}}>Index</a>
-            { userlogged ? <p> {user.email} </p> : <p>not logged in</p> }
+            <a className='notextdeco f3' onClick={()=>{logout(auth)}}>Log Out</a>
+            <a className='notextdeco f3' onClick={()=>{navigate('/')}}>Home</a>
+            <a className='notextdeco f3' onClick={()=>{navigate('/index/edit')}}>Index</a>
+            { userlogged ? <p className='f3'> {user.email} </p> : <p className='f3'>not logged in</p> }
         </div>
     </>
 }
