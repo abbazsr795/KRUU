@@ -216,7 +216,7 @@
       "Alternative_Country" : ["DRC"],
       "Region" : "Middle Africa" ,
       "Recommended Vaccines" :[] 
-   }
+   },
    {
       "Country" : "Djibouti" , 
       "Region" : " " ,
@@ -905,7 +905,7 @@
       "Country" : "United States of America" ,
       "Alternative_Country": ["USA","US"],
       "Region" : "North America" ,
-      "Recommended Vaccines" :
+      "Recommended Vaccines" : []
    },
    {
       "Country" : "Uruguay" , 
