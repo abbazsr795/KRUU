@@ -2,7 +2,7 @@
 let Conditions = ()=>{
 
     return <>
-    <h1>Conditions</h1>
+    <h1 className="massivetext heading1 horizontalcenter">By Conditions</h1>
     </>
 
 }

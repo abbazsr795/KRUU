@@ -28,16 +28,22 @@ const Footer = () => {
         });
     }
 
-    return(
-        <div className='stack'>
+    return<>
+        {/* <div className='stack'>
             <div className="footer">
                 <p><a className="btn76 footerbutton" onClick={()=>{logout(auth)}}><h1 className='f3'>Log Out</h1></a></p> 
                 <a className='btn76 footerbutton' onClick={()=>{navigate('/')}}><h1 className='f3'>Home</h1></a>
                 <a className='btn76 footerbutton' onClick={()=>{navigate('/index/edit')}} ><h1 className='f3'>Index</h1></a>
                 { userlogged ? <h1 className='f3'> {user.email} </h1> : <h1 className='f3'>not logged in</h1> }
             </div>
+        </div> */}
+        <div className='flexiblerow footer spacebetween'>
+            <a className='notextdeco f3' onClick={()=>{logout(auth)}}>Log Out</a>
+            <a className='notextdeco f3' onClick={()=>{navigate('/')}}>Home</a>
+            <a className='notextdeco f3' onClick={()=>{navigate('/index/edit')}}>Index</a>
+            { userlogged ? <p className='f3'> {user.email} </p> : <p className='f3'>not logged in</p> }
         </div>
-    )
+    </>
 }
 
 export default Footer

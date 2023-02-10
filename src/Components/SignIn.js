@@ -53,17 +53,21 @@ const SignIn = () => {
             <div className="horizontalcenter"><Link to='/signup' >Don't have an account?</Link></div>
             <br></br>
             <div className="horizontalcenter">
-                <div className="emailandpasswordbox">
-                    <div>
-                        <h1>Email</h1>
-                        <input className="inputbox" onChange={emailSet} />
-                        <h1>Password</h1>
-                        <input className="inputbox" type={"password"} onChange={passwordSet} />
-                        <br></br>
-                        <br></br>
+                <div className="card21">
                     <div className="horizontalcenter">
-                            <button onClick={()=>{letsignin(getAuth(),email,password)}} className="button is-primary is-light" >Sign In</button>
-                    </div>
+                        <div className="stack">
+                            <div>
+                            <h1>Email</h1>
+                            <input className="inputbox" onChange={emailSet} />
+                            <h1>Password</h1>
+                            <input className="inputbox" type={"password"} onChange={passwordSet} />
+                            <br></br>
+                            <br></br>
+                        <div className="horizontalcenter">
+                                <button onClick={()=>{letsignin(getAuth(),email,password)}} className="button is-primary is-light" >Sign In</button>
+                        </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>

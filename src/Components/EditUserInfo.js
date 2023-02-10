@@ -139,7 +139,7 @@ let EditUserInfo = ()=>{
             <br></br>
             <br></br>
             <div className="horizontalcenter">
-                <div className="card4 lightblue pa3 verticalcenter">
+                <div className="card2 lightblue pa3 verticalcenter">
                     <input type="text" placeholder="Name" />
                     <br/>
                     <div className="row spacebetween"><h3>Date of birth</h3><DatePicker onChange={onChangeBirth} value={birthDate} /></div>

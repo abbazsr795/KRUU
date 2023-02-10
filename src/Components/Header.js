@@ -16,7 +16,7 @@ const Header = () => {
                     <h1 className="ariel textsize44">VACCINIC</h1>
                 </div>
                 <div className="row centeralign gap10">
-                    <Button onClick={() => navigate('/vaccines')} className='button is-primary is-light is-large fit' ><div>Vaccines</div></Button>
+                    <Button onClick={() => navigate('/signin')} className='button is-primary is-light is-large fit' ><div>Log In</div></Button>
                     <Button onClick={() => navigate('/signup')} className='button is-primary is-light is-large fit' ><div>Sign Up</div></Button>
                 </div>
             </div>
