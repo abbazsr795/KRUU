@@ -1,0 +1,54 @@
+[
+   {
+      "VaccineName" : "Influenza inactivated (IIV4) or Influenza recombinant (RIV4)", 
+      "Age" : ["19 to 26", "1 Dose Anually","#FBFE16","27 to 49", "1 Dose Anually","#FBFE16","50 to 64", "1 Dose Anually","#FBFE16",">65","1 Dose Anually","#FBFE16"]
+   }, 
+   {
+      "VaccineName" : "Influenza live, attenuated (LAIV4)", 
+      "Age" : ["19 to 26", "1 Dose Anually","#FBFE16","27 to 49", "1 Dose Anually","#FBFE16","50 to 64",null,"#D6D6D6",">65","null", "#D6D6D6"]
+   },
+   {
+      "VaccineName" : "Tetanus, diphtheria, pertussis (Tdap or Td)", 
+      "Age" : ["19 to 26", "1 Dose Tdap each pregancy; 1 Dose Td/Tdap for woound managament"," #EDBDFF","27 to 49", "1 Dose Tdap each pregancy; 1 Dose Td/Tdap for woound managament"," #EDBDFF","50 to 64", "1 Dose Tdap each pregancy; 1 Dose Td/Tdap for woound managament"," #EDBDFF",">65","1 Dose Tdap each pregancy; 1 Dose Td/Tdap for woound managament"," #EDBDFF"]
+   },
+   {
+      "VaccineName" : "Measles, Mumps & Rubella(MMR)", 
+      "Age" : ["19 to 26", "1 or 2 Doses ,depending on indiction","#FBFE16","27 to 49", "1 or 2 Doses ,depending on indiction","#FBFE16","50 to 64", "1 or 2 Doses ,depending on indiction","#FBFE16",">65",null,"#D6D6D6"]
+   },
+   {
+      "VaccineName" : "Varicella(VAR)", 
+      "Age" : ["19 to 26", "2 Doses","#FBFE16","27 to 49", "2 Doses","#FBFE16","50 to 64", "2 Doses"," #EDBDFF",">65","2 Doses"," #EDBDFF"]  
+   },
+   {
+      "VaccineName" : "Zoster recombinant(RZV)", 
+      "Age" : ["19 to 26", "Doses For Immunocompromising Conditions"," #EDBDFF","27 to 49", "Doses for immunocompromising conditions"," #EDBDFF","50 to 64", "2 Doses","#FBFE16",">65","2 Doses","#FBFE16"]
+   },
+   {
+      "VaccineName" : "Human papillomavirus (HPV)", 
+      "Age" : ["19 to 26", "2 or 3 Doses Depending on ages at Intial Vaccination or condition","Yellow","27 to 45", null,"#AAFDEF","45 to 49",null,"#D6D6D6","50 to 64", null,"#D6D6D6",">65",null,"#D6D6D6"]
+   },
+   {
+      "VaccineName" : "Pneumococcal (PCV15, PCV20, PPSV23)", 
+      "Age" : ["19 to 26", "1 dose PCV15 followed by PPSV23 OR 1 dose PCV20"," #EDBDFF","27 to 49", "1 dose PCV15 followed by PPSV23 OR 1 dose PCV20"," #EDBDFF",",50 to 64", "1 dose PCV15 followed by PPSV23 OR 1 dose PCV20"," #EDBDFF",",>65","1 dose PCV15 followed by PPSV23 OR 1 dose PCV20","#FBFE16"]
+   },
+   {
+      "VaccineName" : "Hepatitis A(Hep A)", 
+      "Age" : ["19 to 26", "2 or 3 doses dependign on vaccine"," #EDBDFF","27 to 49", "2 or 3 doses dependign on vaccine"," #EDBDFF","50 to 64", "2 or 3 doses dependign on vaccine"," #EDBDFF",">65","2 or 3 doses dependign on vaccine"," #EDBDFF"]
+   },
+   {
+      "VaccineName" : "Hepatitis B(Hep B)",
+      "Age" : ["19 to 26", "2, 3, or 4 doses depending on vaccine or condition","#FBFE16","27 to 49", "2, 3, or 4 doses depending on vaccine or condition","#FBFE16","50 to 64", "2, 3, or 4 doses depending on vaccine or condition"," #EDBDFF",">65","2, 3, or 4 doses depending on vaccine or condition"," #EDBDFF"]
+   },
+   {
+      "VaccineName" :"Meningococcal serogroups A, C, W, Y(MenACWY)", 
+      "Age" : ["19 to 26", "1 or 2 doses depending on indication","#EDBDFF","27 to 49", "1 or 2 doses depending on indication","#EDBDFF","50 to 64", "1 or 2 doses depending on indication","#EDBDFF",">65","1 or 2 doses depending on indication","#EDBDFF"]
+   },
+   {
+      "VaccineName" : "Meningococcal B (MenB)", 
+      "Age" : ["19 to 23", null,"#AAFDEF","23 to 26","2 or 3 doses depending on vaccine and indication"," #EDBDFF","27 to 49", "2 or 3 doses depending on vaccine and indication"," #EDBDFF","50 to 64", "2 or 3 doses depending on vaccine and indication"," #EDBDFF",">65","2 or 3 doses depending on vaccine and indication"," #EDBDFF"]
+   },
+   {
+      "VaccineName" : "Haemophilus influenzae type b (Hib)",
+      "Age" : ["19 to 26", "1 or 3 doses depending on indication"," #EDBDFF","27 to 49", "1 or 3 doses depending on indication"," #EDBDFF","50 to 64", "1 or 3 doses depending on indication"," #EDBDFF",">65","1 or 3 doses depending on indication"," #EDBDFF"]
+   }
+]
