@@ -12,11 +12,12 @@ import { useEffect, useState } from "react";
 const FutureVaccinePage = () => {
 
     let [fdoses, setfdoses] = useState([])
+    let useremail = useRecoilValue(UserLogData)
 
     let getdata = async ()=>{
         let g = []
 
-        const q = query(collection(db, "Dose"));
+        const q = query(collection(db, "Dose"),where("email","==",useremail.email));
 
         const querySnapshot = await getDocs(q);
             querySnapshot.forEach((doc) => {

@@ -9,5 +9,6 @@ export let UserLogData = atom({
     key:"UserLogData",
     default:{
         email:'',
+        username:''
     }
 })

@@ -10,7 +10,11 @@ import { UserLogData } from "../States/UserRelated";
 
 let EditUserInfo = ()=>{
 
-    let email = useRecoilValue(UserLogData)
+    let [usernames,setusername1] = useState('')
+    let [usernames1,setusernam1] = useState('')
+
+    let user = useRecoilValue(UserLogData)
+    let [username,usernameset] = useState(false)
     let [id,Setid] = useState('')
 
     const [checked1, setChecked1]   = useState(false)
@@ -50,7 +54,7 @@ let EditUserInfo = ()=>{
     let getuserinfo = async ()=>{
         let g = []
 
-        const q = query(collection(db, "UserInfo"), where("email","==",email.email));
+        const q = query(collection(db, "UserInfo"), where("email","==",user.email));
 
         const querySnapshot = await getDocs(q);
 
@@ -87,47 +91,53 @@ let EditUserInfo = ()=>{
     }
 
     let save = async ()=>{
-        console.log(id)
-        await updateDoc(id, {
-            diabetes: checked1,
-            cld: checked11,
-            hld: checked12,
-            endstageRDorhd: checked13,
-            asplenia: checked14,
-            immunocompromised: checked15,
-            hivcd4countl15p: checked16,
-            hivcd4countg15p: checked17,
+        // console.log(id)
+        // await updateDoc(id, {
+        //     diabetes: checked1,
+        //     cld: checked11,
+        //     hld: checked12,
+        //     endstageRDorhd: checked13,
+        //     asplenia: checked14,
+        //     immunocompromised: checked15,
+        //     hivcd4countl15p: checked16,
+        //     hivcd4countg15p: checked17,
 
-            preg: checked2,
-            workhealthcare: checked21,
-            alcholic: checked22,
-            gay: checked23,
+        //     preg: checked2,
+        //     workhealthcare: checked21,
+        //     alcholic: checked22,
+        //     gay: checked23,
 
-            namerica: checked3,
-            camerica: checked31,
-            caribbean: checked32,
-            samerica: checked33,
-            seasia: checked34,
-            easia: checked35,
-            sasia: checked36,
-            neurope: checked37,
-            oceania: checked38,
-            casia: checked39,
-            weurope: checked390,
-            seurope: checked391,
-            wasia : checked392,
-            nafrica: checked393,
-            wafrica: checked394,
-            mafrica: checked395,
-            eafrica: checked396,
-            safrica : checked397
-          }).then(
-            toaster.success('Success')
-          ).catch(console.log('asd'))
+        //     namerica: checked3,
+        //     camerica: checked31,
+        //     caribbean: checked32,
+        //     samerica: checked33,
+        //     seasia: checked34,
+        //     easia: checked35,
+        //     sasia: checked36,
+        //     neurope: checked37,
+        //     oceania: checked38,
+        //     casia: checked39,
+        //     weurope: checked390,
+        //     seurope: checked391,
+        //     wasia : checked392,
+        //     nafrica: checked393,
+        //     wafrica: checked394,
+        //     mafrica: checked395,
+        //     eafrica: checked396,
+        //     safrica : checked397
+        //   }).then(
+        //     toaster.success('Success')
+        //   ).catch(console.log('asd'))
+
     }
+
+    
 
     useEffect(()=>{
         getuserinfo()
+        if (user.username!==""){
+            usernameset(true)
+        }
     },[])
 
         
@@ -140,7 +150,8 @@ let EditUserInfo = ()=>{
             <br></br>
             <div className="horizontalcenter">
                 <div className="card2 lightblue pa3 verticalcenter">
-                    <input type="text" placeholder="Name" />
+                    {username ? <h1> {user.username} </h1> : <h1>User name is not provided</h1> }
+                    <input type="text" placeholder="User name" onChange={setusername1} value={usernames} />
                     <br/>
                     <div className="row spacebetween"><h3>Date of birth</h3><DatePicker onChange={onChangeBirth} value={birthDate} /></div>
                     <h1>Health Conditions</h1>

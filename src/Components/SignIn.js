@@ -34,7 +34,8 @@ const SignIn = () => {
             const user = userCredential.user;
             // ...
             setUserd({
-                email: user.email
+                email: user.email,
+                username: user.displayName
             })
             setUserl(true)
             toaster.notify('Logged in as :'+user.email)
