@@ -19,7 +19,8 @@ import byCountry from './Components/byCountry';
 import MoreData from './Pages/MoreData';
 import Editvaccine from './Pages/Editvaccine';
 import Countries from './Pages/Countries';
-import Conditions from './Pages/Conditions';
+import Age from './Pages/Age';
+import Condition from './Pages/Condition';
 import { UserLog } from './States/UserRelated';
 import { RecoilValue, useRecoilValue } from 'recoil';
 import { TSideSheet } from './Components/SideSheet';
@@ -48,9 +49,10 @@ const App = () => {
       <Route    path='/userinfo/edit'                   element={<EditUserInfo/>}         />
       <Route    path='/vaccines'                        element={<VaccinesPage/>}         />
       <Route    path='/myvaccines'                      element={<MyVaccines/>}           />
-      <Route    path='/bymcondition'                    element={<Conditions/>}           />
-      <Route    path='/bycountry'                       element={<Countries/>}           /> 
-      <Route    path='/bycountry/:name/:reg/:'         element={<Countries/>}           /> 
+      <Route    path='/byage'                           element={<Age/>}                  />
+      <Route    path='/bycondition'                     element={<Condition/>}                  />
+      <Route    path='/bycountry'                       element={<Countries/>}            /> 
+      <Route    path='/bycountry/:name/:reg/:'          element={<Countries/>}            /> 
       <Route    path='*'                                element={<NotFound/> }            />
     </Routes>
   </>
