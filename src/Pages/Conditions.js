@@ -1,3 +1,4 @@
+// import data from "./Components/Country-Vaccine" 
 let Conditions = ()=>{
 
     return <>
