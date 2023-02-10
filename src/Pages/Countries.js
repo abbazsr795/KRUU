@@ -1,7 +1,8 @@
 let Countries = ()=>{
 
     return <>
-        <h1>Countries</h1>
+        <h1 className="massivetext heading1 horizontalcenter">By Countries</h1>
+        
     </>
 
 }
