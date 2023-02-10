@@ -53,7 +53,7 @@ const FutureVaccinePage = () => {
                             fdoses.map(p=>
                                 <div className="cardh flexiblerow spacebetween" >
                                     <h1 className="bold">Vaccine name {p.vaccine} </h1>
-                                    <h3>Due {moment(p.tookdate).calendar()} </h3>
+                                    <h3>{moment(p.tookdate).calendar()} </h3>
                                 </div>)
                     }
                 </div>
