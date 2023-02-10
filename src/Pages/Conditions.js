@@ -34,17 +34,17 @@ let Conditions = ()=>{
         {
             data.map(d=><div>
                 <p> {d.Vaccinename} </p>
-                <p>Vaccine </p><p style={{color:d.preg[1]}} > {d.preg[0]} </p>
-                <p>preg </p><p style={{color:d.immunocompromised[1]}} > {d.immunocompromised[0]} </p>
-                <p></p><p style={{color:d.hivcd4countl15p[1]}} > {d.hivcd4countl15p[0]} </p>
-                <p></p><p style={{color:d.hivcd4countg15p[1]}} > {d.hivcd4countg15p[0]} </p>
-                <p></p><p style={{color:d.asplenia[1]}} > {d.asplenia[0]} </p>
-                <p></p><p style={{color:d.endstageRDorhd[1]}} > {d.endstageRDorhd[0]} </p>
-                <p></p><p style={{color:d.Heartorlungdisease[1]}} > {d.Heartorlungdisease[0]} </p>
-                <p></p><p style={{color:d.Chronicliverdiease[1]}} > {d.Chronicliverdiease[0]} </p>
-                <p></p><p style={{color:d.diabetes[1]}} > {d.diabetes[0]} </p>
-                <p></p><p style={{color:d.workhealthcare[1]}} > {d.workhealthcare[0]} </p>
-                <p></p><p style={{color:d.gay[1]}} > {d.gay[0]} </p>
+                <p>Pregnant </p><p style={{color:d.preg[1]}} > {d.preg[0]} </p>
+                <p>Immunocompromised (excluding HIV infection) </p><p> style={{color:d.immunocompromised[1]}} > {d.immunocompromised[0]} </p>
+                <p>HIV infection CD4 percentage and count ≥15% and ≥200 mm3</p><p style={{color:d.hivcd4countl15p[1]}} > {d.hivcd4countl15p[0]} </p>
+                <p>HIV infection CD4 percentage and count &lt; 15% or  &lt; 200 mm3</p><p style={{color:d.hivcd4countg15p[1]}} > {d.hivcd4countg15p[0]} </p>
+                <p>Asplenia,complement deficiencies</p><p style={{color:d.asplenia[1]}} > {d.asplenia[0]} </p>
+                <p>End-Stage Renal Disease</p><p style={{color:d.endstageRDorhd[1]}} > {d.endstageRDorhd[0]} </p>
+                <p>Heart or Lung Disease</p><p style={{color:d.Heartorlungdisease[1]}} > {d.Heartorlungdisease[0]} </p>
+                <p>Chonic Liver Disease</p><p style={{color:d.Chronicliverdiease[1]}} > {d.Chronicliverdiease[0]} </p>
+                <p>Diabetes</p><p style={{color:d.diabetes[1]}} > {d.diabetes[0]} </p>
+                <p>Work in healthcare</p><p style={{color:d.workhealthcare[1]}} > {d.workhealthcare[0]} </p>
+                <p>Male who have sex with males</p><p style={{color:d.gay[1]}} > {d.gay[0]} </p>
             </div>)
         }
     <h1 className="massivetext heading1 horizontalcenter">By Conditions</h1>
