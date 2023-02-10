@@ -34,7 +34,6 @@ const FutureVaccinePage = () => {
                 vaccine: d.vaccine
             }
             g.push(f)
-            console.log(d.tookdate)
         });
         setfdoses(g)
     }
@@ -55,7 +54,6 @@ const FutureVaccinePage = () => {
                                 <div className="cardh flexiblerow spacebetween" >
                                     <h1 className="bold">Vaccine name {p.vaccine} </h1>
                                     <h3>Due {moment(p.tookdate).calendar()} </h3>
-                                    <h3>Due {p.tookdate} </h3>
                                 </div>)
                     }
                 </div>

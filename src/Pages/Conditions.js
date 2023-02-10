@@ -35,7 +35,7 @@ let Conditions = ()=>{
             data.map(d=><div>
                 <p> {d.Vaccinename} </p>
                 <p>Pregnant </p><p style={{color:d.preg[1]}} > {d.preg[0]} </p>
-                <p>Immunocompromised (excluding HIV infection) </p><p> style={{color:d.immunocompromised[1]}} > {d.immunocompromised[0]} </p>
+                <p>Immunocompromised (excluding HIV infection) </p><p style={{color:d.immunocompromised[1]}} > {d.immunocompromised[0]} </p>
                 <p>HIV infection CD4 percentage and count ≥15% and ≥200 mm3</p><p style={{color:d.hivcd4countl15p[1]}} > {d.hivcd4countl15p[0]} </p>
                 <p>HIV infection CD4 percentage and count &lt; 15% or  &lt; 200 mm3</p><p style={{color:d.hivcd4countg15p[1]}} > {d.hivcd4countg15p[0]} </p>
                 <p>Asplenia,complement deficiencies</p><p style={{color:d.asplenia[1]}} > {d.asplenia[0]} </p>
