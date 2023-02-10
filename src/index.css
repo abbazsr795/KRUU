@@ -180,7 +180,7 @@
   font-weight: bold;
 }
 .ultramassivetext{
-  font-size: 7vw;
+  font-size: 8vw;
 }
 .row{
   display: flex;
@@ -433,4 +433,11 @@ h1{
 }
 .grey{
   background-color: #E2E2E2;
+}
+.cardfit{
+  background-color: white;
+  width: fit-content;
+  margin: 8px;
+  border-radius: 15px;
+  padding: 10px;
 }

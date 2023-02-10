@@ -28,11 +28,6 @@ const Banner = () => {
                 <div className="horizontalcenter"><h1>Get vaccine recommendations based on location</h1></div>
             </div>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
         </div>
     )
 }
