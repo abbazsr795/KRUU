@@ -13,8 +13,9 @@ let Countries = ()=>{
             countries.map(d=> <Popover content={<Pane width={300} height={400} >
                 <p> {d.Region} </p>
                 <p> {Constant_RoutineVaccine.map(f=><div>{f}</div>)} </p>
+                <p> {d.Recommended Vaccines} </p>
             </Pane>} >
-                <Button>{d.Country}</Button>
+                <div> <div className="card21 horizontalcenter grow"> {<h1>{d.Country}</h1>} </div> </div>
             </Popover>)
         }
     </>

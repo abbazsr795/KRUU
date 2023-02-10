@@ -1,9 +1,5 @@
 [
    {
-      "Constant_RoutineVaccine" : [ "Chickenpox (Varicella)",  "Diphtheria-Tetanus-Pertussis",  "Flu (influenza)",  "Measles-Mumps-Rubella (MMR)",  "Polio",  "Shingles"]
-
-   },
-   {
       "Country" : "Afghanistan",
       "Region" : "Southern Asia",  
       "Recommended Vaccines": [ "COVID 19",  "Cholera",  "Hep A",  "Hep B",  "Malaria",  "Measles",  "Rabies",  "Typhoid"]

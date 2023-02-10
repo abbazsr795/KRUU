@@ -37,10 +37,13 @@ const Footer = () => {
                 { userlogged ? <h1 className='f3'> {user.email} </h1> : <h1 className='f3'>not logged in</h1> }
             </div>
         </div> */}
-        <div className='flexiblerow footer spacebetween'>
+        <div className='row footer spacebetween'>
             <a className='notextdeco f3' onClick={()=>{logout(auth)}}>Log Out</a>
+            <p className='f3'>|</p>
             <a className='notextdeco f3' onClick={()=>{navigate('/')}}>Home</a>
+            <p className='f3'>|</p>
             <a className='notextdeco f3' onClick={()=>{navigate('/index/edit')}}>Index</a>
+            <p className='f3'>|</p>
             { userlogged ? <p className='f3'> {user.email} </p> : <p className='f3'>not logged in</p> }
         </div>
     </>
