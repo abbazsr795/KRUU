@@ -52,7 +52,6 @@ let MoreData = ()=>{
                         <br></br>
                         <br></br>
                         <h2 className="bold">Side effects</h2>
-                        {getPoints(item.sideeffects)}
                         {item.sideeffects}
                         <br></br>
                         <br></br>
