@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="footer">
                 <p><a className="btn76 footerbutton" onClick={()=>{logout(auth)}}><h1 className='f3'>Log Out</h1></a></p> 
                 <a className='btn76 footerbutton' onClick={()=>{navigate('/')}}><h1 className='f3'>Home</h1></a>
-                <a className='btn76 footerbutton' onClick={()=>{navigate('/index/edit')}} ><h1 className='f3'>To Index</h1></a>
+                <a className='btn76 footerbutton' onClick={()=>{navigate('/index/edit')}} ><h1 className='f3'>Index</h1></a>
                 { userlogged ? <h1 className='f3'> {user.email} </h1> : <h1 className='f3'>not logged in</h1> }
             </div>
         </div>

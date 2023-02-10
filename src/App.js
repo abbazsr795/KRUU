@@ -44,6 +44,7 @@ const App = () => {
       <Route    path='/myvaccines'                      element={<MyVaccines/>}           />
       <Route    path='/bymcondition'                    element={<Conditions/>}           />
       <Route    path='/bycountry'                       element={<Countries/>}           /> 
+      <Route    path='/bycountry/:name/:desc/:'         element={<Countries/>}           /> 
       <Route    path='*'                                element={<NotFound/> }            />
     </Routes>
   )
