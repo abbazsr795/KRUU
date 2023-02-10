@@ -10,6 +10,7 @@ import { db } from "../FbStuff/fb"
 import { Switch, toaster } from "evergreen-ui"
 import { useRecoilValue } from "recoil"
 import { UserLogData } from "../States/UserRelated"
+import { Alert } from "evergreen-ui"
 
 
 
@@ -78,7 +79,6 @@ let AddVaccinePage = ()=>{
 
     return(
     <div className="stack">
-        <br/>
         <br/>
         <div className="horizontalcenter">
             <div className="card4 lightblue pa4" >

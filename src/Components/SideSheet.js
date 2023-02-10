@@ -2,8 +2,31 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { SideSheet, Pane, Heading, Card, Button } from 'evergreen-ui'
 import { useNavigate } from 'react-router-dom'
+import { getAuth, signOut } from "firebase/auth";
+import { toaster } from 'evergreen-ui';
+import { useRecoilState, useRecoilValue } from "recoil";
+import { UserLog, UserLogData  } from '../States/UserRelated';
+
 
 export function TSideSheet() {
+
+  const auth = getAuth();
+
+  let [userlogged, setuserlogged] = useRecoilState(UserLog)
+  let user = useRecoilValue(UserLogData)
+    
+  const logout = (auth)=>{
+      signOut(auth).then(() => {
+          // Sign-out successful.
+          toaster.success('Successfully logged out')
+          setuserlogged(false)
+          navigate('/')
+          
+      }).catch((error) => {
+          // An error happened.
+          alert("Not logged out. try again later "+error)
+      });
+  }
 
     let navigate = useNavigate()
     
@@ -12,6 +35,7 @@ export function TSideSheet() {
     return (
       <React.Fragment>
         <SideSheet
+        position='left'
         width={300}
           isShown={isShown}
           onCloseComplete={() => setIsShown(false)}
@@ -38,6 +62,10 @@ export function TSideSheet() {
             <a onClick={() => {navigate('/recommendedvaccine')}}><h1>Recommended Vaccines</h1></a>
             <a onClick={() => {navigate('/vaccines/pastrecords')}}><h1>Current Vaccines</h1></a>
             <a onClick={() => {navigate('/vaccines/addvaccine')}}><h1>Add Vaccines</h1></a>
+          </Pane>
+          <Pane position='bottom'  padding={16}>
+          <a onClick={()=>{logout(auth)}}><h1>Log Out</h1></a>
+          { userlogged ? <p className='f3'> {user.email} </p> : <p className='f3'>not logged in</p> }
           </Pane>
         </SideSheet>
         <Button onClick={() => setIsShown(true)}><img className='icon' src='https://img.icons8.com/ios-filled/512/stripped-patterns.png'/></Button>

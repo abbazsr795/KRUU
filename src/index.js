@@ -23,7 +23,6 @@ root.render(
         <br/>
         <br/>
         <br/>
-        <Footer/>
       </BrowserRouter>
     </RecoilRoot>
   // {/* </React.StrictMode> */}
