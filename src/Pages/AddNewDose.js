@@ -8,6 +8,7 @@ import Select from 'react-select'
 import { useParams } from "react-router-dom";
 import { useRecoilValue } from "recoil";
 import { UserLogData } from "../States/UserRelated";
+import { Tooltip, InfoSignIcon } from 'evergreen-ui'
 
 let AddNewDose = ()=>{
 
@@ -86,7 +87,12 @@ let AddNewDose = ()=>{
                         <br></br>
                         {past ? <><h3>When did you take the vaccine?</h3><DatePicker onChange={ontookdate} value={Tookdate} /><br></br> </> : null }
                         <div className="row spacebetween">
-                            <p>Recurring?</p>
+                            <div className="row alignitems-center">
+                                <p>Recurring?</p>
+                                <Tooltip content="How many times will you be taking this dosage">
+                                <InfoSignIcon />
+                                </Tooltip>
+                            </div>
                             <Switch checked={recurring} onChange={(e)=>{setreuccing(e.target.checked)}} height={24} />
                         </div>
                         {recurring ? <><br></br><Select options={BN} onChange={SelectedVal} /><br></br><div className="stack"><p>Next Dose in?</p> <DatePicker onChange={onChangeStart} value={startDate} /></div></> : null}
