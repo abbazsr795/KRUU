@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Button, Pane, Popover } from "evergreen-ui";
-
 import countries from "./data.json"
 
 let Countries = ()=>{
