@@ -389,3 +389,48 @@ h1{
 .btn43{
   width: 50px;
 }
+.boxtext1{
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.lightyellow{
+  border-left: solid;
+  border-color: lightgoldenrodyellow;
+  border-width: 10px;
+  color: black;
+}
+.lightpurple{
+  border-left: solid;
+  border-color: #D39CEE;
+  border-width: 10px;
+  color: black;
+}
+.tred{
+  border-left: solid;
+  border-color: lightcoral;
+  border-width: 10px;
+  color: black;
+}
+.lightcyan{
+  border-left: solid;
+  border-color: lightcyan;
+  border-width: 10px;
+  color: black;
+}
+.lightgrey{
+  border-left: solid;
+  border-color: lightgrey;
+  border-width: 10px;
+  color: black;
+}
+.torange{
+  border-left: solid;
+  border-color: #FFC474;
+  border-width: 10px;
+  color: black;
+}
+.grey{
+  background-color: #E2E2E2;
+}
