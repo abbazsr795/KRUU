@@ -6,7 +6,7 @@ const MyVaccines = () => {
     let navigate = useNavigate()
 
     let toDashboard = () => {
-        navigate('/futurevaccine')
+        navigate('/mydoses')
     }
 
     let toPastRecords = () => {

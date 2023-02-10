@@ -7,12 +7,15 @@ import Select from 'react-select'
 
 import { db } from "../FbStuff/fb";
 import { useEffect, useState } from "react";
+import moment from "moment/moment";
 
 
 const FutureVaccinePage = () => {
 
     let [fdoses, setfdoses] = useState([])
     let useremail = useRecoilValue(UserLogData)
+
+    let colours = ["green","orange","red"]
 
     let getdata = async ()=>{
         let g = []
@@ -23,7 +26,15 @@ const FutureVaccinePage = () => {
             querySnapshot.forEach((doc) => {
             // doc.data() is never undefined for query doc snapshots
             let d = doc.data()
-            g.push(d)
+            let f = {
+                email: d.email,
+                recurringdays: d.recurringdays,
+                recurringnumber:d.recurringnumber,
+                tookdate: d.tookdate.toDate(),
+                vaccine: d.vaccine
+            }
+            g.push(f)
+            console.log(d.tookdate)
         });
         setfdoses(g)
     }
@@ -35,8 +46,6 @@ const FutureVaccinePage = () => {
     let navigate = useNavigate()
     let userd = useRecoilValue(UserLogData)
 
-    console.log(fdoses)
-
     return <div className="stack">
             <h1 className="massivetext heading1 horizontalcenter">My Doses</h1>
             <div className="">
@@ -45,7 +54,8 @@ const FutureVaccinePage = () => {
                             fdoses.map(p=>
                                 <div className="cardh flexiblerow spacebetween" >
                                     <h1 className="bold">Vaccine name {p.vaccine} </h1>
-                                    <h1>To be taken on : {p.getdata} </h1>
+                                    <h3>Due {moment(p.tookdate).calendar()} </h3>
+                                    <h3>Due {p.tookdate} </h3>
                                 </div>)
                     }
                 </div>
