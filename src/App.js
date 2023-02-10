@@ -20,11 +20,17 @@ import MoreData from './Pages/MoreData';
 import Editvaccine from './Pages/Editvaccine';
 import Countries from './Pages/Countries';
 import Conditions from './Pages/Conditions';
+import { UserLog } from './States/UserRelated';
+import { RecoilValue, useRecoilValue } from 'recoil';
+import { TSideSheet } from './Components/SideSheet';
+
 
 // import PastRecords from './Pages/PastRecordsPage';
 
 const App = () => {
-  return(
+  let userlogbool = useRecoilValue(UserLog)
+  return<>
+    {userlogbool ? <TSideSheet/> : null}
     <Routes>
       <Route    path='/'                                element={<Home/>}                 />
       <Route    path='/editvaccine/:name'               element={<Editvaccine/>}                 />
@@ -47,7 +53,7 @@ const App = () => {
       <Route    path='/bycountry/:name/:reg/:'         element={<Countries/>}           /> 
       <Route    path='*'                                element={<NotFound/> }            />
     </Routes>
-  )
+  </>
 }
 
 export default App;

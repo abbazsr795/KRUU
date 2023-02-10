@@ -12,6 +12,7 @@ export function TSideSheet() {
     return (
       <React.Fragment>
         <SideSheet
+        width={300}
           isShown={isShown}
           onCloseComplete={() => setIsShown(false)}
           containerProps={{

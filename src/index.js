@@ -16,7 +16,6 @@ root.render(
   // <React.StrictMode>
     <RecoilRoot>
       <BrowserRouter>
-      <TSideSheet/>
         <App/>
         <br/>
         <br/>
