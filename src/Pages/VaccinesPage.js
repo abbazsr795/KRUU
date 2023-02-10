@@ -46,7 +46,7 @@ const VaccinesPage = () => {
                                 <h1> {p.name} </h1>
                             </div>)
                     }
-             </div>
+            </div>
         </div>
     )
 }
