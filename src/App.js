@@ -19,6 +19,7 @@ import byCountry from './Components/byCountry';
 import MoreData from './Pages/MoreData';
 import Editvaccine from './Pages/Editvaccine';
 import Countries from './Pages/Countries';
+import Conditions from './Pages/Conditions';
 
 // import PastRecords from './Pages/PastRecordsPage';
 
@@ -41,8 +42,7 @@ const App = () => {
       <Route    path='/userinfo/edit'                   element={<EditUserInfo/>}         />
       <Route    path='/vaccines'                        element={<VaccinesPage/>}         />
       <Route    path='/myvaccines'                      element={<MyVaccines/>}           />
-      <Route    path='/bymcondition'                    element={<Countries/>}           />
-      {/* <Route    path='/bycountry'                       element={<byCountry/>}           />  */}
+      <Route    path='/bymcondition'                    element={<Conditions/>}           />
       <Route    path='/bycountry'                       element={<Countries/>}           /> 
       <Route    path='*'                                element={<NotFound/> }            />
     </Routes>
