@@ -352,3 +352,9 @@ h1{
   width: fit-content;
   padding: 5px;
 }
+.component5{
+  width: fit-content;
+}
+.justifycontent-center{
+  justify-content: center;
+}

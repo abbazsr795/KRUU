@@ -39,16 +39,14 @@ const VaccinesPage = () => {
                     <Alert intent="warning" title="Refer to Mayo Clinic for more information" marginBottom={32} > <a href='https://www.mayoclinic.org/' >Click here</a> </Alert>
                 </div>
             </div>
-            <div className="horizontalcenter">
-                <div className="flexiblerow">
+            <div className="flexiblerow justifycontent-center">
                     {
                         listofdata.map(p=>
                             <div className="card21 verticalcenter grow" onClick={()=>{navigate('/moreinfo/'+p.name)}} >
                                 <h1> {p.name} </h1>
                             </div>)
                     }
-                </div>
-            </div>
+             </div>
         </div>
     )
 }
