@@ -29,7 +29,11 @@ const NotFound = () =>{
                 <h3 className='black'>{content.title}</h3>
                 <img className='img99' height={"600"} width={"800"} src={content.hdurl} alt="" />
                 <br></br>
-                <div className='horizontalcenter ma5'><p className='whiteback pa4 border10 fit black'> {content.explanation} </p></div>
+                <br></br>
+                <br></br>
+                <div className='horizontalcenter justifycontent-center'>
+                    <div className='horizontalcenter card2 pa3'><p className='whiteback border10 black'> {content.explanation} </p></div>
+                </div>
                 <br/>
                 <br/>
                 <br/>
