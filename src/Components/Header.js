@@ -10,7 +10,7 @@ const Header = () => {
         <div className="horizontalcenter">
             <br></br>
             <br></br>
-            <div className="header row spacebetween flexiblerow">
+            <div className="header row spacebetween">
                 <div className="row centeralign">
                     <img className="logo" src="https://img.icons8.com/external-justicon-lineal-color-justicon/512/external-vaccine-science-justicon-lineal-color-justicon-1.png"/>
                     <h1 className="ariel textsize44">VACCINIC</h1>
