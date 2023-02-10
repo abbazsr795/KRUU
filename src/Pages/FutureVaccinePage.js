@@ -38,7 +38,7 @@ const FutureVaccinePage = () => {
     console.log(fdoses)
 
     return <div className="stack">
-            <h1 className="massivetext heading1 horizontalcenter">Future vaccines</h1>
+            <h1 className="massivetext heading1 horizontalcenter">My Doses</h1>
             <div className="">
                 <div className="stack">
                     {

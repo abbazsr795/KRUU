@@ -168,7 +168,7 @@
 }
 .card3{
   border: solid;
-  border-color: whitesmoke;
+  border-color: white;
   padding: 5px;
 }
 .stack{
@@ -213,7 +213,7 @@
   min-width: min-content;
 }
 .whitetext{
-  color: whitesmoke;
+  color: white;
 }
 .whiteback{
   background-color: white;
@@ -363,4 +363,22 @@ h1{
 }
 .alignitems-center{
   align-items: center;
+}
+.card000{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  width: fit-content;
+}
+.gap20{
+  gap: 20px;
+}
+.alignitems-center{
+  display: flex;
+  align-items: center;
+}
+.ultrasmalltext{
+  font-size: 20px
 }
