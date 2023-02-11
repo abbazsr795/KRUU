@@ -26,7 +26,7 @@ let Editvaccine =()=>{
         <br></br>
         <div className="horizontalcenter">
             <div className="card21 stack pa3">
-                <Button intent="danger" appearance="primary" className="" onClick={()=>{Remove()}} >Remove Vaccine?</Button>
+                <Button intent="danger" appearance="primary" className="" onClick={()=>{navigate('/underdev')}} >Remove Vaccine?</Button>
                 <br></br>
                 <Button intent="success" onClick={()=>{navigate('/vaccines/adddose/'+name)}} >Add dose</Button>
             </div>
