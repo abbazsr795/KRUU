@@ -58,7 +58,7 @@ export function TSideSheet() {
           <Pane flex="1" overflowY="scroll" background="tint1" padding={16}>
             <a onClick={() => {navigate("/")}}><h1>Home</h1></a>
             <a onClick={() => {navigate('/vaccines')}}><h1>Vaccine Index</h1></a>
-            <a onClick={() => {navigate("/futurevaccine")}}><h1>My Doses</h1></a>
+            <a onClick={() => {navigate("/mydoses")}}><h1>My Doses</h1></a>
             <a onClick={() => {navigate('/recommendedvaccine')}}><h1>Recommended Vaccines</h1></a>
             <a onClick={() => {navigate('/vaccines/pastrecords')}}><h1>Current Vaccines</h1></a>
             <a onClick={() => {navigate('/vaccines/addvaccine')}}><h1>Add Vaccines</h1></a>
