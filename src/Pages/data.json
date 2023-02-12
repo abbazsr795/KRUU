@@ -216,7 +216,7 @@
       "Alternative_Country" : ["DRC"],
       "Region" : "Middle Africa" ,
       "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
-   }
+   },
    {
       "Country" : "Djibouti" , 
       "Region" : " " ,
@@ -224,17 +224,17 @@
    },
    {
       "Country" : "Dominica" , 
-      "Region" : " " ,
+      "Region" : "Caribbean" ,
       "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Dominican Republic" , 
-      "Region" : " " ,
+      "Region" : "Caribbean" ,
       "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Ecuador" , 
-      "Region" : " " ,
+      "Region" : "Central America" ,
       "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
@@ -244,7 +244,7 @@
    },
    {
       "Country" : "El Salvador" , 
-      "Region" : " " ,
+      "Region" : "Central America" ,
       "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
@@ -905,7 +905,7 @@
       "Country" : "United States of America" ,
       "Alternative_Country": ["USA","US"],
       "Region" : "North America" ,
-      "Recommended Vaccines" :
+      "Recommended Vaccines" : []
    },
    {
       "Country" : "Uruguay" , 
