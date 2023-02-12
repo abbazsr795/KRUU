@@ -1,941 +1,945 @@
 [
    {
+      "Constant_RoutineVaccine" : [ "Chickenpox (Varicella)",  "Diphtheria-Tetanus-Pertussis",  "Flu (influenza)",  "Measles-Mumps-Rubella (MMR)",  "Polio",  "Shingles"]
+
+   },
+   {
       "Country" : "Afghanistan",
       "Region" : "Southern Asia",  
-      "RecommendedVaccines": [ "COVID 19",  "Cholera",  "Hep A",  "Hep B",  "Malaria",  "Measles",  "Rabies",  "Typhoid"]
+      "Recommended Vaccines": [ "COVID 19",  "Cholera",  "Hep A",  "Hep B",  "Malaria",  "Measles",  "Rabies",  "Typhoid"]
    },
    {
       "Country": "Albania",
       "Region" : "Southern Europe",
-      "RecommendedVaccines" : [ "COVID 19",  "Hep A",  "Hep B",  "Measles",  "Rabies",  "Yellow fever"]
+      "Recommended Vaccines" : [ "COVID 19",  "Hep A",  "Hep B",  "Measles",  "Rabies",  "Yellow fever"]
    },
    {
       "Country" : "Algeria",
       "Region" : " Northern Africa",
-      "RecommendedVaccines" : []
+      "Recommended Vaccines" : [ "COVID 19", "Cholera", "Hep A", "Hep B", "Measles","Rabies","Typhoid","Yellow fever"]
    },
    {
       "Country" : "Andorra" , 
       "Region" : "Southern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep B","Measles","Rabies"] 
    },
    {
       "Country" : "Angola" , 
       "Region" : "Middle Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Antigua and Barbuda" , 
       "Region" : "Caribbean" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Argentina" , 
       "Region" : "South America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Armenia" , 
       "Region" : "Central Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies"] 
    },
    {
       "Country" : "Australia" , 
       "Region" : "Oceania" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep B","Japanese Encephalitis","Measles","Rabies","Yellow fever"] 
    },
    {
       "Country" : "Austria" , 
       "Region" : "South America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Azerbaijan" , 
       "Region" : "Central Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies"] 
    },
    {
       "Country" : "Bahamas" , 
       "Region" : "Caribbean" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Bahrain" , 
       "Region" : "Central Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Bangledash " , 
       "Region" : "Southern Asia" ,
-      "RecommendedVaccines" : ["COVID 19", "Cholera", "Hep A", "Hep B", "Measles", "Rabies", "Typhoid", "Japanese Encephalitis", "Yellow fever"]
+      "Recommended Vaccines" : ["COVID 19", "Cholera", "Hep A", "Hep B", "Measles", "Rabies", "Typhoid", "Japanese Encephalitis", "Yellow fever"]
    },
    {
       "Country" : "Barbados" , 
       "Region" : "Caribbean" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Belarus" , 
       "Region" : "Eastern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Belgium" , 
       "Region" : "Western Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Belize" , 
       "Region" : "Central America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Benin" , 
       "Region" : "Western Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Bhutan" , 
       "Region" : "Southern Asia" ,
-      "RecommendedVaccines" : ["COVID 19", "Hep A", "Hep B", "Measles", "Rabies", "Typhoid", "Japanese Encephalitis"]
+      "Recommended Vaccines" : ["COVID 19", "Hep A", "Hep B", "Measles", "Rabies", "Typhoid", "Japanese Encephalitis"]
    },
    {
       "Country" : "Bolivia" , 
       "Region" : "South America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Botswana" , 
       "Region" : "Southern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Brazil" , 
       "Region" : "South America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Brunei" , 
       "Region" : "Southeastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Japanese Encephalitis","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Bulgaria" , 
       "Region" : "Southern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Burkina Faso" , 
       "Region" : "Western Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Burundi" , 
       "Region" : "Eastern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Cambodia" , 
       "Region" : "Southeastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Japanese Encephalitis","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Cameroon" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Canada" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies"] 
    },
    {
       "Country" : "Central Africa Republic " , 
       "Alternative_Country" : ["CAR"],
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" : ["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Chad" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
 
     {
       "Country" : "Chile" , 
       "Region" : "South America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid"] 
    },
    {
       "Country" : "China" , 
       "Region" : "Eastern Asia" ,
-      "RecommendedVaccines" : ["COVID 19", "Hep A", "Hep B", "Japanese Encephalitis", "Measles", "Rabies", "Tick-borne Encephalitis", "Typhoid", "Yellow fever"]
+      "Recommended Vaccines" : ["COVID 19", "Hep A", "Hep B", "Japanese Encephalitis", "Measles", "Rabies", "Tick-borne Encephalitis", "Typhoid", "Yellow fever"]
 
    },
    {
       "Country" : "Colombia" , 
       "Region" : "South America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Comoros" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid"] 
    },
    {
       "Country" : "Cote d’Ivoire" , 
       "Region" : "Western Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Costa Rica" , 
       "Region" : "Central America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Croatia" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Czech Republic " , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Denmark" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Democratic Republic of Congo" , 
       "Alternative_Country" : ["DRC"],
       "Region" : "Middle Africa" ,
-      "RecommendedVaccines" :[] 
-   },
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
+   }
    {
       "Country" : "Djibouti" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Polio","Rabies","Typhoid"] 
    },
    {
       "Country" : "Dominica" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Dominican Republic" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Ecuador" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Egypt" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "El Salvador" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Equatorial Guinea" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Eritrea" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Estonia" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Ethiopia" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Eswatini" , 
       "Region" : "Southern Africa" ,
-      "RecommendedVaccines" :[ "COVID 19",  "Hep A",  "Hep B",  "Malaria",  "Measles",  "Rabies",  "Typhoid",  "Yellow fever"]
+      "Recommended Vaccines" :[ "COVID 19",  "Hep A",  "Hep B",  "Malaria",  "Measles",  "Rabies",  "Typhoid",  "Yellow fever"]
    },
    {
       "Country" : "Swaziland" , 
       "Region" : "Southern Africa" ,
-      "RecommendedVaccines" :[ "COVID 19",  "Hep A",  "Hep B",  "Malaria",  "Measles",  "Rabies",  "Typhoid",  "Yellow fever"]
+      "Recommended Vaccines" :[ "COVID 19",  "Hep A",  "Hep B",  "Malaria",  "Measles",  "Rabies",  "Typhoid",  "Yellow fever"]
    },
    {
       "Country" : "Fiji" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Finland" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "France" , 
       "Region" : "Western Europe" ,
-      "RecommendedVaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"]
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"]
    },
    {
       "Country" : "Gabon" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Gambia" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Georgia" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies"] 
    },
    {
       "Country" : "Germany" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Ghana" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Greece" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies"] 
    },
    {
       "Country" : "Greenland" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies"] 
    },
    {
       "Country" : "Grenada" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Guatemala" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Guinea" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Guinea-Bissau" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Guyana" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Haiti" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Honduras" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Hungary" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Iceland" , 
       "Region" : "Northern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies"] 
    },
    {
       "Country" : "India" , 
       "Region" : "Southern Asia" ,
-      "RecommendedVaccines" : ["COVID 19", "Cholera", "Hep A", "Hep B", "Japanese Encephalitis", "Malaria", "Measles", "Rabies", "Typhoid", "Yellow fever"]
+      "Recommended Vaccines" : ["COVID 19", "Cholera", "Hep A", "Hep B", "Japanese Encephalitis", "Malaria", "Measles", "Rabies", "Typhoid", "Yellow fever"]
 
    },
    {
       "Country" : "Indonesia" , 
       "Region" : "Southeastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Japanese Encephalitis","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Iran" , 
       "Region" : "Southern Asia" ,
-      "RecommendedVaccines" : [["COVID 19", "Hep A", "Hep B", "Malaria", "Measles", "Rabies", "Typhoid", "Yellow fever"]]
+      "Recommended Vaccines" : [["COVID 19", "Hep A", "Hep B", "Malaria", "Measles", "Rabies", "Typhoid", "Yellow fever"]]
    },
    {
       "Country" : "Iraq" , 
       "Region" : "Westerm Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Ireland" , 
       "Region" : "Northern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies"] 
    },
    {
       "Country" : "Israel" , 
       "Region" : "Western Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Polio","Rabies","Typhoid"] 
    },
    {
       "Country" : "Italy" , 
       "Region" : "Southern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Jamaica" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Japan" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Japanese Encephalitis","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Jordan" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Kazakhstan" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Kenya" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Meningitis (Meningococcal disease)","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Kiribati" , 
       "Region" : " " ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Typhoid"] 
    },
    {
       "Country" : "Kuwait" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid"] 
    },
    {
       "Country" : "Kyrgyzstan" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Laos" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Japanese Encephalitis","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Latvia" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Lebanon" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Measles","Rabies","Typhoid"] 
    },
    {
       "Country" : "Lesotho" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Liberia" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Libya" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Typhoid"] 
    },
    {
       "Country" : "Liechtenstein" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Lithuania" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Luxembourg" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Measles","Rabies"] 
    },
 
     {
       "Country" : "Madagascar" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Hep A","Hep B","Malaria","Measles","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Malawi" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Malaria","Measles","Polio","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Malaysia" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["COVID 19","Cholera","Hep A","Hep B","Japanese Encephalitis","Malaria","Measles","Rabies","Typhoid","Yellow fever"] 
    },
    {
       "Country" : "Maldives" , 
       "Region" : "Southern Asia" ,
-      "RecommendedVaccines" :["Covid-19", "Hep A", "Hep B", "Measles", "Typhoid", "Yellow Fever"]
+      "Recommended Vaccines" :["Covid-19", "Hep A", "Hep B", "Measles", "Typhoid", "Yellow Fever"]
    },
    {
       "Country" : "Mali" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Malaria","Measles","Meningitis(Meningococcal disease)","Rabies","Typhoid ","Yellow Fever "] 
    },
    {
       "Country" : "Malta" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Measles","Rabies","Yellow Fever "] 
    },
    {
       "Country" : "Marshall Islands" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Measles","Typhoid "] 
    },
    {
       "Country" : "Mauritania" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Malaria","Measles","Polio","Rabies","Typhoid ","Yellow Fever "] 
    },
    {
-      "Country" : "Mauritania" , 
+      "Country" : "Mauritius" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Measles","Rabies","Typhoid "] 
    },
    {
       "Country" : "Mexico" , 
       "Region" : "Central America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid "] 
    },
    {
       "Country" : "Moldova" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Monaco" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Measles","Rabies"] 
    },
    {
       "Country" : "Mongolia" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis","Typhoid "] 
    },
    {
       "Country" : "Montenegro" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Measles ","Rabies"] 
    },
    {
       "Country" : "Morocco" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Measles","Rabies","Typhoid"] 
    },
    {
       "Country" : "Mozambique" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Malaria","Measles","Polio","Rabies","Typhoid ","Yellow Fever "] 
    },
    {
       "Country" : "Myanmar(Burma)" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Japanese Encephalitis","Malaria","Measles","Rabies","Typhoid ","Yellow Fever "] 
    },
    {
       "Country" : "Namibia" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Malaria","Measles","Rabies","Typhoid ","Yellow Fever "] 
    },
    {
       "Country" : "Nauru" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B","Measles","Typhoid "] 
    },
    {
       "Country" : "Nepal" , 
       "Region" : "Southern Asia" ,
-      "RecommendedVaccines" : ["Covid-19", "Cholera", "Hep A", "Hep B", "Japanese Encephalitis", "Malaria", "Measles", "Rabies", "Typhoid", "Yellow Fever"]
+      "Recommended Vaccines" : ["Covid-19", "Cholera", "Hep A", "Hep B", "Japanese Encephalitis", "Malaria", "Measles", "Rabies", "Typhoid", "Yellow Fever"]
    },
    {
       "Country" : "New Zealand" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A","Hep B"," Measles"] 
    },
    {
       "Country" : "Netherlands" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A ","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Nicaragua" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Hep A ","Hep B","Malaria","Measles","Rabies","Typhoid ","Yellow Fever "] 
    },
    {
       "Country" : "Niger" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Cholera","Hep A ","Hep B","Malaria","Measles","Meningitis(Meningococcal Disease)","Polio","Rabies","Typhoid ","Yellow Fever "] 
    },
    {
       "Country" : "Nigeria" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19","Cholera","Hep A ","Hep B","Malaria","Measles","Meningitis(Meningococcal Disease)","Polio","Rabies","Typhoid ","Yellow Fever "] 
    },
    {
       "Country" : "North Korea" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19 ","Hep A","Hep B","Japanese Encephalitis","Malaria","Measles","Typhoid ","Yellow Fever "] 
    },
    {
       "Country" : "Norway" , 
       "Region" : "" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :["Covid-19 ","Hep A","Hep B","Measles","Rabies","Tick-borne Encephalitis"] 
    },
    {
       "Country" : "Oman" , 
       "Region" : "Western Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Pakistan" , 
       "Region" : "Southern Asia" ,
-      "RecommendedVaccines" : ["Covid-19", "Cholera", "Hep A", "Hep B", "Japanese Encephalitis", "Malaria", "Measles", "Polio", "Rabies", "Typhoid", "Yellow Fever"]
+      "Recommended Vaccines" : ["Covid-19", "Cholera", "Hep A", "Hep B", "Japanese Encephalitis", "Malaria", "Measles", "Polio", "Rabies", "Typhoid", "Yellow Fever"]
    },
    {
       "Country" : "Paraguay" , 
       "Region" : "South America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Panama" , 
       "Region" : "Central America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Papua New Guinea" , 
       "Region" : "Southeastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Peru" , 
       "Region" : "South America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Philippines" , 
       "Region" : "Southeastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Poland" , 
       "Region" : "Eastern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Portugal" , 
       "Region" : "Southern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Qatar" , 
       "Region" : "Western Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Romania" , 
       "Region" : "Southern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Russia" , 
       "Region" : "Eastern Europe" ,
-      "RecommendedVaccines" :["Covid-19", "Hep A", "Hep B", "Japanese Encephalitis", "Measles", "Rabies", "Tick Boren Encephalitis"]
+      "Recommended Vaccines" :["Covid-19", "Hep A", "Hep B", "Japanese Encephalitis", "Measles", "Rabies", "Tick Boren Encephalitis"]
 
    },
    {
       "Country" : "Republic of Congo" , 
       "Region" : "Middle Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Rwanda" , 
       "Region" : "Eastern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Saudi Arabia" , 
       "Region" : "Western Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Saint Kitts and Nevis" , 
       "Region" : "Caribbean" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Saint Lucia" , 
       "Region" : "Caribbean" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Samoa" , 
       "Region" : "Oceania" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Sao Tome and Principe" , 
       "Region" : "Middle Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Saint Vincent and the Grenadines" , 
       "Region" : "Caribbean" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "San Marino" , 
       "Region" : "Southern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Senegal" , 
       "Region" : "Western Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Serbia" , 
       "Region" : "Southern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Seychelles" , 
       "Region" : "Eastern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Sierra Leone" , 
       "Region" : "Western Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Singapore" , 
       "Region" : "Southeastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Slovakia" , 
       "Region" : "Eastern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Slovenia" , 
       "Region" : "Eastern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Somalia" , 
       "Region" : "Eastern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "South Africa" , 
       "Region" : "Central America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "South Korea" , 
       "Region" : "Eastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "South Sudan" , 
       "Region" : "Northern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Spain" , 
       "Region" : "Southern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Sri Lanka" , 
       "Region" : "Southern Asia" ,
-      "RecommendedVaccines" :["Covid-19", "Hep A", "Hep B", "Japanese Encephalitis", "Measles", "Rabies", "Typhoid", "Yellow Fever"]   
+      "Recommended Vaccines" :["Covid-19", "Hep A", "Hep B", "Japanese Encephalitis", "Measles", "Rabies", "Typhoid", "Yellow Fever"]   
    },
    {
       "Country" : "Sudan" , 
       "Region" : "Northern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
       {
       "Country" : "Sweden" , 
       "Region" : "Western Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },   {
       "Country" : "Switzerland" , 
       "Region" : "Western Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Syria" , 
       "Region" : "Westerm Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Taiwan" , 
       "Region" : "Eastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Tajikistan" , 
       "Region" : "Central Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Tanzania" , 
       "Region" : "Eastern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Thailand" , 
       "Region" : "Southeastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Timor Leste" , 
       "Region" : "Southeastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Togo" , 
       "Region" : "Western Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Tonga" , 
       "Region" : "Western Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Trinidad and Taboga" , 
       "Region" : "Oceania" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Tunisia" , 
       "Region" : "Northern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Turkey" , 
       "Region" : "Eastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Turkmenistan" , 
       "Region" : "Central Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Tuvalu" , 
       "Region" : "Oceania" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Uganda" , 
       "Region" : "Eastern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Ukraine" , 
       "Region" : "Eastern Europe" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "United Arab Emirates" , 
       "Region" : "Western Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Untied Kingdom" ,
       "Alternative_Country" : ["UK", "Britain", "Great Britain"], 
       "Region" : "Northern Europe" ,
-      "RecommendedVaccines" : ["Covid-19", "Hep A", "Hep B", "Measles", "Rabies", "Tick-born Encephalitis"]
+      "Recommended Vaccines" : ["Covid-19", "Hep A", "Hep B", "Measles", "Rabies", "Tick-born Encephalitis"]
 
    },
    {
       "Country" : "United States of America" ,
       "Alternative_Country": ["USA","US"],
       "Region" : "North America" ,
-      "RecommendedVaccines" : []
+      "Recommended Vaccines" :
    },
    {
       "Country" : "Uruguay" , 
       "Region" : "South America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Uzbekistan" , 
       "Region" : "Central Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },   
    {
       "Country" : "Venezuela" , 
       "Region" : "South America" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Vietnam" , 
       "Region" : "Southeastern Asia" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Yemen" , 
       "Region" : "Western Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Zambia" , 
       "Region" : "Eastern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    },
    {
       "Country" : "Zimbabwe" , 
       "Region" : "Eastern Africa" ,
-      "RecommendedVaccines" :[] 
+      "Recommended Vaccines" :[] 
    }      
 ]

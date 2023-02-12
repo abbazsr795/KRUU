@@ -57,10 +57,13 @@ let HomeComp = ()=>{
             <div className="horizontalcenter">
                 <div className="card000 flexiblerow spacebetween">
                     <div className="row gap10">
-                        {usernamebool? <Avatar name={user.username} size={100} /> : <Avatar name={user.email} size={100} />}  
+                        {usernamebool? <Avatar name={user.email} size={100} /> : <Avatar name={user.email} size={100} />}  
                         <div className="stack alignitems-flexstart">
-                            <h1 className="ultrasmalltext"> {user.email} </h1>
-                            {usernamebool? <h2>user.username</h2> : null}
+                            <h1 className="ultrasmalltext"> {user.username} </h1>
+                            {usernamebool? <h2>user.email</h2> : null}
+                            <h3></h3>
+                            <h3 className="ultrasmalltext"> {user.DOB} </h3>
+                            {usernamebool? <h2>user.DOB</h2> : null}
                             <h3></h3>
                             <button  className="button btn43 is-primary is-light" onClick={()=>{navigate('/userinfo/edit')}} >Edit</button>
                         </div>

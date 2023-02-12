@@ -30,7 +30,7 @@ const FutureVaccinePage = () => {
                 email: d.email,
                 recurringdays: d.recurringdays,
                 recurringnumber:d.recurringnumber,
-                tookdate: d.tookdate.toDate(),
+                tookdate: typeof(d.tookdate.toDate()),
                 vaccine: d.vaccine
             }
             g.push(f)
@@ -54,6 +54,7 @@ const FutureVaccinePage = () => {
                                 <div className="cardh flexiblerow spacebetween" >
                                     <h1 className="bold">Vaccine name {p.vaccine} </h1>
                                     <h3>{moment(p.tookdate).calendar()} </h3>
+                                    <h3>{p.tookdate} </h3>
                                 </div>)
                     }
                 </div>
