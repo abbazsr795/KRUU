@@ -30,7 +30,7 @@ const FutureVaccinePage = () => {
                 email: d.email,
                 recurringdays: d.recurringdays,
                 recurringnumber:d.recurringnumber,
-                tookdate: typeof(d.tookdate.toDate()),
+                tookdate: d.tookdate.toDate(),
                 vaccine: d.vaccine
             }
             g.push(f)
