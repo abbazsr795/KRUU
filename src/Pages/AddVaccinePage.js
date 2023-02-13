@@ -11,10 +11,13 @@ import { Switch, toaster } from "evergreen-ui"
 import { useRecoilValue } from "recoil"
 import { UserLogData } from "../States/UserRelated"
 import { Alert } from "evergreen-ui"
+import { useNavigate } from "react-router-dom"
 
 
 
 let AddVaccinePage = ()=>{
+
+    let navigate = useNavigate()
 
     let [values,setValue] = useState([])
     // let [Bnumber,setBnumber] = useState(0)
@@ -82,7 +85,7 @@ let AddVaccinePage = ()=>{
         <br/>
         <div className="horizontalcenter">
             <div className="flexiblerow">
-                <Alert intent="warning" title="To add a dose" marginBottom={32} > <a href='/vaccines/pastrecords' >Click here</a> </Alert>
+                <Alert intent="warning" title="To add a dose" marginBottom={32} > <a onClick={() => navigate('/vaccines/pastrecords')} >Click here</a> </Alert>
             </div>
         </div>
         <div className="horizontalcenter">
