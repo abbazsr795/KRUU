@@ -59,7 +59,7 @@ let HomeComp = ()=>{
                     <div className="row gap10">
                         {usernamebool? <Avatar name={user.email} size={100} /> : <Avatar name={user.email} size={100} />}  
                         <div className="stack alignitems-flexstart">
-                            <h1 className="ultrasmalltext"> {user.username} </h1>
+                            <h1 className="ultrasmalltext"> {user.email} </h1>
                             {usernamebool? <h2>user.email</h2> : null}
                             <h3></h3>
                             <h3 className="ultrasmalltext"> {user.DOB} </h3>
