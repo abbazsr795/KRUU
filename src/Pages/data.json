@@ -12,7 +12,7 @@
    {
       "Country" : "Algeria",
       "Region" : " Northern Africa",
-      "Recommended Vaccines" : ["COVID 19", "Cholera", "Hep A", "Hep B", "Measles","Rabies","Typhoid","Yellow fever"]
+      "RecommendedVaccines" : ["COVID 19", "Cholera", "Hep A", "Hep B", "Measles","Rabies","Typhoid","Yellow fever"]
    },
    {
       "Country" : "Andorra" , 
@@ -382,7 +382,7 @@
    {
       "Country" : "Iran" , 
       "Region" : "Southern Asia" ,
-      "Recommended Vaccines" : ["COVID 19", "Hep A", "Hep B", "Malaria", "Measles", "Rabies", "Typhoid", "Yellow fever"]
+      "RecommendedVaccines" : ["COVID 19", "Hep A", "Hep B", "Malaria", "Measles", "Rabies", "Typhoid", "Yellow fever"]
    },
    {
       "Country" : "Iraq" , 
