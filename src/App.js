@@ -2,7 +2,7 @@ import './App.css';
 import SignInPage from './Pages/SignInPage';
 import SignUpPage from './Pages/SignUpPage';
 import FutureVaccinePage from './Pages/FutureVaccinePage';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import NotFound from './Pages/404Page';
 import Home from './Pages/HomePage';
 import UserInfoPage from './Pages/UserInfoPage'
@@ -25,14 +25,23 @@ import { UserLog } from './States/UserRelated';
 import { RecoilValue, useRecoilValue } from 'recoil';
 import { TSideSheet } from './Components/SideSheet';
 import { Underdev } from './Components/underdev';
+import { useEffect } from 'react';
 
 
 // import PastRecords from './Pages/PastRecordsPage';
 
 const App = () => {
+  let navigate= useNavigate()
   let userlogbool = useRecoilValue(UserLog)
+
+  useEffect(()=>{
+    if (!userlogbool){
+      navigate("/")
+    }
+  },[])
+
   return<>
-    {userlogbool ? <TSideSheet/> : null}
+    {/* {userlogbool ? <TSideSheet/> : null} */}
     <Routes>
       <Route    path='/'                                element={<Home/>}                 />
       <Route    path='/editvaccine/:name'               element={<Editvaccine/>}                 />

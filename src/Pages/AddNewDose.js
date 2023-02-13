@@ -5,7 +5,7 @@ import DatePicker from "react-date-picker"
 import { collection, getDocs, query, addDoc } from "firebase/firestore"
 import { useEffect, useState } from "react";
 import Select from 'react-select'
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useRecoilValue } from "recoil";
 import { UserLogData } from "../States/UserRelated";
 import { Tooltip, InfoSignIcon } from 'evergreen-ui'
@@ -13,6 +13,9 @@ import { Tooltip, InfoSignIcon } from 'evergreen-ui'
 let AddNewDose = ()=>{
 
     let g = null
+
+    let navigate = useNavigate()
+
     let useremail = useRecoilValue(UserLogData)
     const [Tookdate, ontookdate] = useState(new Date());
     let current = new Date()
@@ -48,6 +51,8 @@ let AddNewDose = ()=>{
 
         if (docref!==""){
             toaster.success('success')
+            navigate("/")
+            
             // alert(Tookdate +" "+current +" "+ g+" ")
         }
     }
