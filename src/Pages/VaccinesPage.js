@@ -46,9 +46,6 @@ const VaccinesPage = () => {
                                 <h1> {p.name} </h1>
                             </div>)
                     }
-                    <div className="card21 verticalcenter grow" onClick={()=>{navigate('/moreinfo/Hepatitis A(Hep A)')}} >
-                                <h1> {"Hepatitis A(Hep A)"} </h1>
-                            </div>
             </div>
         </div>
     )
