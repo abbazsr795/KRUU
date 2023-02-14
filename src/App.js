@@ -26,6 +26,7 @@ import { RecoilValue, useRecoilValue } from 'recoil';
 import { TSideSheet } from './Components/SideSheet';
 import { Underdev } from './Components/underdev';
 import { useEffect } from 'react';
+import { Feedback } from './Components/Feedback';
 
 
 // import PastRecords from './Pages/PastRecordsPage';
@@ -66,6 +67,7 @@ const App = () => {
       <Route    path='/bycountry/:name/:reg/:'          element={<Countries/>}            /> 
       <Route    path='*'                                element={<NotFound/> }            />
       <Route    path='/underdev'                        element={<Underdev/>}            />
+      <Route    path='/feedback'                        element={<Feedback/>}            />
     </Routes>
   </>
 }

@@ -80,7 +80,7 @@ let HomeComp = ()=>{
                 <button className="bigbtn grow" onClick={()=>{toAddVaccines()}} ><div className="verticalcenter card1 grow"><div className="horizontalcenter"><img className="img2" src="https://img.icons8.com/ios/512/plus-2-math.png"/></div><h1 className="midtext">Add Vaccines</h1></div></button>
                 <button className="bigbtn grow" onClick={()=>{toUserVaccines()}} ><div className="verticalcenter card1 grow "><div className="horizontalcenter"><img src="https://img.icons8.com/ios/512/list.png" className="img2"/></div><h1 className="midtext">Vaccine Index</h1></div></button>
                 <button className="bigbtn grow" onClick={()=>{navigate("underdev")}} ><div className="verticalcenter card1 grow "><div className="horizontalcenter"><img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/512/external-qr-code-social-media-ui-tanah-basah-basic-outline-tanah-basah.png" className="img2"/></div><h1 className="midtext">Verify Vaccine</h1></div></button>
-                <button className="bigbtn grow" onClick={()=>{navigate('/underdev')}} ><div className="verticalcenter card1 grow "><div className="horizontalcenter"><img src="https://img.icons8.com/material-sharp/512/comments.png" className="img2"/></div><h1 className="midtext">Feedback</h1></div></button>
+                <button className="bigbtn grow" onClick={()=>{navigate('/feedback')}} ><div className="verticalcenter card1 grow "><div className="horizontalcenter"><img src="https://img.icons8.com/material-sharp/512/comments.png" className="img2"/></div><h1 className="midtext">Feedback</h1></div></button>
             </div>
         </div>
 
