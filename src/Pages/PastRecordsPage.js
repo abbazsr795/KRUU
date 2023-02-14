@@ -4,7 +4,7 @@ let PastRecordsPage = ()=>{
 
     return <>
         <div>
-            <h1 className="massivetext heading1 horizontalcenter">Past vaccines</h1>
+            <h1 className="massivetext heading1 horizontalcenter">Current vaccines</h1>
             <br></br>
             <div className="futurevaccines ma1">
                 <PastRecords/>
